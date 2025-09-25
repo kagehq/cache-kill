@@ -70,6 +70,11 @@ cargo install cachekill
 
 # Advanced NPX analysis with per-package details
 ./target/release/cachekill --npx --list
+
+# NPX cache management
+./target/release/cachekill --npx --dry-run          # Preview what would be cleaned
+./target/release/cachekill --npx --force            # Nuclear option - clear all NPX caches
+./target/release/cachekill --npx --stale-days 7 --force  # Surgical - only stale packages
 ```
 
 ## Supported Languages

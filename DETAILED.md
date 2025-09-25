@@ -167,6 +167,11 @@ pub struct CacheEntry {
 # NPX analysis with JSON output for automation
 ./target/release/cachekill --npx --list --json
 
+# NPX cache management
+./target/release/cachekill --npx --dry-run          # Preview what would be cleaned
+./target/release/cachekill --npx --force            # Nuclear option - clear all NPX caches
+./target/release/cachekill --npx --stale-days 7 --force  # Surgical - only stale packages
+
 # Custom paths and exclusions
 ./target/release/cachekill --paths "**/custom-cache" --exclude "**/test" --dry-run
 
@@ -376,6 +381,40 @@ For automation and scripting, use `--json` flag:
     "stale": true
   }
 ]
+```
+
+### NPX Cache Management
+
+CacheKill provides powerful NPX cache management capabilities:
+
+#### Safe Preview
+```bash
+# Preview what would be cleaned (recommended first step)
+./target/release/cachekill --npx --dry-run
+```
+
+#### Nuclear Option
+```bash
+# Clear all NPX caches (backup to timestamped directory)
+./target/release/cachekill --npx --force
+```
+
+#### Surgical Approach
+```bash
+# Only clean packages not used in last 7 days
+./target/release/cachekill --npx --stale-days 7 --force
+
+# Only clean packages not used in last 30 days
+./target/release/cachekill --npx --stale-days 30 --force
+```
+
+#### Team Reporting
+```bash
+# Generate comprehensive report for engineering teams
+./target/release/cachekill --npx --list --json > team-cache-report.json
+
+# Human-readable summary
+./target/release/cachekill --npx --list
 ```
 
 ### Optimization Recommendations
