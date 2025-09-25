@@ -1,0 +1,78 @@
+name: 'CacheKill'
+description: 'Safely clean development and build caches'
+author: 'CacheKill Team'
+
+inputs:
+  mode:
+    description: 'CI mode (prebuild|postbuild)'
+    required: true
+    default: 'postbuild'
+  args:
+    description: 'Additional cachekill arguments'
+    required: false
+    default: ''
+  version:
+    description: 'CacheKill version to install'
+    required: false
+    default: 'latest'
+
+outputs:
+  freed_bytes:
+    description: 'Number of bytes freed'
+    value: ${{ steps.cachekill.outputs.freed_bytes }}
+  entries:
+    description: 'Number of cache entries processed'
+    value: ${{ steps.cachekill.outputs.entries }}
+  status:
+    description: 'CacheKill execution status'
+    value: ${{ steps.cachekill.outputs.status }}
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Install CacheKill
+      shell: bash
+      run: |
+        if [ "${{ inputs.version }}" = "latest" ]; then
+          # Install from GitHub releases
+          curl -L https://github.com/kagehq/cachekill/releases/latest/download/cachekill-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m) -o cachekill
+          chmod +x cachekill
+          sudo mv cachekill /usr/local/bin/
+        else
+          # Install specific version
+          curl -L https://github.com/kagehq/cachekill/releases/download/v${{ inputs.version }}/cachekill-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m) -o cachekill
+          chmod +x cachekill
+          sudo mv cachekill /usr/local/bin/
+        fi
+
+    - name: Run CacheKill
+      id: cachekill
+      shell: bash
+      run: |
+        # Set up environment variables for edge cache purging
+        if [ -n "${{ env.VERCEL_TOKEN }}" ]; then
+          export VERCEL_TOKEN="${{ env.VERCEL_TOKEN }}"
+        fi
+        if [ -n "${{ env.CF_API_TOKEN }}" ]; then
+          export CF_API_TOKEN="${{ env.CF_API_TOKEN }}"
+        fi
+        
+        # Run cachekill in CI mode
+        if [ -n "${{ inputs.args }}" ]; then
+          cachekill ci --mode ${{ inputs.mode }} ${{ inputs.args }}
+        else
+          cachekill ci --mode ${{ inputs.mode }}
+        fi
+        
+        # Parse output for metrics (this would need to be implemented in the CLI)
+        echo "freed_bytes=0" >> $GITHUB_OUTPUT
+        echo "entries=0" >> $GITHUB_OUTPUT
+        echo "status=success" >> $GITHUB_OUTPUT
+
+    - name: CacheKill Summary
+      shell: bash
+      run: |
+        echo "✅ CacheKill completed successfully"
+        echo "📊 Freed: ${{ steps.cachekill.outputs.freed_bytes }} bytes"
+        echo "📁 Entries: ${{ steps.cachekill.outputs.entries }}"
+        echo "📈 Status: ${{ steps.cachekill.outputs.status }}"

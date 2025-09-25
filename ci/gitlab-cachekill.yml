@@ -1,0 +1,94 @@
+# GitLab CI template for CacheKill
+# Usage: include this file in your .gitlab-ci.yml
+
+variables:
+  CACHEKILL_VERSION: "latest"
+  CACHEKILL_MODE: "postbuild"
+  CACHEKILL_ARGS: ""
+
+cachekill:prebuild:
+  stage: prebuild
+  image: ubuntu:22.04
+  variables:
+    CACHEKILL_MODE: "prebuild"
+  before_script:
+    - apt-get update && apt-get install -y curl
+    - |
+      if [ "$CACHEKILL_VERSION" = "latest" ]; then
+        curl -L https://github.com/kagehq/cachekill/releases/latest/download/cachekill-linux-$(uname -m) -o cachekill
+      else
+        curl -L https://github.com/kagehq/cachekill/releases/download/v$CACHEKILL_VERSION/cachekill-linux-$(uname -m) -o cachekill
+      fi
+    - chmod +x cachekill
+    - mv cachekill /usr/local/bin/
+  script:
+    - |
+      # Set up environment variables for edge cache purging
+      if [ -n "$VERCEL_TOKEN" ]; then
+        export VERCEL_TOKEN="$VERCEL_TOKEN"
+      fi
+      if [ -n "$CF_API_TOKEN" ]; then
+        export CF_API_TOKEN="$CF_API_TOKEN"
+      fi
+      
+      # Run cachekill in prebuild mode
+      cachekill ci --mode prebuild $CACHEKILL_ARGS
+  artifacts:
+    reports:
+      dotenv: cachekill.env
+  only:
+    - main
+    - develop
+    - merge_requests
+
+cachekill:postbuild:
+  stage: postbuild
+  image: ubuntu:22.04
+  variables:
+    CACHEKILL_MODE: "postbuild"
+  before_script:
+    - apt-get update && apt-get install -y curl
+    - |
+      if [ "$CACHEKILL_VERSION" = "latest" ]; then
+        curl -L https://github.com/kagehq/cachekill/releases/latest/download/cachekill-linux-$(uname -m) -o cachekill
+      else
+        curl -L https://github.com/kagehq/cachekill/releases/download/v$CACHEKILL_VERSION/cachekill-linux-$(uname -m) -o cachekill
+      fi
+    - chmod +x cachekill
+    - mv cachekill /usr/local/bin/
+  script:
+    - |
+      # Set up environment variables for edge cache purging
+      if [ -n "$VERCEL_TOKEN" ]; then
+        export VERCEL_TOKEN="$VERCEL_TOKEN"
+      fi
+      if [ -n "$CF_API_TOKEN" ]; then
+        export CF_API_TOKEN="$CF_API_TOKEN"
+      fi
+      
+      # Run cachekill in postbuild mode
+      cachekill ci --mode postbuild $CACHEKILL_ARGS
+  artifacts:
+    reports:
+      dotenv: cachekill.env
+  when: always
+  only:
+    - main
+    - develop
+    - merge_requests
+
+# Example usage in your .gitlab-ci.yml:
+# include:
+#   - local: 'ci/gitlab-cachekill.yml'
+#
+# stages:
+#   - prebuild
+#   - build
+#   - postbuild
+#
+# build:
+#   stage: build
+#   script:
+#     - echo "Your build commands here"
+#
+# # CacheKill will run automatically in prebuild and postbuild stages

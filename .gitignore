@@ -1,0 +1,108 @@
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+
+# Cargo
+Cargo.lock
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# CacheKill specific
+.cachekill-backup/
+.cachekillrc
+
+# Test artifacts
+test-projects/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Build artifacts
+dist/
+build/
+*.o
+*.so
+*.dylib
+*.dll
+
+# Documentation build
+/book/
+/docs/_book/
+
+# Coverage reports
+tarpaulin-report.html
+lcov.info
+
+# Profiling
+*.prof
+
+# Backup files
+*.bak
+*.backup
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Node.js (for any JS tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (for any Python tooling)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Docker
+.dockerignore
+
+# CI/CD
+.github/workflows/*.yml.bak
+ci/*.yml.bak
+
+# Release artifacts
+*.tar.gz
+*.zip
+*.deb
+*.rpm
+*.dmg
+*.exe
+
+# Benchmark results
+criterion/
+
+# Flamegraph
+flamegraph.svg
+perf.data*
+
+# Local development
+.local/
+.cache/

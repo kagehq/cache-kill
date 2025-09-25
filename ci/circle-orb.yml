@@ -1,0 +1,125 @@
+version: 2.1
+
+description: |
+  CacheKill orb for CircleCI - Safely clean development and build caches
+
+orbs:
+  cachekill: cachekill/cachekill@1.0.0
+
+executors:
+  default:
+    docker:
+      - image: ubuntu:22.04
+
+commands:
+  install-cachekill:
+    description: "Install CacheKill CLI"
+    parameters:
+      version:
+        type: string
+        default: "latest"
+        description: "CacheKill version to install"
+    steps:
+      - run:
+          name: Install CacheKill
+          command: |
+            if [ "<< parameters.version >>" = "latest" ]; then
+              curl -L https://github.com/kagehq/cachekill/releases/latest/download/cachekill-linux-$(uname -m) -o cachekill
+            else
+              curl -L https://github.com/kagehq/cachekill/releases/download/v<< parameters.version >>/cachekill-linux-$(uname -m) -o cachekill
+            fi
+            chmod +x cachekill
+            sudo mv cachekill /usr/local/bin/
+
+jobs:
+  prebuild:
+    executor: default
+    parameters:
+      version:
+        type: string
+        default: "latest"
+        description: "CacheKill version to install"
+      args:
+        type: string
+        default: ""
+        description: "Additional cachekill arguments"
+    steps:
+      - install-cachekill:
+          version: << parameters.version >>
+      - run:
+          name: CacheKill Prebuild
+          command: |
+            # Set up environment variables for edge cache purging
+            if [ -n "$VERCEL_TOKEN" ]; then
+              export VERCEL_TOKEN="$VERCEL_TOKEN"
+            fi
+            if [ -n "$CF_API_TOKEN" ]; then
+              export CF_API_TOKEN="$CF_API_TOKEN"
+            fi
+            
+            # Run cachekill in prebuild mode
+            if [ -n "<< parameters.args >>" ]; then
+              cachekill ci --mode prebuild << parameters.args >>
+            else
+              cachekill ci --mode prebuild
+            fi
+      - run:
+          name: CacheKill Summary
+          command: |
+            echo "✅ CacheKill prebuild completed successfully"
+
+  postbuild:
+    executor: default
+    parameters:
+      version:
+        type: string
+        default: "latest"
+        description: "CacheKill version to install"
+      args:
+        type: string
+        default: ""
+        description: "Additional cachekill arguments"
+    steps:
+      - install-cachekill:
+          version: << parameters.version >>
+      - run:
+          name: CacheKill Postbuild
+          command: |
+            # Set up environment variables for edge cache purging
+            if [ -n "$VERCEL_TOKEN" ]; then
+              export VERCEL_TOKEN="$VERCEL_TOKEN"
+            fi
+            if [ -n "$CF_API_TOKEN" ]; then
+              export CF_API_TOKEN="$CF_API_TOKEN"
+            fi
+            
+            # Run cachekill in postbuild mode
+            if [ -n "<< parameters.args >>" ]; then
+              cachekill ci --mode postbuild << parameters.args >>
+            else
+              cachekill ci --mode postbuild
+            fi
+      - run:
+          name: CacheKill Summary
+          command: |
+            echo "✅ CacheKill postbuild completed successfully"
+
+# Example usage in your .circleci/config.yml:
+# version: 2.1
+# orbs:
+#   cachekill: cachekill/cachekill@1.0.0
+#
+# workflows:
+#   build:
+#     jobs:
+#       - cachekill/prebuild:
+#           version: "latest"
+#           args: "--docker --npx"
+#       - build:
+#           requires:
+#             - cachekill/prebuild
+#       - cachekill/postbuild:
+#           version: "latest"
+#           args: "--docker --npx"
+#           requires:
+#             - build
