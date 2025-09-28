@@ -276,6 +276,7 @@ mod tests {
             npx: false,
             restore_last: false,
             all: false,
+            js_pm: false,
         }
     }
 
