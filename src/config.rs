@@ -62,6 +62,7 @@ pub struct CliArgs {
     pub npx: bool,
     pub restore_last: bool,
     pub all: bool,
+    pub js_pm: bool,
 }
 
 /// Merged configuration combining config file and CLI args
@@ -82,6 +83,7 @@ pub struct MergedConfig {
     pub npx: bool,
     pub restore_last: bool,
     pub all: bool,
+    pub js_pm: bool,
 }
 
 impl Config {
@@ -152,6 +154,7 @@ impl Config {
             npx: cli_args.npx || self.include_npx.unwrap_or(false),
             restore_last: cli_args.restore_last,
             all: cli_args.all,
+            js_pm: cli_args.js_pm,
         }
     }
 }
@@ -173,6 +176,7 @@ impl Default for MergedConfig {
             npx: false,
             restore_last: false,
             all: false,
+            js_pm: false,
         }
     }
 }
@@ -235,6 +239,7 @@ mod tests {
             npx: false,
             restore_last: false,
             all: false,
+            js_pm: false,
         };
 
         let merged = config.merge_with_cli(&cli_args);
@@ -284,6 +289,7 @@ include_docker = true
             npx: false,
             restore_last: false,
             all: false,
+            js_pm: false,
         };
 
         let node_modules = std::path::Path::new("/project/node_modules");

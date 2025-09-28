@@ -16,6 +16,7 @@ mod hf;
 mod torch;
 mod edge;
 mod doctor;
+mod package_managers;
 
 use config::{Config, CliArgs, MergedConfig};
 use discover::DiscoveryResult;
@@ -29,6 +30,7 @@ use hf::{handle_hf_list, handle_hf_clean};
 use torch::{handle_torch_list, handle_torch_clean};
 use edge::{handle_vercel_purge, handle_vercel_status, handle_cloudflare_purge, handle_cloudflare_status};
 use doctor::handle_doctor;
+use crate::cache_entry::{CacheEntry, PlannedAction};
 
 /// CacheKill - A production-ready CLI tool to safely nuke development and build caches
 #[derive(Parser)]
@@ -155,6 +157,10 @@ struct Cli {
     /// API token for edge cache purging
     #[arg(long, value_name = "TOKEN")]
     token: Option<String>,
+
+    /// JavaScript package managers npm, pnpm, yarn
+    #[arg(long)]
+    js_pm: bool,
 }
 
 
@@ -176,12 +182,13 @@ impl Cli {
             npx: self.npx,
             restore_last: self.restore_last,
             all: self.all,
+            js_pm: self.js_pm,
         }
     }
 }
 
 fn main() {
-    let cli = Cli::parse();
+    let cli = Parser::parse();
 
 
     // Run the main application
@@ -305,18 +312,22 @@ fn handle_restore_last(config: &MergedConfig, formatter: &OutputFormatter) -> Re
 
 fn handle_list_mode(config: &MergedConfig, formatter: &OutputFormatter) -> Result<()> {
     // Discover cache entries
-    let discovery = DiscoveryResult::discover(config)?;
-    
-    if discovery.cache_entries.is_empty() {
+    let discovery: DiscoveryResult = DiscoveryResult::discover(config)?;
+    // Inspect cache entries
+    let inspector: CacheInspector = CacheInspector::new(config.clone());
+    let mut entries: Vec<CacheEntry> = inspector.inspect_caches(&discovery.cache_entries)?;
+
+    // Append JS package manager caches when requested
+    if let Err(e) = package_managers::add_js_pm_entries(&mut entries, config) {
+        eprintln!("Warning: failed to add JS PM entries: {e}");
+    }
+
+    if entries.is_empty() {
         if !config.json {
             println!("No cache entries found.");
         }
         return Ok(());
     }
-
-    // Inspect cache entries
-    let inspector = CacheInspector::new(config.clone());
-    let entries = inspector.inspect_caches(&discovery.cache_entries)?;
 
     // Print cache table
     if let Err(e) = formatter.print_cache_table(&entries) {
@@ -414,9 +425,14 @@ fn handle_dry_run_mode(config: &MergedConfig, formatter: &OutputFormatter) -> Re
     let discovery = DiscoveryResult::discover(config)?;
     let inspector = CacheInspector::new(config.clone());
     let entries = inspector.inspect_caches(&discovery.cache_entries)?;
-
     // Add NPX cache if requested
     let mut all_entries = entries;
+
+    // Add JS package manager caches when requested
+    if let Err(e) = package_managers::add_js_pm_entries(&mut all_entries, config) {
+        eprintln!("Warning: failed to add JS PM entries: {e}");
+    }
+
     if config.npx {
         let npx_manager = NpxCacheManager::new(config.clone());
         if let Ok(npx_entries) = npx_manager.list_npx_cache() {
@@ -449,6 +465,10 @@ fn handle_cleanup_mode(config: &MergedConfig, formatter: &OutputFormatter) -> Re
     let discovery = DiscoveryResult::discover(config)?;
     let inspector = CacheInspector::new(config.clone());
     let mut entries = inspector.inspect_caches(&discovery.cache_entries)?;
+
+    if let Err(e) = package_managers::add_js_pm_entries(&mut entries, config) {
+        eprintln!("Warning: failed to add JS PM entries: {e}");
+    }
 
     // Add NPX cache if requested
     if config.npx {
@@ -518,41 +538,50 @@ fn handle_cleanup_mode(config: &MergedConfig, formatter: &OutputFormatter) -> Re
     let executor = ActionExecutor::new(config.clone());
     
     if config.safe_delete {
-        // Safe delete (move to backup)
-        let result = executor.safe_delete(&entries)?;
-        if let Err(e) = formatter.print_safe_delete_result(&result) {
+        // Partition entries into backup vs delete-only and perform both actions
+        let (to_backup, to_delete): (Vec<_>, Vec<_>) = entries
+            .into_iter()
+            .partition(|e| matches!(e.planned_action, Some(PlannedAction::Backup)));
+
+        // 1) Backup eligible entries
+        let backup_result = executor.safe_delete(&to_backup)?;
+        if let Err(e) = formatter.print_safe_delete_result(&backup_result) {
             eprintln!("Error printing safe delete results: {}", e);
         }
-        
-        if result.failed.is_empty() {
-            if !config.json {
-                println!("✅ Successfully moved {} entries to backup", result.backed_up.len());
-            }
-            process::exit(0);
-        } else {
-            if !config.json {
+
+        // 2) Hard-delete delete-only entries (includes JS PM caches)
+        let hard_result = executor.hard_delete(&to_delete)?;
+        if let Err(e) = formatter.print_hard_delete_result(&hard_result) {
+            eprintln!("Error printing hard delete results: {}", e);
+        }
+
+        let any_failures = !backup_result.failed.is_empty() || !hard_result.failed.is_empty();
+        if !config.json {
+            if !any_failures {
+                println!(
+                    "✅ Safely moved {} to backup and deleted {} entries",
+                    backup_result.backed_up.len(),
+                    hard_result.deleted.len()
+                );
+            } else {
                 println!("⚠️  Cleanup completed with some failures");
             }
-            process::exit(2);
         }
+        process::exit(if any_failures { 2 } else { 0 });
     } else {
-        // Hard delete
+        // No safe-delete: just hard-delete all Delete-planned entries
         let result = executor.hard_delete(&entries)?;
         if let Err(e) = formatter.print_hard_delete_result(&result) {
             eprintln!("Error printing hard delete results: {}", e);
         }
-        
-        if result.failed.is_empty() {
-            if !config.json {
+        if !config.json {
+            if result.failed.is_empty() {
                 println!("✅ Successfully deleted {} entries", result.deleted.len());
-            }
-            process::exit(0);
-        } else {
-            if !config.json {
+            } else {
                 println!("⚠️  Cleanup completed with some failures");
             }
-            process::exit(2);
         }
+        process::exit(if result.failed.is_empty() { 0 } else { 2 });
     }
 }
 
@@ -563,7 +592,7 @@ mod tests {
     #[test]
     fn test_cli_parsing() {
         let args = vec!["cachekill", "--list", "--json"];
-        let cli = Cli::try_parse_from(args).unwrap();
+        let cli: Cli = Parser::try_parse_from(args).unwrap();
         assert!(cli.list);
         assert!(cli.json);
     }
@@ -596,6 +625,7 @@ mod tests {
             project: None,
             zone: None,
             token: None,
+            js_pm: false,
         };
 
         let cli_args = cli.to_cli_args();

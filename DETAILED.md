@@ -32,6 +32,7 @@ CacheKill is a CLI tool designed to safely clean up development and build caches
 - **Advanced NPX Analysis**: Per-package visibility with detailed breakdown
 - **Enhanced Edge Purging**: Improved API integration for Vercel and Cloudflare
 - **Integration**: Docker and NPX cache management
+- **JavaScript package managers**: npm, pnpm, yarn caches (opt-in via `--js-pm`)
 
 ## Installation
 
@@ -132,6 +133,7 @@ pub struct CacheEntry {
 | `--backup-dir <PATH>` | | Backup directory | `.cachekill-backup` |
 | `--docker` | | Include Docker cleanup | |
 | `--npx` | | Include NPX cache cleanup and per-package analysis | |
+| `--js-pm`         |       | Include npm, pnpm, and yarn caches in list/dry-run      | `false` |
 | `--restore-last` | | Restore from last backup | |
 | `--all` | | Clean all common caches | |
 | `--help` | `-h` | Show help | |
@@ -296,6 +298,15 @@ include_npx = false
 - `tmp/`, `temp/`
 - `.cache/`
 - `build/`, `dist/`
+
+#### JavaScript Package Managers
+- npm (global): macOS/Linux `~/.npm`, Windows `%LOCALAPPDATA%\npm-cache`
+- pnpm:
+  - Store: Linux `~/.local/share/pnpm/store/v3`, macOS `~/Library/pnpm/store/v3`, Windows `%LOCALAPPDATA%\pnpm\store\v3`
+  - Meta:  Linux `~/.cache/pnpm`, macOS `~/Library/Caches/pnpm`, Windows `%LOCALAPPDATA%\pnpm-cache`
+- yarn:
+  - Global: Linux `~/.cache/yarn`, macOS `~/Library/Caches/Yarn`, Windows `%LOCALAPPDATA%\Yarn\Cache`
+  - Project: `./.yarn/cache` (if present in current working directory)
 
 #### NPX
 - `~/.npm/_npx`
@@ -496,6 +507,20 @@ cargo test -- --nocapture
 ./target/release/cachekill --lang rust --dry-run
 ```
 
+### JavaScript Package Managers Tests
+
+The JS PM feature is covered by:
+- Unit: `src/package_managers/mod.rs::tests::add_js_pm_entries_is_noop_when_flag_is_false`
+- Integration: `tests/js_pm_integration.rs` (ensures `--js-pm` is wired and JSON output is the expected object)
+- End-to-end (per-OS): `tests/js_pm_e2e.rs` (seeds platform-appropriate fake cache directories and asserts presence/absence with/without `--js-pm`)
+
+Run only the JS PM tests:
+
+```bash
+cargo test js_pm_
+cargo test add_js_pm_entries_is_noop_when_flag_is_false
+```
+
 ### Performance Tests
 
 ```bash
@@ -615,6 +640,14 @@ make run
 - `DockerCacheManager` struct
 - Docker system analysis
 - Docker cleanup operations
+
+#### JavaScript Package Managers (`src/package_managers`)
+- `traits.rs`: Common `CacheManager` trait with `name`, `list`, and `exclude_patterns`
+- `common.rs`: Helpers for building `CacheEntry`, planned actions, and path checks
+- `npm.rs`: npm cache discovery (Windows: `%LOCALAPPDATA%\npm-cache`; macOS/Linux: `~/.npm`)
+- `pnpm.rs`: pnpm store and meta caches (platform-specific paths)
+- `yarn.rs`: yarn global cache (platform-specific) and project-local `.yarn/cache`
+- `mod.rs`: `PackageManagers` aggregator and `add_js_pm_entries(entries, config)` glue
 
 #### Utilities (`util.rs`)
 - Path utilities

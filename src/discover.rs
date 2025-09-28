@@ -506,6 +506,7 @@ mod tests {
             npx: false,
             restore_last: false,
             all: false,
+            js_pm: false,
         };
         
         let result = DiscoveryResult::discover(&config).unwrap();
