@@ -48,3 +48,18 @@ pub fn add_js_pm_entries(entries: &mut Vec<CacheEntry>, config: &MergedConfig) -
     entries.append(&mut pm_entries);
     Ok(())
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn add_js_pm_entries_is_noop_when_flag_is_false() {
+        let mut entries = Vec::new();
+        let mut cfg = MergedConfig::default();
+        cfg.js_pm = false;
+        let res = add_js_pm_entries(&mut entries, &cfg);
+        assert!(res.is_ok());
+        assert!(entries.is_empty());
+    }
+}
