@@ -295,7 +295,7 @@ mod tests {
         );
         assert_eq!(
             inspector.determine_cache_kind(Path::new("target")),
-            CacheKind::Generic
+            CacheKind::Rust
         );
     }
 

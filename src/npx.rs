@@ -349,7 +349,7 @@ mod tests {
     #[test]
     fn test_npx_manager_creation() {
         let config = create_test_config();
-        let manager = NpxCacheManager::new(config);
+        let _manager = NpxCacheManager::new(config);
         // Just test that it can be created
         assert!(true);
     }

@@ -1,0 +1,6330 @@
+[
+  {
+    "name": "prisma",
+    "version": null,
+    "size_bytes": 85585270,
+    "last_used": "2025-02-03T00:13:46.794141350Z",
+    "path": "/Users/dantelex/.npm/_npx/2778af9cee32ff87",
+    "stale": true
+  },
+  {
+    "name": "@nestjs/cli",
+    "version": null,
+    "size_bytes": 60861937,
+    "last_used": "2025-08-02T13:43:57.141407946Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55",
+    "stale": true
+  },
+  {
+    "name": "prisma",
+    "version": "6.3.0",
+    "size_bytes": 46587045,
+    "last_used": "2025-02-03T00:10:14.919998786Z",
+    "path": "/Users/dantelex/.npm/_npx/2778af9cee32ff87/node_modules/prisma",
+    "stale": true
+  },
+  {
+    "name": "vue-tsc",
+    "version": null,
+    "size_bytes": 32058388,
+    "last_used": "2025-09-12T20:19:21.504592692Z",
+    "path": "/Users/dantelex/.npm/_npx/2db181330ea4b15b",
+    "stale": false
+  },
+  {
+    "name": "typescript",
+    "version": "5.9.2",
+    "size_bytes": 23622869,
+    "last_used": "2025-09-12T20:19:21.497166458Z",
+    "path": "/Users/dantelex/.npm/_npx/2db181330ea4b15b/node_modules/typescript",
+    "stale": false
+  },
+  {
+    "name": "typescript",
+    "version": "5.8.3",
+    "size_bytes": 22867703,
+    "last_used": "2025-07-08T20:55:07.457544098Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/typescript",
+    "stale": true
+  },
+  {
+    "name": "generate",
+    "version": null,
+    "size_bytes": 14653319,
+    "last_used": "2024-06-01T23:23:51.393812118Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b",
+    "stale": true
+  },
+  {
+    "name": "create-nuxt",
+    "version": null,
+    "size_bytes": 6607704,
+    "last_used": "2025-08-02T13:18:36.706150285Z",
+    "path": "/Users/dantelex/.npm/_npx/820ca40fe6734b94",
+    "stale": true
+  },
+  {
+    "name": "create-nuxt",
+    "version": "3.27.0",
+    "size_bytes": 6237907,
+    "last_used": "2025-08-02T13:18:36.701774854Z",
+    "path": "/Users/dantelex/.npm/_npx/820ca40fe6734b94/node_modules/create-nuxt",
+    "stale": true
+  },
+  {
+    "name": "nuxi",
+    "version": null,
+    "size_bytes": 5773956,
+    "last_used": "2025-09-07T15:51:36.307857145Z",
+    "path": "/Users/dantelex/.npm/_npx/b95349761371180e",
+    "stale": true
+  },
+  {
+    "name": "nuxi",
+    "version": "3.28.0",
+    "size_bytes": 5772641,
+    "last_used": "2025-09-07T15:51:36.294203889Z",
+    "path": "/Users/dantelex/.npm/_npx/b95349761371180e/node_modules/nuxi",
+    "stale": true
+  },
+  {
+    "name": "webpack",
+    "version": "5.100.2",
+    "size_bytes": 5550871,
+    "last_used": "2025-08-02T13:43:57.001915843Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/webpack",
+    "stale": true
+  },
+  {
+    "name": "rxjs",
+    "version": "7.8.1",
+    "size_bytes": 4501327,
+    "last_used": "2025-07-08T20:55:07.561880285Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/rxjs",
+    "stale": true
+  },
+  {
+    "name": "create-tauri-app",
+    "version": null,
+    "size_bytes": 3248987,
+    "last_used": "2025-08-02T15:36:36.339299914Z",
+    "path": "/Users/dantelex/.npm/_npx/b58944764482de26",
+    "stale": true
+  },
+  {
+    "name": "create-tauri-app",
+    "version": null,
+    "size_bytes": 3248987,
+    "last_used": "2025-08-03T03:18:18.164251759Z",
+    "path": "/Users/dantelex/.npm/_npx/7b1d68f041a84c52",
+    "stale": true
+  },
+  {
+    "name": "terser",
+    "version": "5.43.1",
+    "size_bytes": 2306342,
+    "last_used": "2025-07-08T20:55:07.099774671Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/terser",
+    "stale": true
+  },
+  {
+    "name": "caniuse-lite",
+    "version": "1.0.30001727",
+    "size_bytes": 2270970,
+    "last_used": "2025-07-08T20:55:07.373607607Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/caniuse-lite",
+    "stale": true
+  },
+  {
+    "name": "create-tauri-app-darwin-universal",
+    "version": "4.5.9",
+    "size_bytes": 2102394,
+    "last_used": "2025-08-02T15:36:36.330100256Z",
+    "path": "/Users/dantelex/.npm/_npx/b58944764482de26/node_modules/create-tauri-app-darwin-universal",
+    "stale": true
+  },
+  {
+    "name": "create-tauri-app-darwin-universal",
+    "version": "4.5.9",
+    "size_bytes": 2102394,
+    "last_used": "2025-08-03T03:18:18.156948426Z",
+    "path": "/Users/dantelex/.npm/_npx/7b1d68f041a84c52/node_modules/create-tauri-app-darwin-universal",
+    "stale": true
+  },
+  {
+    "name": "lodash",
+    "version": "4.17.21",
+    "size_bytes": 1412415,
+    "last_used": "2025-07-08T20:55:07.381732956Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/lodash",
+    "stale": true
+  },
+  {
+    "name": "schema-utils",
+    "version": "3.3.0",
+    "size_bytes": 1106436,
+    "last_used": "2025-07-08T20:55:07.086293044Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/schema-utils",
+    "stale": true
+  },
+  {
+    "name": "create-tauri-app-darwin-arm64",
+    "version": "4.5.9",
+    "size_bytes": 1037444,
+    "last_used": "2025-08-02T15:36:36.306532545Z",
+    "path": "/Users/dantelex/.npm/_npx/b58944764482de26/node_modules/create-tauri-app-darwin-arm64",
+    "stale": true
+  },
+  {
+    "name": "create-tauri-app-darwin-arm64",
+    "version": "4.5.9",
+    "size_bytes": 1037444,
+    "last_used": "2025-08-03T03:18:18.155611502Z",
+    "path": "/Users/dantelex/.npm/_npx/7b1d68f041a84c52/node_modules/create-tauri-app-darwin-arm64",
+    "stale": true
+  },
+  {
+    "name": "ajv",
+    "version": "8.17.1",
+    "size_bytes": 1030888,
+    "last_used": "2025-07-08T20:55:07.252883695Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/ajv",
+    "stale": true
+  },
+  {
+    "name": "securelog-scan",
+    "version": null,
+    "size_bytes": 975402,
+    "last_used": "2024-08-29T16:26:32.793028436Z",
+    "path": "/Users/dantelex/.npm/_npx/17fe7e21360f26cd",
+    "stale": true
+  },
+  {
+    "name": "create-next-app",
+    "version": null,
+    "size_bytes": 948039,
+    "last_used": "2025-08-04T01:05:09.403154685Z",
+    "path": "/Users/dantelex/.npm/_npx/cc2145a2fe1558fa",
+    "stale": true
+  },
+  {
+    "name": "create-next-app",
+    "version": "15.4.5",
+    "size_bytes": 946840,
+    "last_used": "2025-08-04T01:05:09.383087800Z",
+    "path": "/Users/dantelex/.npm/_npx/cc2145a2fe1558fa/node_modules/create-next-app",
+    "stale": true
+  },
+  {
+    "name": "glob",
+    "version": "11.0.3",
+    "size_bytes": 913818,
+    "last_used": "2025-08-02T13:43:57.001906593Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/glob",
+    "stale": true
+  },
+  {
+    "name": "source-map-support",
+    "version": "0.5.21",
+    "size_bytes": 890401,
+    "last_used": "2025-07-08T20:55:06.939694258Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/source-map-support",
+    "stale": true
+  },
+  {
+    "name": "lru-cache",
+    "version": "11.1.0",
+    "size_bytes": 819995,
+    "last_used": "2025-07-08T20:55:06.954340263Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/lru-cache",
+    "stale": true
+  },
+  {
+    "name": "source-map",
+    "version": "0.5.7",
+    "size_bytes": 766471,
+    "last_used": "2024-06-01T23:23:48.637306868Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/source-map",
+    "stale": true
+  },
+  {
+    "name": "yaml",
+    "version": "2.5.0",
+    "size_bytes": 675753,
+    "last_used": "2024-08-29T16:26:32.781268766Z",
+    "path": "/Users/dantelex/.npm/_npx/17fe7e21360f26cd/node_modules/yaml",
+    "stale": true
+  },
+  {
+    "name": "@astrojs/upgrade",
+    "version": null,
+    "size_bytes": 670835,
+    "last_used": "2025-05-03T14:56:06.631185395Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544",
+    "stale": true
+  },
+  {
+    "name": "acorn",
+    "version": "8.15.0",
+    "size_bytes": 554942,
+    "last_used": "2025-07-08T20:55:06.900145306Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/acorn",
+    "stale": true
+  },
+  {
+    "name": "path-scurry",
+    "version": "2.0.0",
+    "size_bytes": 535406,
+    "last_used": "2025-07-08T20:55:06.916067683Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/path-scurry",
+    "stale": true
+  },
+  {
+    "name": "uri-js",
+    "version": "4.4.1",
+    "size_bytes": 469879,
+    "last_used": "2025-07-08T20:55:06.961541310Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/uri-js",
+    "stale": true
+  },
+  {
+    "name": "magic-string",
+    "version": "0.30.17",
+    "size_bytes": 467464,
+    "last_used": "2025-07-08T20:55:06.894672741Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/magic-string",
+    "stale": true
+  },
+  {
+    "name": "rx-lite",
+    "version": "4.0.8",
+    "size_bytes": 458637,
+    "last_used": "2024-06-01T23:23:49.079614017Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/rx-lite",
+    "stale": true
+  },
+  {
+    "name": "entities",
+    "version": "4.5.0",
+    "size_bytes": 412892,
+    "last_used": "2025-09-12T20:19:21.443290316Z",
+    "path": "/Users/dantelex/.npm/_npx/2db181330ea4b15b/node_modules/entities",
+    "stale": false
+  },
+  {
+    "name": "js-yaml",
+    "version": "4.1.0",
+    "size_bytes": 404738,
+    "last_used": "2025-07-08T20:55:06.930979845Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/js-yaml",
+    "stale": true
+  },
+  {
+    "name": "findup-sync",
+    "version": "2.0.0",
+    "size_bytes": 389200,
+    "last_used": "2024-06-01T23:23:50.337144796Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/findup-sync",
+    "stale": true
+  },
+  {
+    "name": "iconv-lite",
+    "version": "0.4.24",
+    "size_bytes": 335941,
+    "last_used": "2025-07-08T20:55:06.901170355Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/iconv-lite",
+    "stale": true
+  },
+  {
+    "name": "diff",
+    "version": "2.2.3",
+    "size_bytes": 330524,
+    "last_used": "2024-06-01T23:23:49.559333981Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/diff",
+    "stale": true
+  },
+  {
+    "name": "create-vue",
+    "version": null,
+    "size_bytes": 323285,
+    "last_used": "2024-06-22T18:29:33.262838837Z",
+    "path": "/Users/dantelex/.npm/_npx/2f7e7bff16d1c534",
+    "stale": true
+  },
+  {
+    "name": "create-vue",
+    "version": "3.10.4",
+    "size_bytes": 322188,
+    "last_used": "2024-06-22T18:29:33.253085775Z",
+    "path": "/Users/dantelex/.npm/_npx/2f7e7bff16d1c534/node_modules/create-vue",
+    "stale": true
+  },
+  {
+    "name": "consola",
+    "version": "3.4.2",
+    "size_bytes": 321586,
+    "last_used": "2025-08-02T13:18:36.509804144Z",
+    "path": "/Users/dantelex/.npm/_npx/820ca40fe6734b94/node_modules/consola",
+    "stale": true
+  },
+  {
+    "name": "esprima",
+    "version": "4.0.1",
+    "size_bytes": 314361,
+    "last_used": "2025-07-08T20:55:06.851336875Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/esprima",
+    "stale": true
+  },
+  {
+    "name": "esprima",
+    "version": "4.0.1",
+    "size_bytes": 314361,
+    "last_used": "2024-06-01T23:23:48.476023476Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/esprima",
+    "stale": true
+  },
+  {
+    "name": "neo-async",
+    "version": "2.6.2",
+    "size_bytes": 297636,
+    "last_used": "2025-07-08T20:55:07.015015749Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/neo-async",
+    "stale": true
+  },
+  {
+    "name": "js-yaml",
+    "version": "3.14.1",
+    "size_bytes": 291327,
+    "last_used": "2024-06-01T23:23:48.632002781Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/js-yaml",
+    "stale": true
+  },
+  {
+    "name": "jackspeak",
+    "version": "4.1.1",
+    "size_bytes": 287780,
+    "last_used": "2025-07-08T20:55:06.885246560Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/jackspeak",
+    "stale": true
+  },
+  {
+    "name": "minipass",
+    "version": "7.1.2",
+    "size_bytes": 286202,
+    "last_used": "2025-07-08T20:55:06.876011790Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/minipass",
+    "stale": true
+  },
+  {
+    "name": "tsconfig-paths-webpack-plugin",
+    "version": "4.2.0",
+    "size_bytes": 275371,
+    "last_used": "2025-07-08T20:55:06.958855818Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/tsconfig-paths-webpack-plugin",
+    "stale": true
+  },
+  {
+    "name": "common-config",
+    "version": "0.1.1",
+    "size_bytes": 269333,
+    "last_used": "2024-06-01T23:23:51.026637265Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/common-config",
+    "stale": true
+  },
+  {
+    "name": "common-questions",
+    "version": "0.5.1",
+    "size_bytes": 239381,
+    "last_used": "2024-06-01T23:23:50.466987668Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/common-questions",
+    "stale": true
+  },
+  {
+    "name": "json5",
+    "version": "2.2.3",
+    "size_bytes": 235198,
+    "last_used": "2025-07-08T20:55:06.884764994Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/json5",
+    "stale": true
+  },
+  {
+    "name": "templates",
+    "version": "1.2.9",
+    "size_bytes": 231046,
+    "last_used": "2024-06-01T23:23:50.850605239Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/templates",
+    "stale": true
+  },
+  {
+    "name": "base-npm-prompt",
+    "version": "0.2.1",
+    "size_bytes": 228682,
+    "last_used": "2024-06-01T23:23:51.156401679Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-npm-prompt",
+    "stale": true
+  },
+  {
+    "name": "source-map",
+    "version": "0.7.4",
+    "size_bytes": 226000,
+    "last_used": "2025-07-08T20:55:06.879921157Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/source-map",
+    "stale": true
+  },
+  {
+    "name": "node-emoji",
+    "version": "1.11.0",
+    "size_bytes": 223799,
+    "last_used": "2025-07-08T20:55:06.857678911Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/node-emoji",
+    "stale": true
+  },
+  {
+    "name": "enhanced-resolve",
+    "version": "5.18.2",
+    "size_bytes": 222737,
+    "last_used": "2025-07-08T20:55:06.934850089Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/enhanced-resolve",
+    "stale": true
+  },
+  {
+    "name": "terser-webpack-plugin",
+    "version": "5.3.14",
+    "size_bytes": 218669,
+    "last_used": "2025-07-08T20:55:06.884152098Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/terser-webpack-plugin",
+    "stale": true
+  },
+  {
+    "name": "tsconfig-paths",
+    "version": "4.2.0",
+    "size_bytes": 216221,
+    "last_used": "2025-07-08T20:55:06.980876906Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/tsconfig-paths",
+    "stale": true
+  },
+  {
+    "name": "base-generators",
+    "version": "0.4.6",
+    "size_bytes": 214427,
+    "last_used": "2024-06-01T23:23:51.205354293Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-generators",
+    "stale": true
+  },
+  {
+    "name": "create-vite",
+    "version": null,
+    "size_bytes": 212855,
+    "last_used": "2025-03-07T06:51:54.844707837Z",
+    "path": "/Users/dantelex/.npm/_npx/1415fee72ff6294b",
+    "stale": true
+  },
+  {
+    "name": "jsonc-parser",
+    "version": "3.3.1",
+    "size_bytes": 212821,
+    "last_used": "2025-07-08T20:55:06.912962539Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/jsonc-parser",
+    "stale": true
+  },
+  {
+    "name": "fork-ts-checker-webpack-plugin",
+    "version": "9.1.0",
+    "size_bytes": 211689,
+    "last_used": "2025-07-08T20:55:07.123641904Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/fork-ts-checker-webpack-plugin",
+    "stale": true
+  },
+  {
+    "name": "create-vite",
+    "version": "6.3.1",
+    "size_bytes": 211444,
+    "last_used": "2025-03-07T06:51:54.841190011Z",
+    "path": "/Users/dantelex/.npm/_npx/1415fee72ff6294b/node_modules/create-vite",
+    "stale": true
+  },
+  {
+    "name": "mime-db",
+    "version": "1.52.0",
+    "size_bytes": 205539,
+    "last_used": "2025-07-08T20:55:06.819352667Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/mime-db",
+    "stale": true
+  },
+  {
+    "name": "vscode-uri",
+    "version": "3.1.0",
+    "size_bytes": 204476,
+    "last_used": "2025-09-12T20:19:21.428976976Z",
+    "path": "/Users/dantelex/.npm/_npx/2db181330ea4b15b/node_modules/vscode-uri",
+    "stale": false
+  },
+  {
+    "name": "question-store",
+    "version": "0.13.1",
+    "size_bytes": 201816,
+    "last_used": "2024-06-01T23:23:50.877793256Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/question-store",
+    "stale": true
+  },
+  {
+    "name": "kill-port",
+    "version": null,
+    "size_bytes": 188175,
+    "last_used": "2024-01-09T14:48:23.359655958Z",
+    "path": "/Users/dantelex/.npm/_npx/bd296a660a54852e",
+    "stale": true
+  },
+  {
+    "name": "memfs",
+    "version": "3.5.3",
+    "size_bytes": 186222,
+    "last_used": "2025-07-08T20:55:06.907408727Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/memfs",
+    "stale": true
+  },
+  {
+    "name": "macro-store",
+    "version": "0.3.1",
+    "size_bytes": 182051,
+    "last_used": "2024-06-01T23:23:50.924024535Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/macro-store",
+    "stale": true
+  },
+  {
+    "name": "commander",
+    "version": "11.1.0",
+    "size_bytes": 176667,
+    "last_used": "2024-08-29T16:26:32.701844050Z",
+    "path": "/Users/dantelex/.npm/_npx/17fe7e21360f26cd/node_modules/commander",
+    "stale": true
+  },
+  {
+    "name": "kill-port",
+    "version": "2.0.1",
+    "size_bytes": 174628,
+    "last_used": "2024-01-09T14:48:23.095020290Z",
+    "path": "/Users/dantelex/.npm/_npx/bd296a660a54852e/node_modules/kill-port",
+    "stale": true
+  },
+  {
+    "name": "fsevents",
+    "version": "2.3.3",
+    "size_bytes": 173224,
+    "last_used": "2024-11-28T18:36:52.263347890Z",
+    "path": "/Users/dantelex/.npm/_npx/2778af9cee32ff87/node_modules/fsevents",
+    "stale": true
+  },
+  {
+    "name": "argparse",
+    "version": "2.0.1",
+    "size_bytes": 171548,
+    "last_used": "2025-07-08T20:55:06.811501849Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/argparse",
+    "stale": true
+  },
+  {
+    "name": "electron-to-chromium",
+    "version": "1.5.180",
+    "size_bytes": 167885,
+    "last_used": "2025-07-08T20:55:06.846929108Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/electron-to-chromium",
+    "stale": true
+  },
+  {
+    "name": "nanomatch",
+    "version": "1.2.13",
+    "size_bytes": 164234,
+    "last_used": "2024-06-01T23:23:50.077685136Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/nanomatch",
+    "stale": true
+  },
+  {
+    "name": "async",
+    "version": "1.5.2",
+    "size_bytes": 158923,
+    "last_used": "2024-06-01T23:23:48.853633460Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/async",
+    "stale": true
+  },
+  {
+    "name": "base-store",
+    "version": "0.4.4",
+    "size_bytes": 150934,
+    "last_used": "2024-06-01T23:23:51.088922887Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-store",
+    "stale": true
+  },
+  {
+    "name": "chokidar",
+    "version": "4.0.3",
+    "size_bytes": 148759,
+    "last_used": "2025-07-08T20:55:06.891392977Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/chokidar",
+    "stale": true
+  },
+  {
+    "name": "resolve",
+    "version": "1.22.8",
+    "size_bytes": 145394,
+    "last_used": "2024-06-01T23:23:48.833745114Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/resolve",
+    "stale": true
+  },
+  {
+    "name": "glob-stream",
+    "version": "5.3.5",
+    "size_bytes": 144518,
+    "last_used": "2024-06-01T23:23:50.110328781Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/glob-stream",
+    "stale": true
+  },
+  {
+    "name": "type-fest",
+    "version": "1.4.0",
+    "size_bytes": 141345,
+    "last_used": "2025-01-20T01:11:38.345130760Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/type-fest",
+    "stale": true
+  },
+  {
+    "name": "source-map-js",
+    "version": "1.2.1",
+    "size_bytes": 139872,
+    "last_used": "2025-09-12T20:19:21.428090306Z",
+    "path": "/Users/dantelex/.npm/_npx/2db181330ea4b15b/node_modules/source-map-js",
+    "stale": false
+  },
+  {
+    "name": "webpack-sources",
+    "version": "3.3.3",
+    "size_bytes": 137704,
+    "last_used": "2025-07-08T20:55:06.899785610Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/webpack-sources",
+    "stale": true
+  },
+  {
+    "name": "pkg-store",
+    "version": "0.2.2",
+    "size_bytes": 133336,
+    "last_used": "2024-06-01T23:23:50.700832813Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/pkg-store",
+    "stale": true
+  },
+  {
+    "name": "ajv-keywords",
+    "version": "5.1.0",
+    "size_bytes": 131806,
+    "last_used": "2025-07-08T20:55:07.083325145Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/ajv-keywords",
+    "stale": true
+  },
+  {
+    "name": "vinyl-fs",
+    "version": "2.4.4",
+    "size_bytes": 129964,
+    "last_used": "2024-06-01T23:23:50.843766568Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/vinyl-fs",
+    "stale": true
+  },
+  {
+    "name": "yargs-parser",
+    "version": "21.1.1",
+    "size_bytes": 128470,
+    "last_used": "2025-07-08T20:55:06.841326964Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/yargs-parser",
+    "stale": true
+  },
+  {
+    "name": "he",
+    "version": "1.2.0",
+    "size_bytes": 124138,
+    "last_used": "2025-09-12T20:19:21.421997577Z",
+    "path": "/Users/dantelex/.npm/_npx/2db181330ea4b15b/node_modules/he",
+    "stale": false
+  },
+  {
+    "name": "readable-stream",
+    "version": "3.6.2",
+    "size_bytes": 123971,
+    "last_used": "2025-07-08T20:55:06.880499055Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/readable-stream",
+    "stale": true
+  },
+  {
+    "name": "readable-stream",
+    "version": "2.3.8",
+    "size_bytes": 119801,
+    "last_used": "2024-06-01T23:23:48.728621633Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/readable-stream",
+    "stale": true
+  },
+  {
+    "name": "type-fest",
+    "version": "0.21.3",
+    "size_bytes": 119053,
+    "last_used": "2025-07-08T20:55:06.915227129Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/type-fest",
+    "stale": true
+  },
+  {
+    "name": "argparse",
+    "version": "1.0.10",
+    "size_bytes": 116446,
+    "last_used": "2024-06-01T23:23:48.571766785Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/argparse",
+    "stale": true
+  },
+  {
+    "name": "fast-uri",
+    "version": "3.0.6",
+    "size_bytes": 109402,
+    "last_used": "2025-07-08T20:55:06.909535363Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/fast-uri",
+    "stale": true
+  },
+  {
+    "name": "colors",
+    "version": "1.0.3",
+    "size_bytes": 109147,
+    "last_used": "2024-06-01T23:23:49.340917471Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/colors",
+    "stale": true
+  },
+  {
+    "name": "question-cache",
+    "version": "0.4.0",
+    "size_bytes": 108666,
+    "last_used": "2024-06-01T23:23:50.491252141Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/question-cache",
+    "stale": true
+  },
+  {
+    "name": "map-schema",
+    "version": "0.2.4",
+    "size_bytes": 104011,
+    "last_used": "2024-06-01T23:23:50.549347636Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/map-schema",
+    "stale": true
+  },
+  {
+    "name": "engine",
+    "version": "0.1.12",
+    "size_bytes": 103939,
+    "last_used": "2024-06-01T23:23:50.371182693Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/engine",
+    "stale": true
+  },
+  {
+    "name": "undici-types",
+    "version": "7.8.0",
+    "size_bytes": 103421,
+    "last_used": "2025-07-08T20:55:06.922487799Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/undici-types",
+    "stale": true
+  },
+  {
+    "name": "template-helpers",
+    "version": "0.6.7",
+    "size_bytes": 100326,
+    "last_used": "2024-06-01T23:23:50.609708131Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/template-helpers",
+    "stale": true
+  },
+  {
+    "name": "create-tauri-app",
+    "version": "4.5.9",
+    "size_bytes": 99931,
+    "last_used": "2025-08-02T15:36:36.292164994Z",
+    "path": "/Users/dantelex/.npm/_npx/b58944764482de26/node_modules/create-tauri-app",
+    "stale": true
+  },
+  {
+    "name": "create-tauri-app",
+    "version": "4.5.9",
+    "size_bytes": 99931,
+    "last_used": "2025-08-03T03:18:18.154233995Z",
+    "path": "/Users/dantelex/.npm/_npx/7b1d68f041a84c52/node_modules/create-tauri-app",
+    "stale": true
+  },
+  {
+    "name": "emoji-regex",
+    "version": "9.2.2",
+    "size_bytes": 97916,
+    "last_used": "2025-01-20T01:11:38.335374775Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/emoji-regex",
+    "stale": true
+  },
+  {
+    "name": "semver",
+    "version": "7.7.2",
+    "size_bytes": 97420,
+    "last_used": "2025-07-08T20:55:06.925925016Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/semver",
+    "stale": true
+  },
+  {
+    "name": "semver",
+    "version": "7.7.1",
+    "size_bytes": 96674,
+    "last_used": "2025-05-03T14:56:06.320170355Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/semver",
+    "stale": true
+  },
+  {
+    "name": "es-module-lexer",
+    "version": "1.7.0",
+    "size_bytes": 93440,
+    "last_used": "2025-07-08T20:55:06.823726352Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/es-module-lexer",
+    "stale": true
+  },
+  {
+    "name": "commander",
+    "version": "4.1.1",
+    "size_bytes": 93231,
+    "last_used": "2025-07-08T20:55:06.788941780Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/commander",
+    "stale": true
+  },
+  {
+    "name": "tslib",
+    "version": "2.8.1",
+    "size_bytes": 90359,
+    "last_used": "2025-07-08T20:55:06.831962240Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/tslib",
+    "stale": true
+  },
+  {
+    "name": "jest-worker",
+    "version": "27.5.1",
+    "size_bytes": 90348,
+    "last_used": "2025-07-08T20:55:06.879962656Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/jest-worker",
+    "stale": true
+  },
+  {
+    "name": "base-cli-schema",
+    "version": "0.1.19",
+    "size_bytes": 90122,
+    "last_used": "2024-06-01T23:23:50.599349542Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-cli-schema",
+    "stale": true
+  },
+  {
+    "name": "picomatch",
+    "version": "4.0.3",
+    "size_bytes": 85257,
+    "last_used": "2025-09-12T20:19:21.422395662Z",
+    "path": "/Users/dantelex/.npm/_npx/2db181330ea4b15b/node_modules/picomatch",
+    "stale": false
+  },
+  {
+    "name": "picomatch",
+    "version": "4.0.2",
+    "size_bytes": 85237,
+    "last_used": "2025-07-08T20:55:06.809438086Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/picomatch",
+    "stale": true
+  },
+  {
+    "name": "merge-stream",
+    "version": "0.1.8",
+    "size_bytes": 82812,
+    "last_used": "2024-06-01T23:23:50.225746852Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/merge-stream",
+    "stale": true
+  },
+  {
+    "name": "events",
+    "version": "3.3.0",
+    "size_bytes": 82778,
+    "last_used": "2025-07-08T20:55:06.880176274Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/events",
+    "stale": true
+  },
+  {
+    "name": "buffer",
+    "version": "5.7.1",
+    "size_bytes": 82527,
+    "last_used": "2025-07-08T20:55:06.766897193Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/buffer",
+    "stale": true
+  },
+  {
+    "name": "registry-auth-token",
+    "version": "3.4.0",
+    "size_bytes": 81135,
+    "last_used": "2024-06-01T23:23:48.483852772Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/registry-auth-token",
+    "stale": true
+  },
+  {
+    "name": "cosmiconfig",
+    "version": "8.3.6",
+    "size_bytes": 78453,
+    "last_used": "2025-07-08T20:55:06.881132366Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/cosmiconfig",
+    "stale": true
+  },
+  {
+    "name": "eslint-scope",
+    "version": "5.1.1",
+    "size_bytes": 78356,
+    "last_used": "2025-07-08T20:55:06.831795954Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/eslint-scope",
+    "stale": true
+  },
+  {
+    "name": "inquirer2",
+    "version": "0.1.1",
+    "size_bytes": 78060,
+    "last_used": "2024-06-01T23:23:50.796939289Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/inquirer2",
+    "stale": true
+  },
+  {
+    "name": "signal-exit",
+    "version": "4.1.0",
+    "size_bytes": 76966,
+    "last_used": "2025-07-08T20:55:06.887452777Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/signal-exit",
+    "stale": true
+  },
+  {
+    "name": "chardet",
+    "version": "0.7.0",
+    "size_bytes": 74843,
+    "last_used": "2025-07-08T20:55:06.817473647Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/chardet",
+    "stale": true
+  },
+  {
+    "name": "snapdragon",
+    "version": "0.8.2",
+    "size_bytes": 72878,
+    "last_used": "2024-06-01T23:23:50.048762243Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/snapdragon",
+    "stale": true
+  },
+  {
+    "name": "gulp-sourcemaps",
+    "version": "1.6.0",
+    "size_bytes": 71107,
+    "last_used": "2024-06-01T23:23:50.108866780Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/gulp-sourcemaps",
+    "stale": true
+  },
+  {
+    "name": "foreground-child",
+    "version": "3.3.1",
+    "size_bytes": 68302,
+    "last_used": "2025-07-08T20:55:06.905384212Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/foreground-child",
+    "stale": true
+  },
+  {
+    "name": "lodash.map",
+    "version": "4.6.0",
+    "size_bytes": 67194,
+    "last_used": "2024-06-01T23:23:48.329225094Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.map",
+    "stale": true
+  },
+  {
+    "name": "lodash.filter",
+    "version": "4.6.0",
+    "size_bytes": 67137,
+    "last_used": "2024-06-01T23:23:48.329199052Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.filter",
+    "stale": true
+  },
+  {
+    "name": "browserslist",
+    "version": "4.25.1",
+    "size_bytes": 65462,
+    "last_used": "2025-07-08T20:55:06.806610057Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/browserslist",
+    "stale": true
+  },
+  {
+    "name": "bl",
+    "version": "4.1.0",
+    "size_bytes": 64427,
+    "last_used": "2025-07-08T20:55:06.807652438Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/bl",
+    "stale": true
+  },
+  {
+    "name": "semver",
+    "version": "5.7.2",
+    "size_bytes": 63315,
+    "last_used": "2024-06-01T23:23:48.784705209Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/semver",
+    "stale": true
+  },
+  {
+    "name": "fs-extra",
+    "version": "10.1.0",
+    "size_bytes": 63278,
+    "last_used": "2025-07-08T20:55:06.918661679Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/fs-extra",
+    "stale": true
+  },
+  {
+    "name": "data-store",
+    "version": "1.0.0",
+    "size_bytes": 63204,
+    "last_used": "2024-06-01T23:23:51.176073899Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/data-store",
+    "stale": true
+  },
+  {
+    "name": "assemble-core",
+    "version": "0.31.0",
+    "size_bytes": 62393,
+    "last_used": "2024-06-01T23:23:51.211136838Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/assemble-core",
+    "stale": true
+  },
+  {
+    "name": "base-questions",
+    "version": "0.9.1",
+    "size_bytes": 61227,
+    "last_used": "2024-06-01T23:23:51.089149971Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-questions",
+    "stale": true
+  },
+  {
+    "name": "base-engines",
+    "version": "0.2.1",
+    "size_bytes": 60536,
+    "last_used": "2024-06-01T23:23:50.215147262Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-engines",
+    "stale": true
+  },
+  {
+    "name": "base-data",
+    "version": "0.6.2",
+    "size_bytes": 60385,
+    "last_used": "2024-06-01T23:23:50.798977832Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-data",
+    "stale": true
+  },
+  {
+    "name": "micromatch",
+    "version": "2.3.11",
+    "size_bytes": 59705,
+    "last_used": "2024-06-01T23:23:50.522679036Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/micromatch",
+    "stale": true
+  },
+  {
+    "name": "time-diff",
+    "version": "0.3.1",
+    "size_bytes": 59253,
+    "last_used": "2024-06-01T23:23:50.512982863Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/time-diff",
+    "stale": true
+  },
+  {
+    "name": "resolve-glob",
+    "version": "1.0.0",
+    "size_bytes": 59100,
+    "last_used": "2024-06-01T23:23:50.736390752Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/resolve-glob",
+    "stale": true
+  },
+  {
+    "name": "watchpack",
+    "version": "2.4.4",
+    "size_bytes": 57662,
+    "last_used": "2025-07-08T20:55:06.802294578Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/watchpack",
+    "stale": true
+  },
+  {
+    "name": "ajv-formats",
+    "version": "3.0.1",
+    "size_bytes": 56763,
+    "last_used": "2025-07-08T20:55:06.876121369Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/ajv-formats",
+    "stale": true
+  },
+  {
+    "name": "base-fs-conflicts",
+    "version": "0.1.9",
+    "size_bytes": 56633,
+    "last_used": "2024-06-01T23:23:51.210090546Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-fs-conflicts",
+    "stale": true
+  },
+  {
+    "name": "update-notifier",
+    "version": "2.5.0",
+    "size_bytes": 56417,
+    "last_used": "2024-06-01T23:23:49.643613658Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/update-notifier",
+    "stale": true
+  },
+  {
+    "name": "glob",
+    "version": "7.2.3",
+    "size_bytes": 55064,
+    "last_used": "2024-06-01T23:23:48.326263134Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/glob",
+    "stale": true
+  },
+  {
+    "name": "gray-matter",
+    "version": "3.1.1",
+    "size_bytes": 54821,
+    "last_used": "2024-06-01T23:23:50.255115787Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/gray-matter",
+    "stale": true
+  },
+  {
+    "name": "minimist",
+    "version": "1.2.8",
+    "size_bytes": 54477,
+    "last_used": "2025-07-08T20:55:06.863641Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/minimist",
+    "stale": true
+  },
+  {
+    "name": "minimist",
+    "version": "1.2.8",
+    "size_bytes": 54477,
+    "last_used": "2024-06-01T23:23:49.664648629Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/minimist",
+    "stale": true
+  },
+  {
+    "name": "path-browserify",
+    "version": "1.0.1",
+    "size_bytes": 54293,
+    "last_used": "2025-09-12T20:19:21.426867427Z",
+    "path": "/Users/dantelex/.npm/_npx/2db181330ea4b15b/node_modules/path-browserify",
+    "stale": false
+  },
+  {
+    "name": "base-config-schema",
+    "version": "0.1.24",
+    "size_bytes": 53154,
+    "last_used": "2024-06-01T23:23:50.536156044Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-config-schema",
+    "stale": true
+  },
+  {
+    "name": "lodash.isequal",
+    "version": "4.5.0",
+    "size_bytes": 52677,
+    "last_used": "2024-06-01T23:23:48.378467541Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.isequal",
+    "stale": true
+  },
+  {
+    "name": "boxen",
+    "version": "1.3.0",
+    "size_bytes": 51485,
+    "last_used": "2024-06-01T23:23:48.475648100Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/boxen",
+    "stale": true
+  },
+  {
+    "name": "debug",
+    "version": "2.6.9",
+    "size_bytes": 51243,
+    "last_used": "2024-06-01T23:23:48.457959674Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/debug",
+    "stale": true
+  },
+  {
+    "name": "base-option",
+    "version": "0.8.4",
+    "size_bytes": 51177,
+    "last_used": "2024-06-01T23:23:50.771580148Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-option",
+    "stale": true
+  },
+  {
+    "name": "snapdragon-util",
+    "version": "3.0.1",
+    "size_bytes": 50639,
+    "last_used": "2024-06-01T23:23:48.270185891Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/snapdragon-util",
+    "stale": true
+  },
+  {
+    "name": "esrecurse",
+    "version": "4.3.0",
+    "size_bytes": 50621,
+    "last_used": "2025-07-08T20:55:06.754594735Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/esrecurse",
+    "stale": true
+  },
+  {
+    "name": "estree-walker",
+    "version": "2.0.2",
+    "size_bytes": 50243,
+    "last_used": "2025-09-12T20:19:21.426725676Z",
+    "path": "/Users/dantelex/.npm/_npx/2db181330ea4b15b/node_modules/estree-walker",
+    "stale": false
+  },
+  {
+    "name": "base-env",
+    "version": "0.3.1",
+    "size_bytes": 50146,
+    "last_used": "2024-06-01T23:23:50.797694915Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-env",
+    "stale": true
+  },
+  {
+    "name": "inflection",
+    "version": "1.13.4",
+    "size_bytes": 49947,
+    "last_used": "2024-06-01T23:23:49.358601315Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/inflection",
+    "stale": true
+  },
+  {
+    "name": "common-middleware",
+    "version": "0.4.1",
+    "size_bytes": 48825,
+    "last_used": "2024-06-01T23:23:50.455571703Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/common-middleware",
+    "stale": true
+  },
+  {
+    "name": "base-runner",
+    "version": "0.8.2",
+    "size_bytes": 48790,
+    "last_used": "2024-06-01T23:23:51.080989174Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-runner",
+    "stale": true
+  },
+  {
+    "name": "emoji-regex",
+    "version": "8.0.0",
+    "size_bytes": 48255,
+    "last_used": "2025-07-08T20:55:06.761905779Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/emoji-regex",
+    "stale": true
+  },
+  {
+    "name": "base-runtimes",
+    "version": "0.2.0",
+    "size_bytes": 47265,
+    "last_used": "2024-06-01T23:23:51.063569288Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-runtimes",
+    "stale": true
+  },
+  {
+    "name": "option-cache",
+    "version": "3.5.0",
+    "size_bytes": 47265,
+    "last_used": "2024-06-01T23:23:50.704709024Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/option-cache",
+    "stale": true
+  },
+  {
+    "name": "tapable",
+    "version": "2.2.2",
+    "size_bytes": 47215,
+    "last_used": "2025-07-08T20:55:06.847778246Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/tapable",
+    "stale": true
+  },
+  {
+    "name": "class-utils",
+    "version": "0.3.6",
+    "size_bytes": 47097,
+    "last_used": "2024-06-01T23:23:50.187909246Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/class-utils",
+    "stale": true
+  },
+  {
+    "name": "string_decoder",
+    "version": "1.1.1",
+    "size_bytes": 46984,
+    "last_used": "2024-06-01T23:23:48.624410151Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/string_decoder",
+    "stale": true
+  },
+  {
+    "name": "base-cli-process",
+    "version": "0.1.19",
+    "size_bytes": 46684,
+    "last_used": "2024-06-01T23:23:50.618720220Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-cli-process",
+    "stale": true
+  },
+  {
+    "name": "comment-json",
+    "version": "4.2.5",
+    "size_bytes": 46378,
+    "last_used": "2025-07-08T20:55:06.796778931Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/comment-json",
+    "stale": true
+  },
+  {
+    "name": "async-helpers",
+    "version": "0.3.17",
+    "size_bytes": 46313,
+    "last_used": "2024-06-01T23:23:48.564160697Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/async-helpers",
+    "stale": true
+  },
+  {
+    "name": "cli-table3",
+    "version": "0.6.5",
+    "size_bytes": 46198,
+    "last_used": "2025-07-08T20:55:06.801710472Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/cli-table3",
+    "stale": true
+  },
+  {
+    "name": "composer",
+    "version": "0.14.2",
+    "size_bytes": 46070,
+    "last_used": "2024-06-01T23:23:50.503117690Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/composer",
+    "stale": true
+  },
+  {
+    "name": "generate",
+    "version": "0.14.0",
+    "size_bytes": 45821,
+    "last_used": "2024-06-01T23:23:50.192067165Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/generate",
+    "stale": true
+  },
+  {
+    "name": "citty",
+    "version": "0.1.6",
+    "size_bytes": 45534,
+    "last_used": "2025-08-02T13:18:36.647018051Z",
+    "path": "/Users/dantelex/.npm/_npx/820ca40fe6734b94/node_modules/citty",
+    "stale": true
+  },
+  {
+    "name": "base-argv",
+    "version": "0.4.5",
+    "size_bytes": 45220,
+    "last_used": "2024-06-01T23:23:50.593969455Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-argv",
+    "stale": true
+  },
+  {
+    "name": "to-regex",
+    "version": "3.0.2",
+    "size_bytes": 44754,
+    "last_used": "2024-06-01T23:23:50.001190046Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/to-regex",
+    "stale": true
+  },
+  {
+    "name": "muggle-string",
+    "version": "0.4.1",
+    "size_bytes": 44703,
+    "last_used": "2025-09-12T20:19:21.428110389Z",
+    "path": "/Users/dantelex/.npm/_npx/2db181330ea4b15b/node_modules/muggle-string",
+    "stale": false
+  },
+  {
+    "name": "base-helpers",
+    "version": "0.2.0",
+    "size_bytes": 44592,
+    "last_used": "2024-06-01T23:23:50.198231752Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-helpers",
+    "stale": true
+  },
+  {
+    "name": "chalk",
+    "version": "5.4.1",
+    "size_bytes": 44242,
+    "last_used": "2025-01-20T01:11:38.338155723Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/chalk",
+    "stale": true
+  },
+  {
+    "name": "cli-width",
+    "version": "1.1.1",
+    "size_bytes": 43904,
+    "last_used": "2024-06-01T23:23:49.100922864Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/cli-width",
+    "stale": true
+  },
+  {
+    "name": "vinyl-item",
+    "version": "1.0.0",
+    "size_bytes": 43592,
+    "last_used": "2024-06-01T23:23:50.190753789Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/vinyl-item",
+    "stale": true
+  },
+  {
+    "name": "vinyl-view",
+    "version": "2.0.1",
+    "size_bytes": 42994,
+    "last_used": "2024-06-01T23:23:50.188380663Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/vinyl-view",
+    "stale": true
+  },
+  {
+    "name": "alien-signals",
+    "version": "2.0.7",
+    "size_bytes": 42427,
+    "last_used": "2025-09-12T20:19:21.422536704Z",
+    "path": "/Users/dantelex/.npm/_npx/2db181330ea4b15b/node_modules/alien-signals",
+    "stale": false
+  },
+  {
+    "name": "has-values",
+    "version": "1.0.0",
+    "size_bytes": 42325,
+    "last_used": "2024-06-01T23:23:50.336766546Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/has-values",
+    "stale": true
+  },
+  {
+    "name": "safer-buffer",
+    "version": "2.1.2",
+    "size_bytes": 42299,
+    "last_used": "2025-07-08T20:55:06.752799837Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/safer-buffer",
+    "stale": true
+  },
+  {
+    "name": "get-intrinsic",
+    "version": "1.2.4",
+    "size_bytes": 41624,
+    "last_used": "2024-06-01T23:23:48.401259347Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/get-intrinsic",
+    "stale": true
+  },
+  {
+    "name": "file-contents",
+    "version": "1.0.1",
+    "size_bytes": 41623,
+    "last_used": "2024-06-01T23:23:50.830161102Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/file-contents",
+    "stale": true
+  },
+  {
+    "name": "assemble-streams",
+    "version": "1.0.1",
+    "size_bytes": 40851,
+    "last_used": "2024-06-01T23:23:50.868572417Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/assemble-streams",
+    "stale": true
+  },
+  {
+    "name": "repo-utils",
+    "version": "0.3.7",
+    "size_bytes": 40759,
+    "last_used": "2024-06-01T23:23:49.157897566Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/repo-utils",
+    "stale": true
+  },
+  {
+    "name": "base-npm",
+    "version": "0.4.1",
+    "size_bytes": 40719,
+    "last_used": "2024-06-01T23:23:51.168982604Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-npm",
+    "stale": true
+  },
+  {
+    "name": "use",
+    "version": "1.1.2",
+    "size_bytes": 40435,
+    "last_used": "2024-06-01T23:23:50.257347080Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/use",
+    "stale": true
+  },
+  {
+    "name": "normalize-pkg",
+    "version": "0.3.20",
+    "size_bytes": 40209,
+    "last_used": "2024-06-01T23:23:50.443620029Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/normalize-pkg",
+    "stale": true
+  },
+  {
+    "name": "base-plugins",
+    "version": "0.4.13",
+    "size_bytes": 38655,
+    "last_used": "2024-06-01T23:23:50.753142679Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-plugins",
+    "stale": true
+  },
+  {
+    "name": "parse-filepath",
+    "version": "1.0.2",
+    "size_bytes": 37525,
+    "last_used": "2024-06-01T23:23:50.302800442Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/parse-filepath",
+    "stale": true
+  },
+  {
+    "name": "node-releases",
+    "version": "2.0.19",
+    "size_bytes": 37225,
+    "last_used": "2025-07-08T20:55:06.760900771Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/node-releases",
+    "stale": true
+  },
+  {
+    "name": "expand-object",
+    "version": "0.4.2",
+    "size_bytes": 37006,
+    "last_used": "2024-06-01T23:23:50.463964625Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/expand-object",
+    "stale": true
+  },
+  {
+    "name": "is-registered",
+    "version": "0.1.5",
+    "size_bytes": 36692,
+    "last_used": "2024-06-01T23:23:50.823151389Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-registered",
+    "stale": true
+  },
+  {
+    "name": "package-json-from-dist",
+    "version": "1.0.1",
+    "size_bytes": 36453,
+    "last_used": "2025-07-08T20:55:06.812293781Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/package-json-from-dist",
+    "stale": true
+  },
+  {
+    "name": "estraverse",
+    "version": "4.3.0",
+    "size_bytes": 36325,
+    "last_used": "2025-07-08T20:55:06.750426126Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/estraverse",
+    "stale": true
+  },
+  {
+    "name": "atob",
+    "version": "2.1.2",
+    "size_bytes": 36200,
+    "last_used": "2024-06-01T23:23:48.413938313Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/atob",
+    "stale": true
+  },
+  {
+    "name": "array-timsort",
+    "version": "1.0.3",
+    "size_bytes": 36164,
+    "last_used": "2025-07-08T20:55:06.743500694Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/array-timsort",
+    "stale": true
+  },
+  {
+    "name": "readdirp",
+    "version": "4.1.2",
+    "size_bytes": 36127,
+    "last_used": "2025-07-08T20:55:06.863764705Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/readdirp",
+    "stale": true
+  },
+  {
+    "name": "plugin-error",
+    "version": "0.1.2",
+    "size_bytes": 35988,
+    "last_used": "2024-06-01T23:23:50.812638882Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/plugin-error",
+    "stale": true
+  },
+  {
+    "name": "randomatic",
+    "version": "3.1.1",
+    "size_bytes": 35877,
+    "last_used": "2024-06-01T23:23:48.784017375Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/randomatic",
+    "stale": true
+  },
+  {
+    "name": "en-route",
+    "version": "0.7.5",
+    "size_bytes": 35461,
+    "last_used": "2024-06-01T23:23:50.150215139Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/en-route",
+    "stale": true
+  },
+  {
+    "name": "split-string",
+    "version": "3.1.0",
+    "size_bytes": 35222,
+    "last_used": "2024-06-01T23:23:50.240505653Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/split-string",
+    "stale": true
+  },
+  {
+    "name": "execa",
+    "version": "0.7.0",
+    "size_bytes": 35049,
+    "last_used": "2024-06-01T23:23:48.440220413Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/execa",
+    "stale": true
+  },
+  {
+    "name": "chalk",
+    "version": "4.1.2",
+    "size_bytes": 35047,
+    "last_used": "2025-07-08T20:55:06.758727011Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/chalk",
+    "stale": true
+  },
+  {
+    "name": "chalk",
+    "version": "4.1.2",
+    "size_bytes": 35047,
+    "last_used": "2024-08-29T16:26:32.666290078Z",
+    "path": "/Users/dantelex/.npm/_npx/17fe7e21360f26cd/node_modules/chalk",
+    "stale": true
+  },
+  {
+    "name": "minimatch",
+    "version": "3.1.2",
+    "size_bytes": 34902,
+    "last_used": "2025-07-08T20:55:06.737223573Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/minimatch",
+    "stale": true
+  },
+  {
+    "name": "minimatch",
+    "version": "3.1.2",
+    "size_bytes": 34902,
+    "last_used": "2024-06-01T23:23:48.257954591Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/minimatch",
+    "stale": true
+  },
+  {
+    "name": "sprintf-js",
+    "version": "1.0.3",
+    "size_bytes": 34784,
+    "last_used": "2024-06-01T23:23:48.463919428Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/sprintf-js",
+    "stale": true
+  },
+  {
+    "name": "path-to-regexp",
+    "version": "1.8.0",
+    "size_bytes": 34543,
+    "last_used": "2024-06-01T23:23:50.145510469Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/path-to-regexp",
+    "stale": true
+  },
+  {
+    "name": "source-map-resolve",
+    "version": "0.5.3",
+    "size_bytes": 34259,
+    "last_used": "2024-06-01T23:23:48.342976311Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/source-map-resolve",
+    "stale": true
+  },
+  {
+    "name": "yargs-parser",
+    "version": "2.4.1",
+    "size_bytes": 33947,
+    "last_used": "2024-06-01T23:23:50.467004084Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/yargs-parser",
+    "stale": true
+  },
+  {
+    "name": "object-copy",
+    "version": "0.1.0",
+    "size_bytes": 33608,
+    "last_used": "2024-06-01T23:23:50.154756767Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/object-copy",
+    "stale": true
+  },
+  {
+    "name": "punycode",
+    "version": "2.3.1",
+    "size_bytes": 33514,
+    "last_used": "2025-07-08T20:55:06.745124347Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/punycode",
+    "stale": true
+  },
+  {
+    "name": "assemble-fs",
+    "version": "1.0.1",
+    "size_bytes": 32977,
+    "last_used": "2024-06-01T23:23:50.876908255Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/assemble-fs",
+    "stale": true
+  },
+  {
+    "name": "ora",
+    "version": "5.4.1",
+    "size_bytes": 32885,
+    "last_used": "2025-07-08T20:55:06.738058295Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/ora",
+    "stale": true
+  },
+  {
+    "name": "static-extend",
+    "version": "0.1.2",
+    "size_bytes": 32828,
+    "last_used": "2024-06-01T23:23:50.154395808Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/static-extend",
+    "stale": true
+  },
+  {
+    "name": "base",
+    "version": "0.11.2",
+    "size_bytes": 32723,
+    "last_used": "2024-06-01T23:23:48.571689535Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base",
+    "stale": true
+  },
+  {
+    "name": "graceful-fs",
+    "version": "4.2.11",
+    "size_bytes": 32535,
+    "last_used": "2025-07-08T20:55:06.736833794Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/graceful-fs",
+    "stale": true
+  },
+  {
+    "name": "graceful-fs",
+    "version": "4.2.11",
+    "size_bytes": 32535,
+    "last_used": "2024-06-01T23:23:48.258132800Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/graceful-fs",
+    "stale": true
+  },
+  {
+    "name": "cli-spinners",
+    "version": "2.9.2",
+    "size_bytes": 32113,
+    "last_used": "2025-07-08T20:55:06.752250231Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/cli-spinners",
+    "stale": true
+  },
+  {
+    "name": "safe-buffer",
+    "version": "5.2.1",
+    "size_bytes": 32101,
+    "last_used": "2025-07-08T20:55:06.740679206Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/safe-buffer",
+    "stale": true
+  },
+  {
+    "name": "safe-buffer",
+    "version": "5.2.1",
+    "size_bytes": 32101,
+    "last_used": "2024-06-01T23:23:48.268913932Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/safe-buffer",
+    "stale": true
+  },
+  {
+    "name": "fill-range",
+    "version": "2.2.4",
+    "size_bytes": 31821,
+    "last_used": "2024-06-01T23:23:50.261298458Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/fill-range",
+    "stale": true
+  },
+  {
+    "name": "layouts",
+    "version": "0.12.1",
+    "size_bytes": 31774,
+    "last_used": "2024-06-01T23:23:50.187974204Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/layouts",
+    "stale": true
+  },
+  {
+    "name": "matched",
+    "version": "0.4.4",
+    "size_bytes": 31604,
+    "last_used": "2024-06-01T23:23:50.887867512Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/matched",
+    "stale": true
+  },
+  {
+    "name": "make-iterator",
+    "version": "1.0.1",
+    "size_bytes": 31520,
+    "last_used": "2024-06-01T23:23:49.230830861Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/make-iterator",
+    "stale": true
+  },
+  {
+    "name": "function-bind",
+    "version": "1.1.2",
+    "size_bytes": 31427,
+    "last_used": "2024-06-01T23:23:48.428255739Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/function-bind",
+    "stale": true
+  },
+  {
+    "name": "deepmerge",
+    "version": "4.3.1",
+    "size_bytes": 31157,
+    "last_used": "2025-07-08T20:55:06.804633165Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/deepmerge",
+    "stale": true
+  },
+  {
+    "name": "term-size",
+    "version": "1.2.0",
+    "size_bytes": 30918,
+    "last_used": "2024-06-01T23:23:48.479753186Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/term-size",
+    "stale": true
+  },
+  {
+    "name": "define-data-property",
+    "version": "1.1.4",
+    "size_bytes": 30851,
+    "last_used": "2024-06-01T23:23:48.417853441Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/define-data-property",
+    "stale": true
+  },
+  {
+    "name": "no-case",
+    "version": "2.3.2",
+    "size_bytes": 30839,
+    "last_used": "2024-06-01T23:23:49.349659018Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/no-case",
+    "stale": true
+  },
+  {
+    "name": "is-core-module",
+    "version": "2.13.1",
+    "size_bytes": 30239,
+    "last_used": "2024-06-01T23:23:48.377290665Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-core-module",
+    "stale": true
+  },
+  {
+    "name": "base-task",
+    "version": "0.7.1",
+    "size_bytes": 29876,
+    "last_used": "2024-06-01T23:23:50.853547283Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-task",
+    "stale": true
+  },
+  {
+    "name": "regex-not",
+    "version": "1.0.2",
+    "size_bytes": 29860,
+    "last_used": "2024-06-01T23:23:50.047695700Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/regex-not",
+    "stale": true
+  },
+  {
+    "name": "assemble-render-file",
+    "version": "1.0.3",
+    "size_bytes": 29537,
+    "last_used": "2024-06-01T23:23:50.863142497Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/assemble-render-file",
+    "stale": true
+  },
+  {
+    "name": "base-config-process",
+    "version": "0.1.9",
+    "size_bytes": 29305,
+    "last_used": "2024-06-01T23:23:50.609662631Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-config-process",
+    "stale": true
+  },
+  {
+    "name": "generate-collections",
+    "version": "0.3.9",
+    "size_bytes": 29095,
+    "last_used": "2024-06-01T23:23:50.927116662Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/generate-collections",
+    "stale": true
+  },
+  {
+    "name": "is-arguments",
+    "version": "1.1.1",
+    "size_bytes": 28838,
+    "last_used": "2024-06-01T23:23:48.401283889Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-arguments",
+    "stale": true
+  },
+  {
+    "name": "liftoff",
+    "version": "2.5.0",
+    "size_bytes": 28788,
+    "last_used": "2024-06-01T23:23:49.410560931Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/liftoff",
+    "stale": true
+  },
+  {
+    "name": "array-sort",
+    "version": "0.1.4",
+    "size_bytes": 28529,
+    "last_used": "2024-06-01T23:23:50.202400630Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/array-sort",
+    "stale": true
+  },
+  {
+    "name": "base-pkg",
+    "version": "0.2.5",
+    "size_bytes": 28324,
+    "last_used": "2024-06-01T23:23:50.757086806Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-pkg",
+    "stale": true
+  },
+  {
+    "name": "base-pipeline",
+    "version": "0.3.2",
+    "size_bytes": 27877,
+    "last_used": "2024-06-01T23:23:51.094518891Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-pipeline",
+    "stale": true
+  },
+  {
+    "name": "to-regex-range",
+    "version": "2.1.1",
+    "size_bytes": 27757,
+    "last_used": "2024-06-01T23:23:49.950834140Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/to-regex-range",
+    "stale": true
+  },
+  {
+    "name": "helper-ask",
+    "version": "0.2.1",
+    "size_bytes": 27266,
+    "last_used": "2024-06-01T23:23:50.923682660Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/helper-ask",
+    "stale": true
+  },
+  {
+    "name": "color-convert",
+    "version": "2.0.1",
+    "size_bytes": 27189,
+    "last_used": "2025-07-08T20:55:06.748516399Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/color-convert",
+    "stale": true
+  },
+  {
+    "name": "color-convert",
+    "version": "2.0.1",
+    "size_bytes": 27189,
+    "last_used": "2024-08-29T16:26:32.664123645Z",
+    "path": "/Users/dantelex/.npm/_npx/17fe7e21360f26cd/node_modules/color-convert",
+    "stale": true
+  },
+  {
+    "name": "external-editor",
+    "version": "3.1.0",
+    "size_bytes": 26996,
+    "last_used": "2025-07-08T20:55:06.821948996Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/external-editor",
+    "stale": true
+  },
+  {
+    "name": "color-convert",
+    "version": "1.9.3",
+    "size_bytes": 26964,
+    "last_used": "2024-06-01T23:23:48.275846644Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/color-convert",
+    "stale": true
+  },
+  {
+    "name": "unset-value",
+    "version": "1.0.0",
+    "size_bytes": 26285,
+    "last_used": "2024-06-01T23:23:50.499845563Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/unset-value",
+    "stale": true
+  },
+  {
+    "name": "ansi-colors",
+    "version": "4.1.3",
+    "size_bytes": 26143,
+    "last_used": "2025-07-08T20:55:06.748960050Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/ansi-colors",
+    "stale": true
+  },
+  {
+    "name": "tmp",
+    "version": "0.0.33",
+    "size_bytes": 26021,
+    "last_used": "2025-07-08T20:55:06.730401887Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/tmp",
+    "stale": true
+  },
+  {
+    "name": "snapdragon-node",
+    "version": "2.1.1",
+    "size_bytes": 25805,
+    "last_used": "2024-06-01T23:23:48.249371211Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/snapdragon-node",
+    "stale": true
+  },
+  {
+    "name": "base-fs-rename",
+    "version": "0.1.4",
+    "size_bytes": 25743,
+    "last_used": "2024-06-01T23:23:51.205375834Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-fs-rename",
+    "stale": true
+  },
+  {
+    "name": "expand-args",
+    "version": "0.4.3",
+    "size_bytes": 25341,
+    "last_used": "2024-06-01T23:23:50.579776529Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/expand-args",
+    "stale": true
+  },
+  {
+    "name": "vinyl",
+    "version": "2.2.1",
+    "size_bytes": 24523,
+    "last_used": "2024-06-01T23:23:48.960475443Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/vinyl",
+    "stale": true
+  },
+  {
+    "name": "assign-deep",
+    "version": "0.4.8",
+    "size_bytes": 24423,
+    "last_used": "2024-06-01T23:23:50.340826215Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/assign-deep",
+    "stale": true
+  },
+  {
+    "name": "rethrow",
+    "version": "0.2.3",
+    "size_bytes": 24395,
+    "last_used": "2024-06-01T23:23:50.154955975Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/rethrow",
+    "stale": true
+  },
+  {
+    "name": "lodash._createwrapper",
+    "version": "3.2.0",
+    "size_bytes": 24216,
+    "last_used": "2024-06-01T23:23:48.564205447Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash._createwrapper",
+    "stale": true
+  },
+  {
+    "name": "falsey",
+    "version": "0.3.2",
+    "size_bytes": 23832,
+    "last_used": "2024-06-01T23:23:50.555388764Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/falsey",
+    "stale": true
+  },
+  {
+    "name": "group-array",
+    "version": "0.3.4",
+    "size_bytes": 23810,
+    "last_used": "2024-06-01T23:23:50.187268703Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/group-array",
+    "stale": true
+  },
+  {
+    "name": "base-cwd",
+    "version": "0.2.1",
+    "size_bytes": 23744,
+    "last_used": "2024-06-01T23:23:50.802236918Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-cwd",
+    "stale": true
+  },
+  {
+    "name": "base-namespace",
+    "version": "0.2.0",
+    "size_bytes": 23525,
+    "last_used": "2024-06-01T23:23:50.717535532Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-namespace",
+    "stale": true
+  },
+  {
+    "name": "extend",
+    "version": "3.0.2",
+    "size_bytes": 23461,
+    "last_used": "2024-06-01T23:23:48.283966483Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/extend",
+    "stale": true
+  },
+  {
+    "name": "default-compare",
+    "version": "1.0.0",
+    "size_bytes": 23333,
+    "last_used": "2024-06-01T23:23:50.182409534Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/default-compare",
+    "stale": true
+  },
+  {
+    "name": "base-config",
+    "version": "0.5.2",
+    "size_bytes": 23239,
+    "last_used": "2024-06-01T23:23:50.579888446Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-config",
+    "stale": true
+  },
+  {
+    "name": "shallow-clone",
+    "version": "0.1.2",
+    "size_bytes": 22567,
+    "last_used": "2024-06-01T23:23:50.497294103Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/shallow-clone",
+    "stale": true
+  },
+  {
+    "name": "delimiter-regex",
+    "version": "2.0.0",
+    "size_bytes": 22518,
+    "last_used": "2024-06-01T23:23:50.383909950Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/delimiter-regex",
+    "stale": true
+  },
+  {
+    "name": "glob-base",
+    "version": "0.3.0",
+    "size_bytes": 22462,
+    "last_used": "2024-06-01T23:23:50.270106922Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/glob-base",
+    "stale": true
+  },
+  {
+    "name": "json-schema-traverse",
+    "version": "1.0.0",
+    "size_bytes": 22220,
+    "last_used": "2025-07-08T20:55:06.821993827Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/json-schema-traverse",
+    "stale": true
+  },
+  {
+    "name": "call-bind",
+    "version": "1.0.7",
+    "size_bytes": 22118,
+    "last_used": "2024-06-01T23:23:48.376790790Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/call-bind",
+    "stale": true
+  },
+  {
+    "name": "package-manager-detector",
+    "version": "1.2.0",
+    "size_bytes": 21960,
+    "last_used": "2025-05-03T14:56:06.440293066Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/package-manager-detector",
+    "stale": true
+  },
+  {
+    "name": "cloneable-readable",
+    "version": "1.1.3",
+    "size_bytes": 21807,
+    "last_used": "2024-06-01T23:23:48.426693904Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/cloneable-readable",
+    "stale": true
+  },
+  {
+    "name": "template-error",
+    "version": "0.1.2",
+    "size_bytes": 21667,
+    "last_used": "2024-06-01T23:23:50.184384077Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/template-error",
+    "stale": true
+  },
+  {
+    "name": "fs-monkey",
+    "version": "1.0.6",
+    "size_bytes": 21274,
+    "last_used": "2025-07-08T20:55:06.803863983Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/fs-monkey",
+    "stale": true
+  },
+  {
+    "name": "got",
+    "version": "6.7.1",
+    "size_bytes": 21107,
+    "last_used": "2024-06-01T23:23:48.433256783Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/got",
+    "stale": true
+  },
+  {
+    "name": "engine-cache",
+    "version": "0.19.4",
+    "size_bytes": 21006,
+    "last_used": "2024-06-01T23:23:48.570784993Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/engine-cache",
+    "stale": true
+  },
+  {
+    "name": "is-date-object",
+    "version": "1.0.5",
+    "size_bytes": 20793,
+    "last_used": "2024-06-01T23:23:48.401866514Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-date-object",
+    "stale": true
+  },
+  {
+    "name": "is-descriptor",
+    "version": "1.0.3",
+    "size_bytes": 20626,
+    "last_used": "2024-06-01T23:23:49.202201426Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-descriptor",
+    "stale": true
+  },
+  {
+    "name": "has-symbols",
+    "version": "1.0.3",
+    "size_bytes": 20603,
+    "last_used": "2024-06-01T23:23:48.437594453Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/has-symbols",
+    "stale": true
+  },
+  {
+    "name": "dateformat-light",
+    "version": "1.3.5",
+    "size_bytes": 20493,
+    "last_used": "2024-06-01T23:23:49.789750540Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/dateformat-light",
+    "stale": true
+  },
+  {
+    "name": "is-accessor-descriptor",
+    "version": "1.0.1",
+    "size_bytes": 20287,
+    "last_used": "2024-06-01T23:23:49.032293279Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-accessor-descriptor",
+    "stale": true
+  },
+  {
+    "name": "wrap-ansi",
+    "version": "7.0.0",
+    "size_bytes": 20286,
+    "last_used": "2025-07-08T20:55:06.725836667Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/wrap-ansi-cjs",
+    "stale": true
+  },
+  {
+    "name": "parse-glob",
+    "version": "3.0.4",
+    "size_bytes": 20230,
+    "last_used": "2024-06-01T23:23:50.271649172Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/parse-glob",
+    "stale": true
+  },
+  {
+    "name": "lodash.assign",
+    "version": "4.2.0",
+    "size_bytes": 19885,
+    "last_used": "2024-06-01T23:23:48.270969433Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.assign",
+    "stale": true
+  },
+  {
+    "name": "base-project",
+    "version": "0.2.1",
+    "size_bytes": 19770,
+    "last_used": "2024-06-01T23:23:50.609643215Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-project",
+    "stale": true
+  },
+  {
+    "name": "jsonfile",
+    "version": "6.1.0",
+    "size_bytes": 19750,
+    "last_used": "2025-07-08T20:55:06.742369690Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/jsonfile",
+    "stale": true
+  },
+  {
+    "name": "wrap-ansi",
+    "version": "6.2.0",
+    "size_bytes": 19138,
+    "last_used": "2025-07-08T20:55:06.726127907Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/wrap-ansi",
+    "stale": true
+  },
+  {
+    "name": "ansi-colors",
+    "version": "0.2.0",
+    "size_bytes": 18884,
+    "last_used": "2024-06-01T23:23:48.987052418Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-colors",
+    "stale": true
+  },
+  {
+    "name": "is-data-descriptor",
+    "version": "1.0.1",
+    "size_bytes": 18811,
+    "last_used": "2024-06-01T23:23:49.037598366Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-data-descriptor",
+    "stale": true
+  },
+  {
+    "name": "helper-cache",
+    "version": "0.7.2",
+    "size_bytes": 18699,
+    "last_used": "2024-06-01T23:23:50.155380184Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/helper-cache",
+    "stale": true
+  },
+  {
+    "name": "load-templates",
+    "version": "1.0.2",
+    "size_bytes": 18596,
+    "last_used": "2024-06-01T23:23:49.559356272Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/load-templates",
+    "stale": true
+  },
+  {
+    "name": "securelog-scan",
+    "version": "1.0.0",
+    "size_bytes": 18432,
+    "last_used": "2024-08-29T16:26:32.766145736Z",
+    "path": "/Users/dantelex/.npm/_npx/17fe7e21360f26cd/node_modules/securelog-scan",
+    "stale": true
+  },
+  {
+    "name": "loader-runner",
+    "version": "4.3.0",
+    "size_bytes": 18386,
+    "last_used": "2025-07-08T20:55:06.734499415Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/loader-runner",
+    "stale": true
+  },
+  {
+    "name": "expand-pkg",
+    "version": "0.1.9",
+    "size_bytes": 18358,
+    "last_used": "2024-06-01T23:23:49.505249614Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/expand-pkg",
+    "stale": true
+  },
+  {
+    "name": "mime-types",
+    "version": "2.1.35",
+    "size_bytes": 18272,
+    "last_used": "2025-07-08T20:55:06.734586620Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/mime-types",
+    "stale": true
+  },
+  {
+    "name": "glob-to-regexp",
+    "version": "0.4.1",
+    "size_bytes": 18100,
+    "last_used": "2025-07-08T20:55:06.727584566Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/glob-to-regexp",
+    "stale": true
+  },
+  {
+    "name": "lodash.foreach",
+    "version": "4.5.0",
+    "size_bytes": 17950,
+    "last_used": "2024-06-01T23:23:48.271026933Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.foreach",
+    "stale": true
+  },
+  {
+    "name": "ret",
+    "version": "0.1.15",
+    "size_bytes": 17907,
+    "last_used": "2024-06-01T23:23:48.279233938Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ret",
+    "stale": true
+  },
+  {
+    "name": "lru-cache",
+    "version": "4.1.5",
+    "size_bytes": 17843,
+    "last_used": "2024-06-01T23:23:48.237775746Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lru-cache",
+    "stale": true
+  },
+  {
+    "name": "pluralize",
+    "version": "8.0.0",
+    "size_bytes": 17725,
+    "last_used": "2025-07-08T20:55:06.731031199Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/pluralize",
+    "stale": true
+  },
+  {
+    "name": "has-tostringtag",
+    "version": "1.0.2",
+    "size_bytes": 17603,
+    "last_used": "2024-06-01T23:23:48.448244501Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/has-tostringtag",
+    "stale": true
+  },
+  {
+    "name": "ansi-styles",
+    "version": "6.2.1",
+    "size_bytes": 17512,
+    "last_used": "2025-01-20T01:11:38.325736291Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/ansi-styles",
+    "stale": true
+  },
+  {
+    "name": "webpack-node-externals",
+    "version": "3.0.0",
+    "size_bytes": 17346,
+    "last_used": "2025-07-08T20:55:06.738161374Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/webpack-node-externals",
+    "stale": true
+  },
+  {
+    "name": "cli-table",
+    "version": "0.3.11",
+    "size_bytes": 17292,
+    "last_used": "2024-06-01T23:23:49.549473183Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/cli-table",
+    "stale": true
+  },
+  {
+    "name": "rc",
+    "version": "1.2.8",
+    "size_bytes": 17255,
+    "last_used": "2024-06-01T23:23:48.476733935Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/rc",
+    "stale": true
+  },
+  {
+    "name": "duplexify",
+    "version": "3.7.1",
+    "size_bytes": 17129,
+    "last_used": "2024-06-01T23:23:48.658094506Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/duplexify",
+    "stale": true
+  },
+  {
+    "name": "ansi-styles",
+    "version": "4.3.0",
+    "size_bytes": 16978,
+    "last_used": "2025-07-08T20:55:06.729976776Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/ansi-styles",
+    "stale": true
+  },
+  {
+    "name": "ansi-styles",
+    "version": "4.3.0",
+    "size_bytes": 16978,
+    "last_used": "2024-08-29T16:26:32.658391227Z",
+    "path": "/Users/dantelex/.npm/_npx/17fe7e21360f26cd/node_modules/ansi-styles",
+    "stale": true
+  },
+  {
+    "name": "fast-json-stable-stringify",
+    "version": "2.1.0",
+    "size_bytes": 16959,
+    "last_used": "2025-07-08T20:55:06.825976276Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/fast-json-stable-stringify",
+    "stale": true
+  },
+  {
+    "name": "serialize-javascript",
+    "version": "6.0.2",
+    "size_bytes": 16893,
+    "last_used": "2025-07-08T20:55:06.717985349Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/serialize-javascript",
+    "stale": true
+  },
+  {
+    "name": "node-abort-controller",
+    "version": "3.1.1",
+    "size_bytes": 16885,
+    "last_used": "2025-07-08T20:55:06.812698767Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/node-abort-controller",
+    "stale": true
+  },
+  {
+    "name": "braces",
+    "version": "1.8.5",
+    "size_bytes": 16804,
+    "last_used": "2024-06-01T23:23:48.828321861Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/braces",
+    "stale": true
+  },
+  {
+    "name": "symbol-observable",
+    "version": "4.0.0",
+    "size_bytes": 16788,
+    "last_used": "2025-07-08T20:55:06.805081025Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/symbol-observable",
+    "stale": true
+  },
+  {
+    "name": "cache-base",
+    "version": "1.0.1",
+    "size_bytes": 16440,
+    "last_used": "2024-06-01T23:23:49.465725382Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/cache-base",
+    "stale": true
+  },
+  {
+    "name": "ansi-escapes",
+    "version": "4.3.2",
+    "size_bytes": 16380,
+    "last_used": "2025-07-08T20:55:06.731160445Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/ansi-escapes",
+    "stale": true
+  },
+  {
+    "name": "ansi-escapes",
+    "version": "5.0.0",
+    "size_bytes": 16335,
+    "last_used": "2025-01-20T01:11:38.440179040Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/ansi-escapes",
+    "stale": true
+  },
+  {
+    "name": "cross-spawn",
+    "version": "7.0.6",
+    "size_bytes": 16094,
+    "last_used": "2025-07-08T20:55:06.758113532Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/cross-spawn",
+    "stale": true
+  },
+  {
+    "name": "co",
+    "version": "4.6.0",
+    "size_bytes": 16016,
+    "last_used": "2024-06-01T23:23:49.266943258Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/co",
+    "stale": true
+  },
+  {
+    "name": "bach",
+    "version": "1.2.0",
+    "size_bytes": 15912,
+    "last_used": "2024-06-01T23:23:49.270402969Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/bach",
+    "stale": true
+  },
+  {
+    "name": "clone",
+    "version": "2.1.2",
+    "size_bytes": 15879,
+    "last_used": "2024-06-01T23:23:48.416007273Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/clone",
+    "stale": true
+  },
+  {
+    "name": "lazystream",
+    "version": "1.0.1",
+    "size_bytes": 15648,
+    "last_used": "2024-06-01T23:23:48.458486924Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lazystream",
+    "stale": true
+  },
+  {
+    "name": "resolve-file",
+    "version": "0.3.0",
+    "size_bytes": 15565,
+    "last_used": "2024-06-01T23:23:50.876723255Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/resolve-file",
+    "stale": true
+  },
+  {
+    "name": "rimraf",
+    "version": "2.7.1",
+    "size_bytes": 15463,
+    "last_used": "2024-06-01T23:23:49.195257547Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/rimraf",
+    "stale": true
+  },
+  {
+    "name": "js-tokens",
+    "version": "4.0.0",
+    "size_bytes": 15069,
+    "last_used": "2025-07-08T20:55:06.729973235Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/js-tokens",
+    "stale": true
+  },
+  {
+    "name": "string-width",
+    "version": "2.1.1",
+    "size_bytes": 14916,
+    "last_used": "2024-06-01T23:23:50.142858884Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/string-width",
+    "stale": true
+  },
+  {
+    "name": "string-width",
+    "version": "4.2.3",
+    "size_bytes": 14799,
+    "last_used": "2025-07-08T20:55:06.726106116Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/string-width",
+    "stale": true
+  },
+  {
+    "name": "string-width",
+    "version": "4.2.3",
+    "size_bytes": 14799,
+    "last_used": "2025-07-08T20:55:06.725852083Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/string-width-cjs",
+    "stale": true
+  },
+  {
+    "name": "update-browserslist-db",
+    "version": "1.1.3",
+    "size_bytes": 14770,
+    "last_used": "2025-07-08T20:55:06.750246590Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/update-browserslist-db",
+    "stale": true
+  },
+  {
+    "name": "set-function-length",
+    "version": "1.2.2",
+    "size_bytes": 14747,
+    "last_used": "2024-06-01T23:23:48.400309846Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/set-function-length",
+    "stale": true
+  },
+  {
+    "name": "now-and-later",
+    "version": "2.0.1",
+    "size_bytes": 14618,
+    "last_used": "2024-06-01T23:23:49.231282778Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/now-and-later",
+    "stale": true
+  },
+  {
+    "name": "parse-github-url",
+    "version": "0.3.2",
+    "size_bytes": 14512,
+    "last_used": "2024-06-01T23:23:48.660177173Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/parse-github-url",
+    "stale": true
+  },
+  {
+    "name": "helper-slugify",
+    "version": "0.2.0",
+    "size_bytes": 14468,
+    "last_used": "2024-06-01T23:23:48.736538762Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/helper-slugify",
+    "stale": true
+  },
+  {
+    "name": "string_decoder",
+    "version": "1.3.0",
+    "size_bytes": 14427,
+    "last_used": "2025-07-08T20:55:06.728694737Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/string_decoder",
+    "stale": true
+  },
+  {
+    "name": "relative",
+    "version": "3.0.2",
+    "size_bytes": 14374,
+    "last_used": "2024-06-01T23:23:50.240856445Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/relative",
+    "stale": true
+  },
+  {
+    "name": "base-compose",
+    "version": "0.2.1",
+    "size_bytes": 14352,
+    "last_used": "2024-06-01T23:23:49.494889357Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-compose",
+    "stale": true
+  },
+  {
+    "name": "merge-value",
+    "version": "1.0.0",
+    "size_bytes": 14319,
+    "last_used": "2024-06-01T23:23:50.734224584Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/merge-value",
+    "stale": true
+  },
+  {
+    "name": "wcwidth",
+    "version": "1.0.1",
+    "size_bytes": 14241,
+    "last_used": "2025-07-08T20:55:06.762076731Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/wcwidth",
+    "stale": true
+  },
+  {
+    "name": "json-stable-stringify-without-jsonify",
+    "version": "1.0.1",
+    "size_bytes": 14224,
+    "last_used": "2024-06-01T23:23:48.438089370Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/json-stable-stringify-without-jsonify",
+    "stale": true
+  },
+  {
+    "name": "lodash._baseisequal",
+    "version": "3.0.7",
+    "size_bytes": 14213,
+    "last_used": "2024-06-01T23:23:48.949451853Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash._baseisequal",
+    "stale": true
+  },
+  {
+    "name": "pretty-time",
+    "version": "0.2.0",
+    "size_bytes": 14210,
+    "last_used": "2024-06-01T23:23:50.464037375Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/pretty-time",
+    "stale": true
+  },
+  {
+    "name": "engine-base",
+    "version": "0.1.3",
+    "size_bytes": 14192,
+    "last_used": "2024-06-01T23:23:49.117257416Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/engine-base",
+    "stale": true
+  },
+  {
+    "name": "clone-deep",
+    "version": "0.2.4",
+    "size_bytes": 14178,
+    "last_used": "2024-06-01T23:23:50.660807788Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/clone-deep",
+    "stale": true
+  },
+  {
+    "name": "mixin-deep",
+    "version": "1.3.2",
+    "size_bytes": 14159,
+    "last_used": "2024-06-01T23:23:50.868686292Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/mixin-deep",
+    "stale": true
+  },
+  {
+    "name": "lodash._basecallback",
+    "version": "3.3.1",
+    "size_bytes": 14036,
+    "last_used": "2024-06-01T23:23:48.956602149Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash._basecallback",
+    "stale": true
+  },
+  {
+    "name": "export-files",
+    "version": "2.1.1",
+    "size_bytes": 13921,
+    "last_used": "2024-06-01T23:23:50.937177918Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/export-files",
+    "stale": true
+  },
+  {
+    "name": "map-config",
+    "version": "0.5.0",
+    "size_bytes": 13794,
+    "last_used": "2024-06-01T23:23:49.368182279Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/map-config",
+    "stale": true
+  },
+  {
+    "name": "cross-spawn",
+    "version": "4.0.2",
+    "size_bytes": 13701,
+    "last_used": "2024-06-01T23:23:49.447093120Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/cross-spawn",
+    "stale": true
+  },
+  {
+    "name": "eastasianwidth",
+    "version": "0.2.0",
+    "size_bytes": 13640,
+    "last_used": "2025-01-20T01:11:38.321049280Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/eastasianwidth",
+    "stale": true
+  },
+  {
+    "name": "eastasianwidth",
+    "version": "0.2.0",
+    "size_bytes": 13640,
+    "last_used": "2025-07-08T20:55:06.697305883Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/eastasianwidth",
+    "stale": true
+  },
+  {
+    "name": "extglob",
+    "version": "0.3.2",
+    "size_bytes": 13613,
+    "last_used": "2024-06-01T23:23:50.255594204Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/extglob",
+    "stale": true
+  },
+  {
+    "name": "trim-leading-lines",
+    "version": "0.1.1",
+    "size_bytes": 13606,
+    "last_used": "2024-06-01T23:23:48.775796537Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/trim-leading-lines",
+    "stale": true
+  },
+  {
+    "name": "yallist",
+    "version": "2.1.2",
+    "size_bytes": 13597,
+    "last_used": "2024-06-01T23:23:48.247337585Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/yallist",
+    "stale": true
+  },
+  {
+    "name": "parser-front-matter",
+    "version": "1.6.4",
+    "size_bytes": 13543,
+    "last_used": "2024-06-01T23:23:49.137669845Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/parser-front-matter",
+    "stale": true
+  },
+  {
+    "name": "git-repo-name",
+    "version": "0.6.0",
+    "size_bytes": 13517,
+    "last_used": "2024-06-01T23:23:50.240901820Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/git-repo-name",
+    "stale": true
+  },
+  {
+    "name": "fs.realpath",
+    "version": "1.0.0",
+    "size_bytes": 13433,
+    "last_used": "2024-06-01T23:23:48.246693043Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/fs.realpath",
+    "stale": true
+  },
+  {
+    "name": "kind-of",
+    "version": "3.2.2",
+    "size_bytes": 13416,
+    "last_used": "2024-06-01T23:23:49.571643613Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/kind-of",
+    "stale": true
+  },
+  {
+    "name": "any",
+    "version": "1.0.0",
+    "size_bytes": 13377,
+    "last_used": "2024-06-01T23:23:50.215188679Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/any",
+    "stale": true
+  },
+  {
+    "name": "async-done",
+    "version": "1.3.2",
+    "size_bytes": 13293,
+    "last_used": "2024-06-01T23:23:49.250723915Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/async-done",
+    "stale": true
+  },
+  {
+    "name": "paginationator",
+    "version": "0.1.4",
+    "size_bytes": 13025,
+    "last_used": "2024-06-01T23:23:48.572014910Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/paginationator",
+    "stale": true
+  },
+  {
+    "name": "object.defaults",
+    "version": "1.1.0",
+    "size_bytes": 12999,
+    "last_used": "2024-06-01T23:23:50.279769969Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/object.defaults",
+    "stale": true
+  },
+  {
+    "name": "fast-deep-equal",
+    "version": "3.1.3",
+    "size_bytes": 12966,
+    "last_used": "2025-07-08T20:55:06.796729349Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/fast-deep-equal",
+    "stale": true
+  },
+  {
+    "name": "assemble-loader",
+    "version": "1.0.5",
+    "size_bytes": 12943,
+    "last_used": "2024-06-01T23:23:49.873072134Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/assemble-loader",
+    "stale": true
+  },
+  {
+    "name": "parse-git-config",
+    "version": "1.1.1",
+    "size_bytes": 12925,
+    "last_used": "2024-06-01T23:23:49.157002857Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/parse-git-config",
+    "stale": true
+  },
+  {
+    "name": "object.map",
+    "version": "1.0.1",
+    "size_bytes": 12813,
+    "last_used": "2024-06-01T23:23:50.280880637Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/object.map",
+    "stale": true
+  },
+  {
+    "name": "restore-cursor",
+    "version": "3.1.0",
+    "size_bytes": 12775,
+    "last_used": "2025-07-08T20:55:06.725761544Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/restore-cursor",
+    "stale": true
+  },
+  {
+    "name": "titlecase",
+    "version": "1.1.3",
+    "size_bytes": 12709,
+    "last_used": "2024-06-01T23:23:48.602951388Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/titlecase",
+    "stale": true
+  },
+  {
+    "name": "center-align",
+    "version": "0.1.3",
+    "size_bytes": 12635,
+    "last_used": "2024-06-01T23:23:50.212749386Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/center-align",
+    "stale": true
+  },
+  {
+    "name": "istextorbinary",
+    "version": "1.0.2",
+    "size_bytes": 12539,
+    "last_used": "2024-06-01T23:23:49.513416577Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/istextorbinary",
+    "stale": true
+  },
+  {
+    "name": "through",
+    "version": "2.3.8",
+    "size_bytes": 12533,
+    "last_used": "2024-06-01T23:23:48.619591148Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/through",
+    "stale": true
+  },
+  {
+    "name": "escalade",
+    "version": "3.2.0",
+    "size_bytes": 12385,
+    "last_used": "2025-07-08T20:55:06.766131219Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/escalade",
+    "stale": true
+  },
+  {
+    "name": "match-file",
+    "version": "0.2.2",
+    "size_bytes": 12363,
+    "last_used": "2024-06-01T23:23:49.549283474Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/match-file",
+    "stale": true
+  },
+  {
+    "name": "tableize-object",
+    "version": "0.1.0",
+    "size_bytes": 12351,
+    "last_used": "2024-06-01T23:23:50.534001834Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/tableize-object",
+    "stale": true
+  },
+  {
+    "name": "es-errors",
+    "version": "1.3.0",
+    "size_bytes": 12324,
+    "last_used": "2024-06-01T23:23:48.472801224Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/es-errors",
+    "stale": true
+  },
+  {
+    "name": "write-file-atomic",
+    "version": "2.4.3",
+    "size_bytes": 12243,
+    "last_used": "2024-06-01T23:23:48.459263758Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/write-file-atomic",
+    "stale": true
+  },
+  {
+    "name": "middleware-rename-file",
+    "version": "0.1.1",
+    "size_bytes": 12129,
+    "last_used": "2024-06-01T23:23:50.371567068Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/middleware-rename-file",
+    "stale": true
+  },
+  {
+    "name": "lodash.flatten",
+    "version": "4.4.0",
+    "size_bytes": 12053,
+    "last_used": "2024-06-01T23:23:48.259359926Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.flatten",
+    "stale": true
+  },
+  {
+    "name": "has-proto",
+    "version": "1.0.3",
+    "size_bytes": 11964,
+    "last_used": "2024-06-01T23:23:48.376632248Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/has-proto",
+    "stale": true
+  },
+  {
+    "name": "imurmurhash",
+    "version": "0.1.4",
+    "size_bytes": 11887,
+    "last_used": "2024-06-01T23:23:48.227879198Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/imurmurhash",
+    "stale": true
+  },
+  {
+    "name": "unique-stream",
+    "version": "2.3.1",
+    "size_bytes": 11850,
+    "last_used": "2024-06-01T23:23:50.087468933Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/unique-stream",
+    "stale": true
+  },
+  {
+    "name": "ci-info",
+    "version": "1.6.0",
+    "size_bytes": 11845,
+    "last_used": "2024-06-01T23:23:48.459126425Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ci-info",
+    "stale": true
+  },
+  {
+    "name": "word-wrap",
+    "version": "1.2.5",
+    "size_bytes": 11845,
+    "last_used": "2024-06-01T23:23:48.615010562Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/word-wrap",
+    "stale": true
+  },
+  {
+    "name": "chalk",
+    "version": "1.1.3",
+    "size_bytes": 11825,
+    "last_used": "2024-06-01T23:23:49.088194564Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/chalk",
+    "stale": true
+  },
+  {
+    "name": "es-define-property",
+    "version": "1.0.0",
+    "size_bytes": 11798,
+    "last_used": "2024-06-01T23:23:48.346509355Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/es-define-property",
+    "stale": true
+  },
+  {
+    "name": "wrap-ansi",
+    "version": "8.1.0",
+    "size_bytes": 11777,
+    "last_used": "2025-01-20T01:11:38.325271286Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/wrap-ansi",
+    "stale": true
+  },
+  {
+    "name": "mixin-object",
+    "version": "2.0.1",
+    "size_bytes": 11669,
+    "last_used": "2024-06-01T23:23:50.254822495Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/mixin-object",
+    "stale": true
+  },
+  {
+    "name": "ask-when",
+    "version": "0.1.7",
+    "size_bytes": 11659,
+    "last_used": "2024-06-01T23:23:50.137902090Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ask-when",
+    "stale": true
+  },
+  {
+    "name": "base-routes",
+    "version": "0.2.2",
+    "size_bytes": 11656,
+    "last_used": "2024-06-01T23:23:48.597602510Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-routes",
+    "stale": true
+  },
+  {
+    "name": "defaults-deep",
+    "version": "0.2.4",
+    "size_bytes": 11570,
+    "last_used": "2024-06-01T23:23:50.456044037Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/defaults-deep",
+    "stale": true
+  },
+  {
+    "name": "generate-data",
+    "version": "0.1.8",
+    "size_bytes": 11564,
+    "last_used": "2024-06-01T23:23:49.344375640Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/generate-data",
+    "stale": true
+  },
+  {
+    "name": "is-unc-path",
+    "version": "0.1.2",
+    "size_bytes": 11451,
+    "last_used": "2024-06-01T23:23:49.026786318Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-unc-path",
+    "stale": true
+  },
+  {
+    "name": "convert-source-map",
+    "version": "1.9.0",
+    "size_bytes": 11434,
+    "last_used": "2024-06-01T23:23:48.228157990Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/convert-source-map",
+    "stale": true
+  },
+  {
+    "name": "clone",
+    "version": "1.0.4",
+    "size_bytes": 11132,
+    "last_used": "2025-07-08T20:55:06.728356873Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/clone",
+    "stale": true
+  },
+  {
+    "name": "brace-expansion",
+    "version": "1.1.12",
+    "size_bytes": 11107,
+    "last_used": "2025-07-08T20:55:06.712881064Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/brace-expansion",
+    "stale": true
+  },
+  {
+    "name": "load-helpers",
+    "version": "0.3.1",
+    "size_bytes": 11103,
+    "last_used": "2024-06-01T23:23:48.781233998Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/load-helpers",
+    "stale": true
+  },
+  {
+    "name": "brace-expansion",
+    "version": "1.1.11",
+    "size_bytes": 11059,
+    "last_used": "2024-06-01T23:23:48.228714948Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/brace-expansion",
+    "stale": true
+  },
+  {
+    "name": "text-table",
+    "version": "0.2.0",
+    "size_bytes": 11014,
+    "last_used": "2024-06-01T23:23:48.428233780Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/text-table",
+    "stale": true
+  },
+  {
+    "name": "lazy-cache",
+    "version": "2.0.2",
+    "size_bytes": 10958,
+    "last_used": "2024-06-01T23:23:49.694520356Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lazy-cache",
+    "stale": true
+  },
+  {
+    "name": "isexe",
+    "version": "2.0.0",
+    "size_bytes": 10956,
+    "last_used": "2025-07-08T20:55:06.749801397Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/isexe",
+    "stale": true
+  },
+  {
+    "name": "isexe",
+    "version": "2.0.0",
+    "size_bytes": 10956,
+    "last_used": "2024-06-01T23:23:48.283483316Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/isexe",
+    "stale": true
+  },
+  {
+    "name": "has-property-descriptors",
+    "version": "1.0.2",
+    "size_bytes": 10911,
+    "last_used": "2024-06-01T23:23:48.346372230Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/has-property-descriptors",
+    "stale": true
+  },
+  {
+    "name": "is-answer",
+    "version": "0.1.1",
+    "size_bytes": 10867,
+    "last_used": "2024-06-01T23:23:50.876851631Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-answer",
+    "stale": true
+  },
+  {
+    "name": "textextensions",
+    "version": "1.0.2",
+    "size_bytes": 10789,
+    "last_used": "2024-06-01T23:23:48.997483008Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/textextensions",
+    "stale": true
+  },
+  {
+    "name": "yoctocolors-cjs",
+    "version": "2.1.2",
+    "size_bytes": 10694,
+    "last_used": "2025-07-08T20:55:06.766213716Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/yoctocolors-cjs",
+    "stale": true
+  },
+  {
+    "name": "bytes",
+    "version": "2.5.0",
+    "size_bytes": 10600,
+    "last_used": "2024-06-01T23:23:49.548986641Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/bytes",
+    "stale": true
+  },
+  {
+    "name": "omit-empty",
+    "version": "0.4.1",
+    "size_bytes": 10433,
+    "last_used": "2024-06-01T23:23:50.497276562Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/omit-empty",
+    "stale": true
+  },
+  {
+    "name": "json-parse-even-better-errors",
+    "version": "2.3.1",
+    "size_bytes": 10426,
+    "last_used": "2025-07-08T20:55:06.720451266Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/json-parse-even-better-errors",
+    "stale": true
+  },
+  {
+    "name": "assemble-handle",
+    "version": "0.1.4",
+    "size_bytes": 10409,
+    "last_used": "2024-06-01T23:23:49.605336551Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/assemble-handle",
+    "stale": true
+  },
+  {
+    "name": "flagged-respawn",
+    "version": "1.0.1",
+    "size_bytes": 10361,
+    "last_used": "2024-06-01T23:23:48.998208758Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/flagged-respawn",
+    "stale": true
+  },
+  {
+    "name": "set-value",
+    "version": "2.0.1",
+    "size_bytes": 10322,
+    "last_used": "2024-06-01T23:23:49.445408286Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/set-value",
+    "stale": true
+  },
+  {
+    "name": "mute-stream",
+    "version": "0.0.5",
+    "size_bytes": 10293,
+    "last_used": "2024-06-01T23:23:48.689026941Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/mute-stream",
+    "stale": true
+  },
+  {
+    "name": "is-valid-instance",
+    "version": "0.2.0",
+    "size_bytes": 10273,
+    "last_used": "2024-06-01T23:23:50.812613716Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-valid-instance",
+    "stale": true
+  },
+  {
+    "name": "generate-defaults",
+    "version": "0.6.6",
+    "size_bytes": 10215,
+    "last_used": "2024-06-01T23:23:49.961127688Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/generate-defaults",
+    "stale": true
+  },
+  {
+    "name": "binaryextensions",
+    "version": "1.0.1",
+    "size_bytes": 10173,
+    "last_used": "2024-06-01T23:23:48.997538883Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/binaryextensions",
+    "stale": true
+  },
+  {
+    "name": "middleware-utils",
+    "version": "0.3.1",
+    "size_bytes": 10134,
+    "last_used": "2024-06-01T23:23:49.347755809Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/middleware-utils",
+    "stale": true
+  },
+  {
+    "name": "which",
+    "version": "2.0.2",
+    "size_bytes": 9975,
+    "last_used": "2025-07-08T20:55:06.736276355Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/which",
+    "stale": true
+  },
+  {
+    "name": "signal-exit",
+    "version": "3.0.7",
+    "size_bytes": 9958,
+    "last_used": "2025-01-20T01:11:38.325035284Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/signal-exit",
+    "stale": true
+  },
+  {
+    "name": "signal-exit",
+    "version": "3.0.7",
+    "size_bytes": 9958,
+    "last_used": "2024-06-01T23:23:48.235806078Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/signal-exit",
+    "stale": true
+  },
+  {
+    "name": "fragment-cache",
+    "version": "0.2.1",
+    "size_bytes": 9905,
+    "last_used": "2024-06-01T23:23:48.250305170Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/fragment-cache",
+    "stale": true
+  },
+  {
+    "name": "regex-cache",
+    "version": "0.4.4",
+    "size_bytes": 9879,
+    "last_used": "2024-06-01T23:23:48.824163608Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/regex-cache",
+    "stale": true
+  },
+  {
+    "name": "chrome-trace-event",
+    "version": "1.0.4",
+    "size_bytes": 9806,
+    "last_used": "2025-07-08T20:55:06.734591704Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/chrome-trace-event",
+    "stale": true
+  },
+  {
+    "name": "through2",
+    "version": "2.0.5",
+    "size_bytes": 9649,
+    "last_used": "2024-06-01T23:23:49.678536179Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/through2",
+    "stale": true
+  },
+  {
+    "name": "strip-ansi",
+    "version": "6.0.1",
+    "size_bytes": 9638,
+    "last_used": "2025-07-08T20:55:06.725883082Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/strip-ansi-cjs",
+    "stale": true
+  },
+  {
+    "name": "base64-js",
+    "version": "1.5.1",
+    "size_bytes": 9624,
+    "last_used": "2025-07-08T20:55:06.728871731Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/base64-js",
+    "stale": true
+  },
+  {
+    "name": "preserve",
+    "version": "0.2.0",
+    "size_bytes": 9424,
+    "last_used": "2024-06-01T23:23:48.809667433Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/preserve",
+    "stale": true
+  },
+  {
+    "name": "which",
+    "version": "1.3.1",
+    "size_bytes": 9419,
+    "last_used": "2024-06-01T23:23:48.258091258Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/which",
+    "stale": true
+  },
+  {
+    "name": "lodash.keys",
+    "version": "3.1.2",
+    "size_bytes": 9409,
+    "last_used": "2024-06-01T23:23:48.948194227Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.keys",
+    "stale": true
+  },
+  {
+    "name": "color-name",
+    "version": "1.1.3",
+    "size_bytes": 9360,
+    "last_used": "2024-06-01T23:23:48.256583257Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/color-name",
+    "stale": true
+  },
+  {
+    "name": "expand-brackets",
+    "version": "0.1.5",
+    "size_bytes": 9329,
+    "last_used": "2024-06-01T23:23:48.834927282Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/expand-brackets",
+    "stale": true
+  },
+  {
+    "name": "ini",
+    "version": "1.3.8",
+    "size_bytes": 9304,
+    "last_used": "2024-06-01T23:23:49.089535815Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ini",
+    "stale": true
+  },
+  {
+    "name": "resolve-dir",
+    "version": "0.1.1",
+    "size_bytes": 9202,
+    "last_used": "2024-06-01T23:23:50.533915709Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/resolve-dir",
+    "stale": true
+  },
+  {
+    "name": "deep-extend",
+    "version": "0.6.0",
+    "size_bytes": 9190,
+    "last_used": "2024-06-01T23:23:48.432999117Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/deep-extend",
+    "stale": true
+  },
+  {
+    "name": "supports-preserve-symlinks-flag",
+    "version": "1.0.0",
+    "size_bytes": 9178,
+    "last_used": "2024-06-01T23:23:48.342023810Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/supports-preserve-symlinks-flag",
+    "stale": true
+  },
+  {
+    "name": "repeat-string",
+    "version": "1.6.1",
+    "size_bytes": 9089,
+    "last_used": "2025-07-08T20:55:06.714193269Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/repeat-string",
+    "stale": true
+  },
+  {
+    "name": "repeat-string",
+    "version": "1.6.1",
+    "size_bytes": 9089,
+    "last_used": "2024-06-01T23:23:48.782510208Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/repeat-string",
+    "stale": true
+  },
+  {
+    "name": "error-ex",
+    "version": "1.3.2",
+    "size_bytes": 9035,
+    "last_used": "2025-07-08T20:55:06.711446154Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/error-ex",
+    "stale": true
+  },
+  {
+    "name": "lodash.isarguments",
+    "version": "3.1.0",
+    "size_bytes": 8909,
+    "last_used": "2024-06-01T23:23:48.921414877Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.isarguments",
+    "stale": true
+  },
+  {
+    "name": "align-text",
+    "version": "0.1.4",
+    "size_bytes": 8828,
+    "last_used": "2024-06-01T23:23:48.592921965Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/align-text",
+    "stale": true
+  },
+  {
+    "name": "figures",
+    "version": "1.7.0",
+    "size_bytes": 8827,
+    "last_used": "2024-06-01T23:23:49.046736080Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/figures",
+    "stale": true
+  },
+  {
+    "name": "resolve-url",
+    "version": "0.2.1",
+    "size_bytes": 8771,
+    "last_used": "2024-06-01T23:23:48.284914525Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/resolve-url",
+    "stale": true
+  },
+  {
+    "name": "hasown",
+    "version": "2.0.2",
+    "size_bytes": 8765,
+    "last_used": "2024-06-01T23:23:48.326288842Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/hasown",
+    "stale": true
+  },
+  {
+    "name": "rechoir",
+    "version": "0.6.2",
+    "size_bytes": 8707,
+    "last_used": "2024-06-01T23:23:48.992425713Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/rechoir",
+    "stale": true
+  },
+  {
+    "name": "fined",
+    "version": "1.2.0",
+    "size_bytes": 8659,
+    "last_used": "2024-06-01T23:23:48.996883549Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/fined",
+    "stale": true
+  },
+  {
+    "name": "detect-file",
+    "version": "1.0.0",
+    "size_bytes": 8626,
+    "last_used": "2024-06-01T23:23:48.988498961Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/detect-file",
+    "stale": true
+  },
+  {
+    "name": "is-glob",
+    "version": "3.1.0",
+    "size_bytes": 8593,
+    "last_used": "2024-06-01T23:23:49.262798464Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-glob",
+    "stale": true
+  },
+  {
+    "name": "time-stamp",
+    "version": "1.1.0",
+    "size_bytes": 8577,
+    "last_used": "2024-06-01T23:23:48.974242702Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/time-stamp",
+    "stale": true
+  },
+  {
+    "name": "map-visit",
+    "version": "1.0.0",
+    "size_bytes": 8469,
+    "last_used": "2024-06-01T23:23:49.306325658Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/map-visit",
+    "stale": true
+  },
+  {
+    "name": "merge-deep",
+    "version": "3.0.3",
+    "size_bytes": 8465,
+    "last_used": "2024-06-01T23:23:49.393785045Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/merge-deep",
+    "stale": true
+  },
+  {
+    "name": "normalize-path",
+    "version": "2.1.1",
+    "size_bytes": 8461,
+    "last_used": "2024-06-01T23:23:48.822472649Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/normalize-path",
+    "stale": true
+  },
+  {
+    "name": "find-file-up",
+    "version": "0.1.3",
+    "size_bytes": 8380,
+    "last_used": "2024-06-01T23:23:48.961424069Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/find-file-up",
+    "stale": true
+  },
+  {
+    "name": "base-cli",
+    "version": "0.5.0",
+    "size_bytes": 8367,
+    "last_used": "2024-06-01T23:23:49.396637630Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/base-cli",
+    "stale": true
+  },
+  {
+    "name": "get-view",
+    "version": "0.1.3",
+    "size_bytes": 8306,
+    "last_used": "2024-06-01T23:23:48.565496281Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/get-view",
+    "stale": true
+  },
+  {
+    "name": "pseudomap",
+    "version": "1.0.2",
+    "size_bytes": 8212,
+    "last_used": "2024-06-01T23:23:48.257970883Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/pseudomap",
+    "stale": true
+  },
+  {
+    "name": "is-number",
+    "version": "4.0.0",
+    "size_bytes": 8146,
+    "last_used": "2024-06-01T23:23:49.230667277Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-number",
+    "stale": true
+  },
+  {
+    "name": "lodash._baseeach",
+    "version": "3.0.4",
+    "size_bytes": 8071,
+    "last_used": "2024-06-01T23:23:48.951373646Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash._baseeach",
+    "stale": true
+  },
+  {
+    "name": "homedir-polyfill",
+    "version": "1.0.3",
+    "size_bytes": 8052,
+    "last_used": "2024-06-01T23:23:49.089838648Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/homedir-polyfill",
+    "stale": true
+  },
+  {
+    "name": "log-update",
+    "version": "5.0.1",
+    "size_bytes": 8038,
+    "last_used": "2025-01-20T01:11:38.428303281Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/log-update",
+    "stale": true
+  },
+  {
+    "name": "project-name",
+    "version": "0.2.6",
+    "size_bytes": 8032,
+    "last_used": "2024-06-01T23:23:49.341298138Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/project-name",
+    "stale": true
+  },
+  {
+    "name": "to-choices",
+    "version": "0.2.0",
+    "size_bytes": 8024,
+    "last_used": "2024-06-01T23:23:48.717586834Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/to-choices",
+    "stale": true
+  },
+  {
+    "name": "object.omit",
+    "version": "2.0.1",
+    "size_bytes": 7919,
+    "last_used": "2024-06-01T23:23:49.104528824Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/object.omit",
+    "stale": true
+  },
+  {
+    "name": "global-prefix",
+    "version": "0.1.5",
+    "size_bytes": 7914,
+    "last_used": "2024-06-01T23:23:49.089511857Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/global-prefix",
+    "stale": true
+  },
+  {
+    "name": "expand-range",
+    "version": "1.8.2",
+    "size_bytes": 7888,
+    "last_used": "2024-06-01T23:23:48.816695396Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/expand-range",
+    "stale": true
+  },
+  {
+    "name": "get-stream",
+    "version": "3.0.0",
+    "size_bytes": 7880,
+    "last_used": "2024-06-01T23:23:48.235823619Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/get-stream",
+    "stale": true
+  },
+  {
+    "name": "has-glob",
+    "version": "1.0.0",
+    "size_bytes": 7860,
+    "last_used": "2024-06-01T23:23:49.481265307Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/has-glob",
+    "stale": true
+  },
+  {
+    "name": "lodash.isarray",
+    "version": "3.0.4",
+    "size_bytes": 7857,
+    "last_used": "2024-06-01T23:23:48.949249020Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.isarray",
+    "stale": true
+  },
+  {
+    "name": "tree-kill",
+    "version": "1.2.2",
+    "size_bytes": 7816,
+    "last_used": "2025-07-08T20:55:06.731663594Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/tree-kill",
+    "stale": true
+  },
+  {
+    "name": "is-absolute",
+    "version": "0.2.6",
+    "size_bytes": 7738,
+    "last_used": "2024-06-01T23:23:49.504155071Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-absolute",
+    "stale": true
+  },
+  {
+    "name": "remote-origin-url",
+    "version": "0.5.3",
+    "size_bytes": 7732,
+    "last_used": "2024-06-01T23:23:48.717563376Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/remote-origin-url",
+    "stale": true
+  },
+  {
+    "name": "gopd",
+    "version": "1.0.1",
+    "size_bytes": 7703,
+    "last_used": "2024-06-01T23:23:48.282964649Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/gopd",
+    "stale": true
+  },
+  {
+    "name": "mkdirp",
+    "version": "0.5.6",
+    "size_bytes": 7688,
+    "last_used": "2024-06-01T23:23:49.196120923Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/mkdirp",
+    "stale": true
+  },
+  {
+    "name": "source-map-url",
+    "version": "0.4.1",
+    "size_bytes": 7658,
+    "last_used": "2024-06-01T23:23:48.238185913Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/source-map-url",
+    "stale": true
+  },
+  {
+    "name": "has-value",
+    "version": "1.0.0",
+    "size_bytes": 7617,
+    "last_used": "2024-06-01T23:23:49.463407172Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/has-value",
+    "stale": true
+  },
+  {
+    "name": "map-cache",
+    "version": "0.2.2",
+    "size_bytes": 7598,
+    "last_used": "2024-06-01T23:23:48.781350457Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/map-cache",
+    "stale": true
+  },
+  {
+    "name": "is-plain-object",
+    "version": "2.0.4",
+    "size_bytes": 7503,
+    "last_used": "2024-06-01T23:23:49.306632116Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-plain-object",
+    "stale": true
+  },
+  {
+    "name": "acorn-import-phases",
+    "version": "1.0.4",
+    "size_bytes": 7462,
+    "last_used": "2025-08-02T13:43:56.934483625Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/acorn-import-phases",
+    "stale": true
+  },
+  {
+    "name": "lodash.istypedarray",
+    "version": "3.0.6",
+    "size_bytes": 7455,
+    "last_used": "2024-06-01T23:23:48.925288255Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.istypedarray",
+    "stale": true
+  },
+  {
+    "name": "isbinaryfile",
+    "version": "3.0.3",
+    "size_bytes": 7437,
+    "last_used": "2024-06-01T23:23:49.116112540Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/isbinaryfile",
+    "stale": true
+  },
+  {
+    "name": "set-getter",
+    "version": "0.1.1",
+    "size_bytes": 7420,
+    "last_used": "2024-06-01T23:23:49.104508657Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/set-getter",
+    "stale": true
+  },
+  {
+    "name": "ansi-escapes",
+    "version": "1.4.0",
+    "size_bytes": 7415,
+    "last_used": "2024-06-01T23:23:49.089496398Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-escapes",
+    "stale": true
+  },
+  {
+    "name": "namify",
+    "version": "0.1.3",
+    "size_bytes": 7335,
+    "last_used": "2024-06-01T23:23:49.308889368Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/namify",
+    "stale": true
+  },
+  {
+    "name": "is-valid-app",
+    "version": "0.2.1",
+    "size_bytes": 7110,
+    "last_used": "2024-06-01T23:23:49.619465226Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-valid-app",
+    "stale": true
+  },
+  {
+    "name": "pify",
+    "version": "3.0.0",
+    "size_bytes": 7046,
+    "last_used": "2024-06-01T23:23:48.705453451Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/pify",
+    "stale": true
+  },
+  {
+    "name": "supports-color",
+    "version": "7.2.0",
+    "size_bytes": 7035,
+    "last_used": "2025-01-20T01:11:38.324783072Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/supports-color",
+    "stale": true
+  },
+  {
+    "name": "supports-color",
+    "version": "7.2.0",
+    "size_bytes": 7035,
+    "last_used": "2025-07-08T20:55:06.722323369Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/supports-color",
+    "stale": true
+  },
+  {
+    "name": "supports-color",
+    "version": "7.2.0",
+    "size_bytes": 7035,
+    "last_used": "2024-08-29T16:26:32.653051812Z",
+    "path": "/Users/dantelex/.npm/_npx/17fe7e21360f26cd/node_modules/supports-color",
+    "stale": true
+  },
+  {
+    "name": "is-binary-buffer",
+    "version": "1.0.0",
+    "size_bytes": 6998,
+    "last_used": "2024-06-01T23:23:49.154474772Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-binary-buffer",
+    "stale": true
+  },
+  {
+    "name": "posix-character-classes",
+    "version": "0.1.1",
+    "size_bytes": 6970,
+    "last_used": "2024-06-01T23:23:48.230628366Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/posix-character-classes",
+    "stale": true
+  },
+  {
+    "name": "configstore",
+    "version": "3.1.5",
+    "size_bytes": 6943,
+    "last_used": "2024-06-01T23:23:48.476480809Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/configstore",
+    "stale": true
+  },
+  {
+    "name": "write",
+    "version": "0.2.1",
+    "size_bytes": 6940,
+    "last_used": "2024-06-01T23:23:48.259559634Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/write",
+    "stale": true
+  },
+  {
+    "name": "balanced-match",
+    "version": "1.0.2",
+    "size_bytes": 6939,
+    "last_used": "2025-07-08T20:55:06.729276925Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/balanced-match",
+    "stale": true
+  },
+  {
+    "name": "balanced-match",
+    "version": "1.0.2",
+    "size_bytes": 6939,
+    "last_used": "2024-06-01T23:23:48.246676834Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/balanced-match",
+    "stale": true
+  },
+  {
+    "name": "isobject",
+    "version": "3.0.1",
+    "size_bytes": 6932,
+    "last_used": "2024-06-01T23:23:49.703654903Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/isobject",
+    "stale": true
+  },
+  {
+    "name": "supports-hyperlinks",
+    "version": "2.3.0",
+    "size_bytes": 6927,
+    "last_used": "2025-01-20T01:11:38.324990242Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/supports-hyperlinks",
+    "stale": true
+  },
+  {
+    "name": "arr-flatten",
+    "version": "1.1.0",
+    "size_bytes": 6876,
+    "last_used": "2024-06-01T23:23:49.472583635Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/arr-flatten",
+    "stale": true
+  },
+  {
+    "name": "ansi-align",
+    "version": "2.0.0",
+    "size_bytes": 6853,
+    "last_used": "2024-06-01T23:23:48.471168515Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-align",
+    "stale": true
+  },
+  {
+    "name": "collection-visit",
+    "version": "1.0.0",
+    "size_bytes": 6848,
+    "last_used": "2024-06-01T23:23:49.331116465Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/collection-visit",
+    "stale": true
+  },
+  {
+    "name": "union-value",
+    "version": "1.0.1",
+    "size_bytes": 6835,
+    "last_used": "2024-06-01T23:23:49.463444089Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/union-value",
+    "stale": true
+  },
+  {
+    "name": "ieee754",
+    "version": "1.2.1",
+    "size_bytes": 6796,
+    "last_used": "2025-07-08T20:55:06.720023572Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/ieee754",
+    "stale": true
+  },
+  {
+    "name": "sisteransi",
+    "version": "1.0.5",
+    "size_bytes": 6791,
+    "last_used": "2025-01-20T01:11:38.325880001Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/sisteransi",
+    "stale": true
+  },
+  {
+    "name": "git-config-path",
+    "version": "1.0.1",
+    "size_bytes": 6769,
+    "last_used": "2024-06-01T23:23:48.743291350Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/git-config-path",
+    "stale": true
+  },
+  {
+    "name": "define-property",
+    "version": "1.0.0",
+    "size_bytes": 6745,
+    "last_used": "2024-06-01T23:23:49.743955095Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/define-property",
+    "stale": true
+  },
+  {
+    "name": "object-visit",
+    "version": "1.0.1",
+    "size_bytes": 6699,
+    "last_used": "2024-06-01T23:23:49.305962407Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/object-visit",
+    "stale": true
+  },
+  {
+    "name": "color-name",
+    "version": "1.1.4",
+    "size_bytes": 6693,
+    "last_used": "2025-07-08T20:55:06.714014984Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/color-name",
+    "stale": true
+  },
+  {
+    "name": "color-name",
+    "version": "1.1.4",
+    "size_bytes": 6693,
+    "last_used": "2024-08-29T16:26:32.640439052Z",
+    "path": "/Users/dantelex/.npm/_npx/17fe7e21360f26cd/node_modules/color-name",
+    "stale": true
+  },
+  {
+    "name": "arr-union",
+    "version": "3.1.0",
+    "size_bytes": 6656,
+    "last_used": "2024-06-01T23:23:49.409052263Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/arr-union",
+    "stale": true
+  },
+  {
+    "name": "file-is-binary",
+    "version": "1.0.0",
+    "size_bytes": 6644,
+    "last_used": "2024-06-01T23:23:49.596471087Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/file-is-binary",
+    "stale": true
+  },
+  {
+    "name": "array-last",
+    "version": "1.3.0",
+    "size_bytes": 6643,
+    "last_used": "2024-06-01T23:23:49.231094819Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/array-last",
+    "stale": true
+  },
+  {
+    "name": "reduce-object",
+    "version": "0.1.3",
+    "size_bytes": 6597,
+    "last_used": "2024-06-01T23:23:48.781212707Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/reduce-object",
+    "stale": true
+  },
+  {
+    "name": "is-dotfile",
+    "version": "1.0.3",
+    "size_bytes": 6595,
+    "last_used": "2024-06-01T23:23:48.727438840Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-dotfile",
+    "stale": true
+  },
+  {
+    "name": "expand-tilde",
+    "version": "2.0.2",
+    "size_bytes": 6595,
+    "last_used": "2024-06-01T23:23:48.978052579Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/expand-tilde",
+    "stale": true
+  },
+  {
+    "name": "get-them-args",
+    "version": "1.3.2",
+    "size_bytes": 6583,
+    "last_used": "2024-01-09T14:48:23.062885974Z",
+    "path": "/Users/dantelex/.npm/_npx/bd296a660a54852e/node_modules/get-them-args",
+    "stale": true
+  },
+  {
+    "name": "make-dir",
+    "version": "1.3.0",
+    "size_bytes": 6525,
+    "last_used": "2024-06-01T23:23:48.440704246Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/make-dir",
+    "stale": true
+  },
+  {
+    "name": "mute-stream",
+    "version": "2.0.0",
+    "size_bytes": 6498,
+    "last_used": "2025-07-08T20:55:06.766551830Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/mute-stream",
+    "stale": true
+  },
+  {
+    "name": "lodash._getnative",
+    "version": "3.9.1",
+    "size_bytes": 6488,
+    "last_used": "2024-06-01T23:23:48.921432961Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash._getnative",
+    "stale": true
+  },
+  {
+    "name": "for-own",
+    "version": "0.1.5",
+    "size_bytes": 6473,
+    "last_used": "2024-06-01T23:23:49.307003867Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/for-own",
+    "stale": true
+  },
+  {
+    "name": "stream-exhaust",
+    "version": "1.0.2",
+    "size_bytes": 6473,
+    "last_used": "2024-06-01T23:23:49.213276933Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/stream-exhaust",
+    "stale": true
+  },
+  {
+    "name": "xtend",
+    "version": "4.0.2",
+    "size_bytes": 6465,
+    "last_used": "2024-06-01T23:23:48.257537633Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/xtend",
+    "stale": true
+  },
+  {
+    "name": "slice-ansi",
+    "version": "5.0.0",
+    "size_bytes": 6412,
+    "last_used": "2025-01-20T01:11:38.324534736Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/slice-ansi",
+    "stale": true
+  },
+  {
+    "name": "picocolors",
+    "version": "1.1.1",
+    "size_bytes": 6373,
+    "last_used": "2025-07-08T20:55:06.736604885Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/picocolors",
+    "stale": true
+  },
+  {
+    "name": "randombytes",
+    "version": "2.1.0",
+    "size_bytes": 6363,
+    "last_used": "2025-07-08T20:55:06.738954389Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/randombytes",
+    "stale": true
+  },
+  {
+    "name": "object.pick",
+    "version": "1.3.0",
+    "size_bytes": 6362,
+    "last_used": "2024-06-01T23:23:49.418788644Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/object.pick",
+    "stale": true
+  },
+  {
+    "name": "dot-prop",
+    "version": "4.2.1",
+    "size_bytes": 6350,
+    "last_used": "2024-06-01T23:23:48.471141514Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/dot-prop",
+    "stale": true
+  },
+  {
+    "name": "callsites",
+    "version": "3.1.0",
+    "size_bytes": 6332,
+    "last_used": "2025-07-08T20:55:06.719974782Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/callsites",
+    "stale": true
+  },
+  {
+    "name": "parse-author",
+    "version": "1.0.0",
+    "size_bytes": 6321,
+    "last_used": "2024-06-01T23:23:49.193958838Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/parse-author",
+    "stale": true
+  },
+  {
+    "name": "terminal-link",
+    "version": "3.0.0",
+    "size_bytes": 6312,
+    "last_used": "2025-01-20T01:11:38.334030052Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/terminal-link",
+    "stale": true
+  },
+  {
+    "name": "arr-map",
+    "version": "2.0.2",
+    "size_bytes": 6310,
+    "last_used": "2024-06-01T23:23:49.301827655Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/arr-map",
+    "stale": true
+  },
+  {
+    "name": "component-emitter",
+    "version": "1.3.1",
+    "size_bytes": 6305,
+    "last_used": "2024-06-01T23:23:48.229257032Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/component-emitter",
+    "stale": true
+  },
+  {
+    "name": "for-in",
+    "version": "1.0.2",
+    "size_bytes": 6284,
+    "last_used": "2024-06-01T23:23:49.141228222Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/for-in",
+    "stale": true
+  },
+  {
+    "name": "ms",
+    "version": "2.0.0",
+    "size_bytes": 6266,
+    "last_used": "2024-06-01T23:23:48.229124532Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ms",
+    "stale": true
+  },
+  {
+    "name": "path-dirname",
+    "version": "1.0.2",
+    "size_bytes": 6264,
+    "last_used": "2024-06-01T23:23:48.961380110Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/path-dirname",
+    "stale": true
+  },
+  {
+    "name": "array-slice",
+    "version": "1.1.0",
+    "size_bytes": 6256,
+    "last_used": "2024-06-01T23:23:49.230616652Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/array-slice",
+    "stale": true
+  },
+  {
+    "name": "end-of-stream",
+    "version": "1.4.4",
+    "size_bytes": 6234,
+    "last_used": "2024-06-01T23:23:49.230755444Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/end-of-stream",
+    "stale": true
+  },
+  {
+    "name": "lodash.where",
+    "version": "3.1.0",
+    "size_bytes": 6218,
+    "last_used": "2024-06-01T23:23:49.088231606Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.where",
+    "stale": true
+  },
+  {
+    "name": "is-extglob",
+    "version": "2.1.1",
+    "size_bytes": 6217,
+    "last_used": "2024-06-01T23:23:48.229051740Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-extglob",
+    "stale": true
+  },
+  {
+    "name": "onetime",
+    "version": "5.1.2",
+    "size_bytes": 6173,
+    "last_used": "2025-01-20T01:11:38.325053367Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/onetime",
+    "stale": true
+  },
+  {
+    "name": "onetime",
+    "version": "5.1.2",
+    "size_bytes": 6173,
+    "last_used": "2025-07-08T20:55:06.719911284Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/onetime",
+    "stale": true
+  },
+  {
+    "name": "log-utils",
+    "version": "0.2.1",
+    "size_bytes": 6170,
+    "last_used": "2024-06-01T23:23:49.685260475Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/log-utils",
+    "stale": true
+  },
+  {
+    "name": "array-each",
+    "version": "1.0.1",
+    "size_bytes": 6165,
+    "last_used": "2024-06-01T23:23:49.257118169Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/array-each",
+    "stale": true
+  },
+  {
+    "name": "arr-filter",
+    "version": "1.1.2",
+    "size_bytes": 6146,
+    "last_used": "2024-06-01T23:23:49.262731547Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/arr-filter",
+    "stale": true
+  },
+  {
+    "name": "async-array-reduce",
+    "version": "0.2.1",
+    "size_bytes": 6132,
+    "last_used": "2024-06-01T23:23:49.565407026Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/async-array-reduce",
+    "stale": true
+  },
+  {
+    "name": "decode-uri-component",
+    "version": "0.2.2",
+    "size_bytes": 6093,
+    "last_used": "2024-06-01T23:23:48.229747074Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/decode-uri-component",
+    "stale": true
+  },
+  {
+    "name": "copy-task",
+    "version": "0.1.0",
+    "size_bytes": 6074,
+    "last_used": "2024-06-01T23:23:49.465748715Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/copy-task",
+    "stale": true
+  },
+  {
+    "name": "glob-parent",
+    "version": "3.1.0",
+    "size_bytes": 6040,
+    "last_used": "2024-06-01T23:23:48.954660564Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/glob-parent",
+    "stale": true
+  },
+  {
+    "name": "fs-exists-sync",
+    "version": "0.1.0",
+    "size_bytes": 6019,
+    "last_used": "2024-06-01T23:23:49.577551325Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/fs-exists-sync",
+    "stale": true
+  },
+  {
+    "name": "min-request",
+    "version": "1.4.1",
+    "size_bytes": 6004,
+    "last_used": "2024-06-01T23:23:49.671304967Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/min-request",
+    "stale": true
+  },
+  {
+    "name": "parse-passwd",
+    "version": "1.0.0",
+    "size_bytes": 5957,
+    "last_used": "2024-06-01T23:23:49.089287023Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/parse-passwd",
+    "stale": true
+  },
+  {
+    "name": "is-generator",
+    "version": "1.0.3",
+    "size_bytes": 5939,
+    "last_used": "2024-06-01T23:23:49.264817424Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-generator",
+    "stale": true
+  },
+  {
+    "name": "engine-utils",
+    "version": "0.1.1",
+    "size_bytes": 5910,
+    "last_used": "2024-06-01T23:23:49.105023491Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/engine-utils",
+    "stale": true
+  },
+  {
+    "name": "safe-regex",
+    "version": "1.1.0",
+    "size_bytes": 5870,
+    "last_used": "2024-06-01T23:23:48.343585853Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/safe-regex",
+    "stale": true
+  },
+  {
+    "name": "cwd",
+    "version": "0.9.1",
+    "size_bytes": 5866,
+    "last_used": "2024-06-01T23:23:48.727392715Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/cwd",
+    "stale": true
+  },
+  {
+    "name": "global-dirs",
+    "version": "0.1.1",
+    "size_bytes": 5857,
+    "last_used": "2024-06-01T23:23:48.440647705Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/global-dirs",
+    "stale": true
+  },
+  {
+    "name": "package-json",
+    "version": "4.0.1",
+    "size_bytes": 5846,
+    "last_used": "2024-06-01T23:23:48.440666496Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/package-json",
+    "stale": true
+  },
+  {
+    "name": "assign-symbols",
+    "version": "0.1.1",
+    "size_bytes": 5843,
+    "last_used": "2024-06-01T23:23:49.090634566Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/assign-symbols",
+    "stale": true
+  },
+  {
+    "name": "is-posix-bracket",
+    "version": "0.1.1",
+    "size_bytes": 5836,
+    "last_used": "2024-06-01T23:23:48.807068390Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-posix-bracket",
+    "stale": true
+  },
+  {
+    "name": "deep-bind",
+    "version": "0.3.0",
+    "size_bytes": 5836,
+    "last_used": "2024-06-01T23:23:48.565461948Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/deep-bind",
+    "stale": true
+  },
+  {
+    "name": "readline2",
+    "version": "1.0.1",
+    "size_bytes": 5787,
+    "last_used": "2024-06-01T23:23:49.039996076Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/readline2",
+    "stale": true
+  },
+  {
+    "name": "reserved",
+    "version": "0.1.2",
+    "size_bytes": 5783,
+    "last_used": "2024-06-01T23:23:48.783845334Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/reserved",
+    "stale": true
+  },
+  {
+    "name": "string-width",
+    "version": "5.1.2",
+    "size_bytes": 5781,
+    "last_used": "2025-01-20T01:11:38.324605570Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/string-width",
+    "stale": true
+  },
+  {
+    "name": "ansis",
+    "version": "4.1.0",
+    "size_bytes": 5713,
+    "last_used": "2025-08-02T13:43:56.933585075Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/ansis",
+    "stale": true
+  },
+  {
+    "name": "duplexer3",
+    "version": "0.1.5",
+    "size_bytes": 5689,
+    "last_used": "2024-06-01T23:23:48.465111803Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/duplexer3",
+    "stale": true
+  },
+  {
+    "name": "async-settle",
+    "version": "1.0.0",
+    "size_bytes": 5659,
+    "last_used": "2024-06-01T23:23:49.230774569Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/async-settle",
+    "stale": true
+  },
+  {
+    "name": "is-equal-shallow",
+    "version": "0.1.3",
+    "size_bytes": 5589,
+    "last_used": "2024-06-01T23:23:48.659766590Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-equal-shallow",
+    "stale": true
+  },
+  {
+    "name": "lodash._basematches",
+    "version": "3.2.0",
+    "size_bytes": 5588,
+    "last_used": "2024-06-01T23:23:48.951679813Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash._basematches",
+    "stale": true
+  },
+  {
+    "name": "is-buffer",
+    "version": "1.1.6",
+    "size_bytes": 5575,
+    "last_used": "2024-06-01T23:23:49.156964398Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-buffer",
+    "stale": true
+  },
+  {
+    "name": "global-modules",
+    "version": "0.2.3",
+    "size_bytes": 5559,
+    "last_used": "2024-06-01T23:23:49.713628243Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/global-modules",
+    "stale": true
+  },
+  {
+    "name": "replace-ext",
+    "version": "1.0.1",
+    "size_bytes": 5520,
+    "last_used": "2024-06-01T23:23:48.344048520Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/replace-ext",
+    "stale": true
+  },
+  {
+    "name": "next-tick",
+    "version": "0.2.2",
+    "size_bytes": 5519,
+    "last_used": "2024-06-01T23:23:48.284331024Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/next-tick",
+    "stale": true
+  },
+  {
+    "name": "object-assign",
+    "version": "4.1.1",
+    "size_bytes": 5493,
+    "last_used": "2024-06-01T23:23:48.229016407Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/object-assign",
+    "stale": true
+  },
+  {
+    "name": "stream-combiner",
+    "version": "0.2.2",
+    "size_bytes": 5491,
+    "last_used": "2024-06-01T23:23:49.579737951Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/stream-combiner",
+    "stale": true
+  },
+  {
+    "name": "util-deprecate",
+    "version": "1.0.2",
+    "size_bytes": 5481,
+    "last_used": "2025-07-08T20:55:06.728629572Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/util-deprecate",
+    "stale": true
+  },
+  {
+    "name": "util-deprecate",
+    "version": "1.0.2",
+    "size_bytes": 5481,
+    "last_used": "2024-06-01T23:23:48.246227709Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/util-deprecate",
+    "stale": true
+  },
+  {
+    "name": "src-stream",
+    "version": "0.1.1",
+    "size_bytes": 5479,
+    "last_used": "2024-06-01T23:23:49.548588474Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/src-stream",
+    "stale": true
+  },
+  {
+    "name": "lodash._baseismatch",
+    "version": "3.1.3",
+    "size_bytes": 5474,
+    "last_used": "2024-06-01T23:23:48.921533336Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash._baseismatch",
+    "stale": true
+  },
+  {
+    "name": "duplexer",
+    "version": "0.1.2",
+    "size_bytes": 5470,
+    "last_used": "2024-06-01T23:23:48.614649312Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/duplexer",
+    "stale": true
+  },
+  {
+    "name": "stringify-author",
+    "version": "0.1.3",
+    "size_bytes": 5438,
+    "last_used": "2024-06-01T23:23:48.781690415Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/stringify-author",
+    "stale": true
+  },
+  {
+    "name": "to-absolute-glob",
+    "version": "0.1.1",
+    "size_bytes": 5424,
+    "last_used": "2024-06-01T23:23:48.329570886Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/to-absolute-glob",
+    "stale": true
+  },
+  {
+    "name": "read-file",
+    "version": "0.2.0",
+    "size_bytes": 5420,
+    "last_used": "2024-06-01T23:23:49.453708874Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/read-file",
+    "stale": true
+  },
+  {
+    "name": "ansi-regex",
+    "version": "6.1.0",
+    "size_bytes": 5412,
+    "last_used": "2025-01-20T01:11:38.325016575Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/ansi-regex",
+    "stale": true
+  },
+  {
+    "name": "ansi-regex",
+    "version": "6.1.0",
+    "size_bytes": 5412,
+    "last_used": "2025-07-08T20:55:06.719702875Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/ansi-regex",
+    "stale": true
+  },
+  {
+    "name": "parse-json",
+    "version": "5.2.0",
+    "size_bytes": 5409,
+    "last_used": "2025-07-08T20:55:06.713461461Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/parse-json",
+    "stale": true
+  },
+  {
+    "name": "path-type",
+    "version": "4.0.0",
+    "size_bytes": 5407,
+    "last_used": "2025-07-08T20:55:06.721917133Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/path-type",
+    "stale": true
+  },
+  {
+    "name": "path-root",
+    "version": "0.1.1",
+    "size_bytes": 5394,
+    "last_used": "2024-06-01T23:23:48.740196681Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/path-root",
+    "stale": true
+  },
+  {
+    "name": "repeat-element",
+    "version": "1.1.4",
+    "size_bytes": 5391,
+    "last_used": "2024-06-01T23:23:48.807099265Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/repeat-element",
+    "stale": true
+  },
+  {
+    "name": "lines-and-columns",
+    "version": "1.2.4",
+    "size_bytes": 5386,
+    "last_used": "2025-07-08T20:55:06.728810024Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/lines-and-columns",
+    "stale": true
+  },
+  {
+    "name": "load-pkg",
+    "version": "3.0.1",
+    "size_bytes": 5351,
+    "last_used": "2024-06-01T23:23:49.194307130Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/load-pkg",
+    "stale": true
+  },
+  {
+    "name": "arr-diff",
+    "version": "2.0.0",
+    "size_bytes": 5318,
+    "last_used": "2024-06-01T23:23:49.391232419Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/arr-diff",
+    "stale": true
+  },
+  {
+    "name": "pad-right",
+    "version": "0.2.2",
+    "size_bytes": 5316,
+    "last_used": "2024-06-01T23:23:49.392198711Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/pad-right",
+    "stale": true
+  },
+  {
+    "name": "run-async",
+    "version": "0.1.0",
+    "size_bytes": 5279,
+    "last_used": "2024-06-01T23:23:49.036419157Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/run-async",
+    "stale": true
+  },
+  {
+    "name": "is-valid-glob",
+    "version": "0.3.0",
+    "size_bytes": 5267,
+    "last_used": "2024-06-01T23:23:49.582782953Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-valid-glob",
+    "stale": true
+  },
+  {
+    "name": "is-fullwidth-code-point",
+    "version": "4.0.0",
+    "size_bytes": 5189,
+    "last_used": "2025-01-20T01:11:38.325059409Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/is-fullwidth-code-point",
+    "stale": true
+  },
+  {
+    "name": "has-own-deep",
+    "version": "0.1.4",
+    "size_bytes": 5118,
+    "last_used": "2024-06-01T23:23:49.194529505Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/has-own-deep",
+    "stale": true
+  },
+  {
+    "name": "contains-path",
+    "version": "0.1.0",
+    "size_bytes": 5104,
+    "last_used": "2024-06-01T23:23:49.437811864Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/contains-path",
+    "stale": true
+  },
+  {
+    "name": "is-extendable",
+    "version": "0.1.1",
+    "size_bytes": 5091,
+    "last_used": "2024-06-01T23:23:48.229145407Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-extendable",
+    "stale": true
+  },
+  {
+    "name": "to-object-path",
+    "version": "0.3.0",
+    "size_bytes": 5070,
+    "last_used": "2024-06-01T23:23:49.334585009Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/to-object-path",
+    "stale": true
+  },
+  {
+    "name": "strip-json-comments",
+    "version": "2.0.1",
+    "size_bytes": 5061,
+    "last_used": "2024-06-01T23:23:48.416323523Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/strip-json-comments",
+    "stale": true
+  },
+  {
+    "name": "buffer-from",
+    "version": "1.1.2",
+    "size_bytes": 5047,
+    "last_used": "2025-07-08T20:55:06.708010020Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/buffer-from",
+    "stale": true
+  },
+  {
+    "name": "lodash.restparam",
+    "version": "3.6.1",
+    "size_bytes": 5030,
+    "last_used": "2024-06-01T23:23:48.479970062Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.restparam",
+    "stale": true
+  },
+  {
+    "name": "is-fullwidth-code-point",
+    "version": "3.0.0",
+    "size_bytes": 4994,
+    "last_used": "2025-07-08T20:55:06.719431634Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/is-fullwidth-code-point",
+    "stale": true
+  },
+  {
+    "name": "core-util-is",
+    "version": "1.0.3",
+    "size_bytes": 4982,
+    "last_used": "2025-07-08T20:55:06.722948973Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/core-util-is",
+    "stale": true
+  },
+  {
+    "name": "core-util-is",
+    "version": "1.0.3",
+    "size_bytes": 4982,
+    "last_used": "2024-06-01T23:23:48.620902149Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/core-util-is",
+    "stale": true
+  },
+  {
+    "name": "ansi-strikethrough",
+    "version": "0.1.1",
+    "size_bytes": 4959,
+    "last_used": "2024-06-01T23:23:48.854021835Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-strikethrough",
+    "stale": true
+  },
+  {
+    "name": "write-json",
+    "version": "0.2.2",
+    "size_bytes": 4949,
+    "last_used": "2024-06-01T23:23:48.781247040Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/write-json",
+    "stale": true
+  },
+  {
+    "name": "sort-object-arrays",
+    "version": "0.1.1",
+    "size_bytes": 4948,
+    "last_used": "2024-06-01T23:23:48.824658900Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/sort-object-arrays",
+    "stale": true
+  },
+  {
+    "name": "unc-path-regex",
+    "version": "0.1.2",
+    "size_bytes": 4931,
+    "last_used": "2024-06-01T23:23:49.025943109Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/unc-path-regex",
+    "stale": true
+  },
+  {
+    "name": "ansi-wrap",
+    "version": "0.1.0",
+    "size_bytes": 4916,
+    "last_used": "2024-06-01T23:23:48.845718080Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-wrap",
+    "stale": true
+  },
+  {
+    "name": "ansi-bgmagenta",
+    "version": "0.1.1",
+    "size_bytes": 4892,
+    "last_used": "2024-06-01T23:23:48.894187194Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-bgmagenta",
+    "stale": true
+  },
+  {
+    "name": "lodash.bind",
+    "version": "3.1.0",
+    "size_bytes": 4891,
+    "last_used": "2024-06-01T23:23:48.563213113Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.bind",
+    "stale": true
+  },
+  {
+    "name": "ansi-underline",
+    "version": "0.1.1",
+    "size_bytes": 4891,
+    "last_used": "2024-06-01T23:23:48.845878414Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-underline",
+    "stale": true
+  },
+  {
+    "name": "ansi-bgyellow",
+    "version": "0.1.1",
+    "size_bytes": 4875,
+    "last_used": "2024-06-01T23:23:48.908119827Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-bgyellow",
+    "stale": true
+  },
+  {
+    "name": "concat-map",
+    "version": "0.0.1",
+    "size_bytes": 4861,
+    "last_used": "2025-07-08T20:55:06.747118405Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/concat-map",
+    "stale": true
+  },
+  {
+    "name": "concat-map",
+    "version": "0.0.1",
+    "size_bytes": 4861,
+    "last_used": "2024-06-01T23:23:48.276906603Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/concat-map",
+    "stale": true
+  },
+  {
+    "name": "ansi-bgwhite",
+    "version": "0.1.1",
+    "size_bytes": 4858,
+    "last_used": "2024-06-01T23:23:48.904297033Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-bgwhite",
+    "stale": true
+  },
+  {
+    "name": "ansi-bgblack",
+    "version": "0.1.1",
+    "size_bytes": 4858,
+    "last_used": "2024-06-01T23:23:48.899312030Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-bgblack",
+    "stale": true
+  },
+  {
+    "name": "ansi-magenta",
+    "version": "0.1.1",
+    "size_bytes": 4858,
+    "last_used": "2024-06-01T23:23:48.862297799Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-magenta",
+    "stale": true
+  },
+  {
+    "name": "ansi-bggreen",
+    "version": "0.1.1",
+    "size_bytes": 4858,
+    "last_used": "2024-06-01T23:23:48.897972654Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-bggreen",
+    "stale": true
+  },
+  {
+    "name": "ansi-inverse",
+    "version": "0.1.1",
+    "size_bytes": 4857,
+    "last_used": "2024-06-01T23:23:48.866928468Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-inverse",
+    "stale": true
+  },
+  {
+    "name": "noncharacters",
+    "version": "1.1.0",
+    "size_bytes": 4846,
+    "last_used": "2024-06-01T23:23:48.259126342Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/noncharacters",
+    "stale": true
+  },
+  {
+    "name": "ansi-bgblue",
+    "version": "0.1.1",
+    "size_bytes": 4841,
+    "last_used": "2024-06-01T23:23:48.951395521Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-bgblue",
+    "stale": true
+  },
+  {
+    "name": "ansi-yellow",
+    "version": "0.1.1",
+    "size_bytes": 4841,
+    "last_used": "2024-06-01T23:23:48.853880169Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-yellow",
+    "stale": true
+  },
+  {
+    "name": "ansi-bgcyan",
+    "version": "0.1.1",
+    "size_bytes": 4841,
+    "last_used": "2024-06-01T23:23:48.904314575Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-bgcyan",
+    "stale": true
+  },
+  {
+    "name": "ansi-hidden",
+    "version": "0.1.1",
+    "size_bytes": 4840,
+    "last_used": "2024-06-01T23:23:48.862322632Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-hidden",
+    "stale": true
+  },
+  {
+    "name": "ansi-italic",
+    "version": "0.1.1",
+    "size_bytes": 4840,
+    "last_used": "2024-06-01T23:23:48.862281091Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-italic",
+    "stale": true
+  },
+  {
+    "name": "lodash.pairs",
+    "version": "3.0.1",
+    "size_bytes": 4834,
+    "last_used": "2024-06-01T23:23:48.949196936Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.pairs",
+    "stale": true
+  },
+  {
+    "name": "ansi-green",
+    "version": "0.1.1",
+    "size_bytes": 4824,
+    "last_used": "2024-06-01T23:23:48.867030093Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-green",
+    "stale": true
+  },
+  {
+    "name": "ansi-white",
+    "version": "0.1.1",
+    "size_bytes": 4824,
+    "last_used": "2024-06-01T23:23:48.845541705Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-white",
+    "stale": true
+  },
+  {
+    "name": "ansi-black",
+    "version": "0.1.1",
+    "size_bytes": 4824,
+    "last_used": "2024-06-01T23:23:48.886836606Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-black",
+    "stale": true
+  },
+  {
+    "name": "ansi-bgred",
+    "version": "0.1.1",
+    "size_bytes": 4824,
+    "last_used": "2024-06-01T23:23:48.886575856Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-bgred",
+    "stale": true
+  },
+  {
+    "name": "ansi-reset",
+    "version": "0.1.1",
+    "size_bytes": 4822,
+    "last_used": "2024-06-01T23:23:48.853706293Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-reset",
+    "stale": true
+  },
+  {
+    "name": "extend-shallow",
+    "version": "2.0.1",
+    "size_bytes": 4819,
+    "last_used": "2024-06-01T23:23:48.229277824Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/extend-shallow",
+    "stale": true
+  },
+  {
+    "name": "ansi-blue",
+    "version": "0.1.1",
+    "size_bytes": 4807,
+    "last_used": "2024-06-01T23:23:48.887352814Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-blue",
+    "stale": true
+  },
+  {
+    "name": "ansi-gray",
+    "version": "0.1.1",
+    "size_bytes": 4807,
+    "last_used": "2024-06-01T23:23:48.883797437Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-gray",
+    "stale": true
+  },
+  {
+    "name": "ansi-grey",
+    "version": "0.1.1",
+    "size_bytes": 4807,
+    "last_used": "2024-06-01T23:23:48.883761812Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-grey",
+    "stale": true
+  },
+  {
+    "name": "ansi-cyan",
+    "version": "0.1.1",
+    "size_bytes": 4807,
+    "last_used": "2024-06-01T23:23:48.878588142Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-cyan",
+    "stale": true
+  },
+  {
+    "name": "ansi-bold",
+    "version": "0.1.1",
+    "size_bytes": 4806,
+    "last_used": "2024-06-01T23:23:48.878610476Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-bold",
+    "stale": true
+  },
+  {
+    "name": "path-root-regex",
+    "version": "0.1.2",
+    "size_bytes": 4791,
+    "last_used": "2024-06-01T23:23:48.727460507Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/path-root-regex",
+    "stale": true
+  },
+  {
+    "name": "ansi-red",
+    "version": "0.1.1",
+    "size_bytes": 4790,
+    "last_used": "2024-06-01T23:23:48.846151955Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-red",
+    "stale": true
+  },
+  {
+    "name": "arrayify-compact",
+    "version": "0.2.0",
+    "size_bytes": 4790,
+    "last_used": "2024-06-01T23:23:49.412890974Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/arrayify-compact",
+    "stale": true
+  },
+  {
+    "name": "ansi-dim",
+    "version": "0.1.1",
+    "size_bytes": 4789,
+    "last_used": "2024-06-01T23:23:48.878562309Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-dim",
+    "stale": true
+  },
+  {
+    "name": "lower-case",
+    "version": "1.1.4",
+    "size_bytes": 4777,
+    "last_used": "2024-06-01T23:23:48.782354791Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lower-case",
+    "stale": true
+  },
+  {
+    "name": "cli-width",
+    "version": "4.1.0",
+    "size_bytes": 4767,
+    "last_used": "2025-07-08T20:55:06.724688622Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/cli-width",
+    "stale": true
+  },
+  {
+    "name": "import-lazy",
+    "version": "2.1.0",
+    "size_bytes": 4766,
+    "last_used": "2024-06-01T23:23:48.474562392Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/import-lazy",
+    "stale": true
+  },
+  {
+    "name": "shell-exec",
+    "version": "1.0.2",
+    "size_bytes": 4733,
+    "last_used": "2024-01-09T14:48:23.345329322Z",
+    "path": "/Users/dantelex/.npm/_npx/bd296a660a54852e/node_modules/shell-exec",
+    "stale": true
+  },
+  {
+    "name": "ansi-styles",
+    "version": "2.2.1",
+    "size_bytes": 4721,
+    "last_used": "2024-06-01T23:23:49.088144314Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-styles",
+    "stale": true
+  },
+  {
+    "name": "import-fresh",
+    "version": "3.3.1",
+    "size_bytes": 4693,
+    "last_used": "2025-07-08T20:55:06.721678307Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/import-fresh",
+    "stale": true
+  },
+  {
+    "name": "ordered-read-streams",
+    "version": "0.3.0",
+    "size_bytes": 4693,
+    "last_used": "2024-06-01T23:23:48.287713485Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ordered-read-streams",
+    "stale": true
+  },
+  {
+    "name": "lodash.initial",
+    "version": "4.1.1",
+    "size_bytes": 4685,
+    "last_used": "2024-06-01T23:23:48.259596676Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.initial",
+    "stale": true
+  },
+  {
+    "name": "universalify",
+    "version": "2.0.1",
+    "size_bytes": 4675,
+    "last_used": "2025-07-08T20:55:06.713519459Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/universalify",
+    "stale": true
+  },
+  {
+    "name": "longest",
+    "version": "1.0.1",
+    "size_bytes": 4657,
+    "last_used": "2024-06-01T23:23:48.824202859Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/longest",
+    "stale": true
+  },
+  {
+    "name": "upper-case",
+    "version": "1.1.3",
+    "size_bytes": 4644,
+    "last_used": "2024-06-01T23:23:49.331687548Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/upper-case",
+    "stale": true
+  },
+  {
+    "name": "resolve-from",
+    "version": "4.0.0",
+    "size_bytes": 4641,
+    "last_used": "2025-07-08T20:55:06.713048475Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/resolve-from",
+    "stale": true
+  },
+  {
+    "name": "is-interactive",
+    "version": "1.0.0",
+    "size_bytes": 4619,
+    "last_used": "2025-07-08T20:55:06.720525638Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/is-interactive",
+    "stale": true
+  },
+  {
+    "name": "log-symbols",
+    "version": "4.1.0",
+    "size_bytes": 4580,
+    "last_used": "2025-07-08T20:55:06.728864189Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/log-symbols",
+    "stale": true
+  },
+  {
+    "name": "path-key",
+    "version": "3.1.1",
+    "size_bytes": 4553,
+    "last_used": "2025-07-08T20:55:06.721523480Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/path-key",
+    "stale": true
+  },
+  {
+    "name": "lodash._bindcallback",
+    "version": "3.0.1",
+    "size_bytes": 4550,
+    "last_used": "2024-06-01T23:23:48.949181811Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash._bindcallback",
+    "stale": true
+  },
+  {
+    "name": "npm-run-path",
+    "version": "2.0.2",
+    "size_bytes": 4529,
+    "last_used": "2024-06-01T23:23:48.228022115Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/npm-run-path",
+    "stale": true
+  },
+  {
+    "name": "path-parse",
+    "version": "1.0.7",
+    "size_bytes": 4511,
+    "last_used": "2024-06-01T23:23:48.228272615Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/path-parse",
+    "stale": true
+  },
+  {
+    "name": "stream-shift",
+    "version": "1.0.3",
+    "size_bytes": 4465,
+    "last_used": "2024-06-01T23:23:48.637044992Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/stream-shift",
+    "stale": true
+  },
+  {
+    "name": "pascalcase",
+    "version": "0.1.1",
+    "size_bytes": 4462,
+    "last_used": "2024-06-01T23:23:49.025926775Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/pascalcase",
+    "stale": true
+  },
+  {
+    "name": "mimic-fn",
+    "version": "2.1.0",
+    "size_bytes": 4457,
+    "last_used": "2025-01-20T01:11:38.325122534Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/mimic-fn",
+    "stale": true
+  },
+  {
+    "name": "mimic-fn",
+    "version": "2.1.0",
+    "size_bytes": 4457,
+    "last_used": "2025-07-08T20:55:06.719922284Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/mimic-fn",
+    "stale": true
+  },
+  {
+    "name": "cli-cursor",
+    "version": "4.0.0",
+    "size_bytes": 4450,
+    "last_used": "2025-01-20T01:11:38.325300245Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/cli-cursor",
+    "stale": true
+  },
+  {
+    "name": "array-unique",
+    "version": "0.2.1",
+    "size_bytes": 4427,
+    "last_used": "2024-06-01T23:23:49.368660738Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/array-unique",
+    "stale": true
+  },
+  {
+    "name": "has-flag",
+    "version": "4.0.0",
+    "size_bytes": 4419,
+    "last_used": "2025-01-20T01:11:38.324875657Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/has-flag",
+    "stale": true
+  },
+  {
+    "name": "has-flag",
+    "version": "4.0.0",
+    "size_bytes": 4419,
+    "last_used": "2025-07-08T20:55:06.719970449Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/has-flag",
+    "stale": true
+  },
+  {
+    "name": "has-flag",
+    "version": "4.0.0",
+    "size_bytes": 4419,
+    "last_used": "2024-08-29T16:26:32.653138396Z",
+    "path": "/Users/dantelex/.npm/_npx/17fe7e21360f26cd/node_modules/has-flag",
+    "stale": true
+  },
+  {
+    "name": "array-initial",
+    "version": "1.1.0",
+    "size_bytes": 4414,
+    "last_used": "2024-06-01T23:23:49.250832665Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/array-initial",
+    "stale": true
+  },
+  {
+    "name": "async-each",
+    "version": "1.0.6",
+    "size_bytes": 4403,
+    "last_used": "2024-06-01T23:23:49.425246898Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/async-each",
+    "stale": true
+  },
+  {
+    "name": "buffer-fill",
+    "version": "1.0.0",
+    "size_bytes": 4390,
+    "last_used": "2024-06-01T23:23:48.996718632Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/buffer-fill",
+    "stale": true
+  },
+  {
+    "name": "strip-color",
+    "version": "0.1.0",
+    "size_bytes": 4388,
+    "last_used": "2024-06-01T23:23:49.643511533Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/strip-color",
+    "stale": true
+  },
+  {
+    "name": "cli-cursor",
+    "version": "3.1.0",
+    "size_bytes": 4372,
+    "last_used": "2025-07-08T20:55:06.720497139Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/cli-cursor",
+    "stale": true
+  },
+  {
+    "name": "urix",
+    "version": "0.1.0",
+    "size_bytes": 4367,
+    "last_used": "2024-06-01T23:23:48.258625842Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/urix",
+    "stale": true
+  },
+  {
+    "name": "through2-filter",
+    "version": "2.0.0",
+    "size_bytes": 4363,
+    "last_used": "2024-06-01T23:23:48.280003063Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/through2-filter",
+    "stale": true
+  },
+  {
+    "name": "strip-bom-buffer",
+    "version": "0.1.1",
+    "size_bytes": 4361,
+    "last_used": "2024-06-01T23:23:49.156663482Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/strip-bom-buffer",
+    "stale": true
+  },
+  {
+    "name": "filename-regex",
+    "version": "2.0.1",
+    "size_bytes": 4349,
+    "last_used": "2024-06-01T23:23:48.807872848Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/filename-regex",
+    "stale": true
+  },
+  {
+    "name": "is-utf8",
+    "version": "0.2.1",
+    "size_bytes": 4344,
+    "last_used": "2024-06-01T23:23:48.594940425Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-utf8",
+    "stale": true
+  },
+  {
+    "name": "right-align",
+    "version": "0.1.3",
+    "size_bytes": 4341,
+    "last_used": "2024-06-01T23:23:48.593279840Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/right-align",
+    "stale": true
+  },
+  {
+    "name": "strip-ansi",
+    "version": "7.1.0",
+    "size_bytes": 4321,
+    "last_used": "2025-01-20T01:11:38.325298245Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/strip-ansi",
+    "stale": true
+  },
+  {
+    "name": "strip-ansi",
+    "version": "7.1.0",
+    "size_bytes": 4321,
+    "last_used": "2025-07-08T20:55:06.721378651Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/strip-ansi",
+    "stale": true
+  },
+  {
+    "name": "camelcase",
+    "version": "4.1.0",
+    "size_bytes": 4317,
+    "last_used": "2024-06-01T23:23:48.450713211Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/camelcase",
+    "stale": true
+  },
+  {
+    "name": "merge-stream",
+    "version": "2.0.0",
+    "size_bytes": 4306,
+    "last_used": "2025-07-08T20:55:06.708143266Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/merge-stream",
+    "stale": true
+  },
+  {
+    "name": "lodash._root",
+    "version": "3.0.1",
+    "size_bytes": 4300,
+    "last_used": "2024-06-01T23:23:48.479993228Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash._root",
+    "stale": true
+  },
+  {
+    "name": "clone-buffer",
+    "version": "1.0.0",
+    "size_bytes": 4284,
+    "last_used": "2024-06-01T23:23:48.344134937Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/clone-buffer",
+    "stale": true
+  },
+  {
+    "name": "file-name",
+    "version": "0.1.0",
+    "size_bytes": 4264,
+    "last_used": "2024-06-01T23:23:48.736175387Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/file-name",
+    "stale": true
+  },
+  {
+    "name": "is-fullwidth-code-point",
+    "version": "1.0.0",
+    "size_bytes": 4252,
+    "last_used": "2024-06-01T23:23:48.703900326Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-fullwidth-code-point",
+    "stale": true
+  },
+  {
+    "name": "remove-trailing-separator",
+    "version": "1.1.0",
+    "size_bytes": 4246,
+    "last_used": "2024-06-01T23:23:48.782257958Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/remove-trailing-separator",
+    "stale": true
+  },
+  {
+    "name": "set-blocking",
+    "version": "2.0.0",
+    "size_bytes": 4224,
+    "last_used": "2024-06-01T23:23:49.658303917Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/set-blocking",
+    "stale": true
+  },
+  {
+    "name": "nanoseconds",
+    "version": "0.1.0",
+    "size_bytes": 4203,
+    "last_used": "2024-06-01T23:23:49.305947782Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/nanoseconds",
+    "stale": true
+  },
+  {
+    "name": "ansi-regex",
+    "version": "2.1.1",
+    "size_bytes": 4192,
+    "last_used": "2024-06-01T23:23:49.088314272Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/ansi-regex",
+    "stale": true
+  },
+  {
+    "name": "arr-pluck",
+    "version": "0.1.0",
+    "size_bytes": 4190,
+    "last_used": "2024-06-01T23:23:49.088210064Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/arr-pluck",
+    "stale": true
+  },
+  {
+    "name": "strip-bom-string",
+    "version": "0.1.2",
+    "size_bytes": 4185,
+    "last_used": "2024-06-01T23:23:49.141293180Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/strip-bom-string",
+    "stale": true
+  },
+  {
+    "name": "copy-descriptor",
+    "version": "0.1.1",
+    "size_bytes": 4148,
+    "last_used": "2024-06-01T23:23:48.474656017Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/copy-descriptor",
+    "stale": true
+  },
+  {
+    "name": "xdg-basedir",
+    "version": "3.0.0",
+    "size_bytes": 4082,
+    "last_used": "2024-06-01T23:23:48.475615142Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/xdg-basedir",
+    "stale": true
+  },
+  {
+    "name": "timed-out",
+    "version": "4.0.1",
+    "size_bytes": 4078,
+    "last_used": "2024-06-01T23:23:48.426931280Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/timed-out",
+    "stale": true
+  },
+  {
+    "name": "to-gfm-code-block",
+    "version": "0.1.1",
+    "size_bytes": 4075,
+    "last_used": "2024-06-01T23:23:48.591438881Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/to-gfm-code-block",
+    "stale": true
+  },
+  {
+    "name": "is-arrayish",
+    "version": "0.2.1",
+    "size_bytes": 4053,
+    "last_used": "2025-07-08T20:55:06.740891865Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/is-arrayish",
+    "stale": true
+  },
+  {
+    "name": "once",
+    "version": "1.4.0",
+    "size_bytes": 4046,
+    "last_used": "2024-06-01T23:23:48.229169657Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/once",
+    "stale": true
+  },
+  {
+    "name": "is-whitespace",
+    "version": "0.3.0",
+    "size_bytes": 4041,
+    "last_used": "2024-06-01T23:23:48.475669392Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-whitespace",
+    "stale": true
+  },
+  {
+    "name": "inherits",
+    "version": "2.0.4",
+    "size_bytes": 3958,
+    "last_used": "2025-07-08T20:55:06.720051779Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/inherits",
+    "stale": true
+  },
+  {
+    "name": "inherits",
+    "version": "2.0.4",
+    "size_bytes": 3958,
+    "last_used": "2024-06-01T23:23:48.236780828Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/inherits",
+    "stale": true
+  },
+  {
+    "name": "first-chunk-stream",
+    "version": "1.0.0",
+    "size_bytes": 3948,
+    "last_used": "2024-06-01T23:23:48.250878462Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/first-chunk-stream",
+    "stale": true
+  },
+  {
+    "name": "parent-module",
+    "version": "1.0.1",
+    "size_bytes": 3922,
+    "last_used": "2025-07-08T20:55:06.713388172Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/parent-module",
+    "stale": true
+  },
+  {
+    "name": "isarray",
+    "version": "1.0.0",
+    "size_bytes": 3886,
+    "last_used": "2024-06-01T23:23:48.268680890Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/isarray",
+    "stale": true
+  },
+  {
+    "name": "empty-dir",
+    "version": "0.2.1",
+    "size_bytes": 3884,
+    "last_used": "2024-06-01T23:23:49.127974839Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/empty-dir",
+    "stale": true
+  },
+  {
+    "name": "is-relative",
+    "version": "0.2.1",
+    "size_bytes": 3871,
+    "last_used": "2024-06-01T23:23:49.026632484Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-relative",
+    "stale": true
+  },
+  {
+    "name": "cli-boxes",
+    "version": "1.0.0",
+    "size_bytes": 3858,
+    "last_used": "2024-06-01T23:23:48.459328675Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/cli-boxes",
+    "stale": true
+  },
+  {
+    "name": "defaults",
+    "version": "1.0.4",
+    "size_bytes": 3842,
+    "last_used": "2025-07-08T20:55:06.719343970Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/defaults",
+    "stale": true
+  },
+  {
+    "name": "lodash._replaceholders",
+    "version": "3.0.0",
+    "size_bytes": 3811,
+    "last_used": "2024-06-01T23:23:48.560794320Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash._replaceholders",
+    "stale": true
+  },
+  {
+    "name": "inflight",
+    "version": "1.0.6",
+    "size_bytes": 3762,
+    "last_used": "2024-06-01T23:23:48.228827323Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/inflight",
+    "stale": true
+  },
+  {
+    "name": "supports-color",
+    "version": "2.0.0",
+    "size_bytes": 3748,
+    "last_used": "2024-06-01T23:23:49.027641485Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/supports-color",
+    "stale": true
+  },
+  {
+    "name": "lodash._basefilter",
+    "version": "3.0.0",
+    "size_bytes": 3721,
+    "last_used": "2024-06-01T23:23:48.955747815Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash._basefilter",
+    "stale": true
+  },
+  {
+    "name": "create-error-class",
+    "version": "3.0.2",
+    "size_bytes": 3718,
+    "last_used": "2024-06-01T23:23:48.427004905Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/create-error-class",
+    "stale": true
+  },
+  {
+    "name": "get-value",
+    "version": "2.0.6",
+    "size_bytes": 3709,
+    "last_used": "2024-06-01T23:23:49.716258370Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/get-value",
+    "stale": true
+  },
+  {
+    "name": "clone-stats",
+    "version": "1.0.0",
+    "size_bytes": 3705,
+    "last_used": "2024-06-01T23:23:48.367309326Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/clone-stats",
+    "stale": true
+  },
+  {
+    "name": "url-parse-lax",
+    "version": "1.0.0",
+    "size_bytes": 3705,
+    "last_used": "2024-06-01T23:23:48.426988946Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/url-parse-lax",
+    "stale": true
+  },
+  {
+    "name": "get-stdin",
+    "version": "5.0.1",
+    "size_bytes": 3683,
+    "last_used": "2024-06-01T23:23:49.194406005Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/get-stdin",
+    "stale": true
+  },
+  {
+    "name": "lodash._arrayfilter",
+    "version": "3.0.0",
+    "size_bytes": 3678,
+    "last_used": "2024-06-01T23:23:48.960645110Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash._arrayfilter",
+    "stale": true
+  },
+  {
+    "name": "vue-tsc",
+    "version": "3.0.7",
+    "size_bytes": 3667,
+    "last_used": "2025-09-12T20:19:21.420548072Z",
+    "path": "/Users/dantelex/.npm/_npx/2db181330ea4b15b/node_modules/vue-tsc",
+    "stale": false
+  },
+  {
+    "name": "path-is-absolute",
+    "version": "1.0.1",
+    "size_bytes": 3616,
+    "last_used": "2024-06-01T23:23:48.228950490Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/path-is-absolute",
+    "stale": true
+  },
+  {
+    "name": "is-retry-allowed",
+    "version": "1.2.0",
+    "size_bytes": 3599,
+    "last_used": "2024-06-01T23:23:48.427022738Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-retry-allowed",
+    "stale": true
+  },
+  {
+    "name": "async-each-series",
+    "version": "1.1.0",
+    "size_bytes": 3596,
+    "last_used": "2024-06-01T23:23:49.503432904Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/async-each-series",
+    "stale": true
+  },
+  {
+    "name": "is-unicode-supported",
+    "version": "0.1.0",
+    "size_bytes": 3535,
+    "last_used": "2025-07-08T20:55:06.720703049Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/is-unicode-supported",
+    "stale": true
+  },
+  {
+    "name": "unzip-response",
+    "version": "2.0.1",
+    "size_bytes": 3505,
+    "last_used": "2024-06-01T23:23:48.426947030Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/unzip-response",
+    "stale": true
+  },
+  {
+    "name": "read-chunk",
+    "version": "2.1.0",
+    "size_bytes": 3480,
+    "last_used": "2024-06-01T23:23:49.503883363Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/read-chunk",
+    "stale": true
+  },
+  {
+    "name": "crypto-random-string",
+    "version": "1.0.0",
+    "size_bytes": 3479,
+    "last_used": "2024-06-01T23:23:48.426877238Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/crypto-random-string",
+    "stale": true
+  },
+  {
+    "name": "lodash.last",
+    "version": "3.0.0",
+    "size_bytes": 3458,
+    "last_used": "2024-06-01T23:23:48.259285634Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lodash.last",
+    "stale": true
+  },
+  {
+    "name": "is-primitive",
+    "version": "2.0.0",
+    "size_bytes": 3433,
+    "last_used": "2024-06-01T23:23:49.117207832Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-primitive",
+    "stale": true
+  },
+  {
+    "name": "require-from-string",
+    "version": "2.0.2",
+    "size_bytes": 3422,
+    "last_used": "2025-07-08T20:55:06.715070448Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/require-from-string",
+    "stale": true
+  },
+  {
+    "name": "path-is-inside",
+    "version": "1.0.2",
+    "size_bytes": 3324,
+    "last_used": "2024-06-01T23:23:48.450729503Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/path-is-inside",
+    "stale": true
+  },
+  {
+    "name": "is-ci",
+    "version": "1.2.1",
+    "size_bytes": 3313,
+    "last_used": "2024-06-01T23:23:48.475576559Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-ci",
+    "stale": true
+  },
+  {
+    "name": "warning-symbol",
+    "version": "0.1.0",
+    "size_bytes": 3297,
+    "last_used": "2024-06-01T23:23:48.903631158Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/warning-symbol",
+    "stale": true
+  },
+  {
+    "name": "success-symbol",
+    "version": "0.1.0",
+    "size_bytes": 3263,
+    "last_used": "2024-06-01T23:23:48.912257371Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/success-symbol",
+    "stale": true
+  },
+  {
+    "name": "registry-url",
+    "version": "3.1.0",
+    "size_bytes": 3250,
+    "last_used": "2024-06-01T23:23:48.440493788Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/registry-url",
+    "stale": true
+  },
+  {
+    "name": "semver-diff",
+    "version": "2.1.0",
+    "size_bytes": 3235,
+    "last_used": "2024-06-01T23:23:48.465129887Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/semver-diff",
+    "stale": true
+  },
+  {
+    "name": "is-stream",
+    "version": "1.1.0",
+    "size_bytes": 3234,
+    "last_used": "2024-06-01T23:23:48.228085823Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-stream",
+    "stale": true
+  },
+  {
+    "name": "error-symbol",
+    "version": "0.1.0",
+    "size_bytes": 3234,
+    "last_used": "2024-06-01T23:23:48.920477752Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/error-symbol",
+    "stale": true
+  },
+  {
+    "name": "restore-cursor",
+    "version": "4.0.0",
+    "size_bytes": 3225,
+    "last_used": "2025-01-20T01:11:38.325251119Z",
+    "path": "/Users/dantelex/.npm/_npx/ccd89c3107010544/node_modules/restore-cursor",
+    "stale": true
+  },
+  {
+    "name": "info-symbol",
+    "version": "0.1.0",
+    "size_bytes": 3219,
+    "last_used": "2024-06-01T23:23:48.913366497Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/info-symbol",
+    "stale": true
+  },
+  {
+    "name": "is-installed-globally",
+    "version": "0.1.0",
+    "size_bytes": 3213,
+    "last_used": "2024-06-01T23:23:48.471193098Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-installed-globally",
+    "stale": true
+  },
+  {
+    "name": "tsc",
+    "version": null,
+    "size_bytes": 3209,
+    "last_used": "2025-09-15T02:06:17.676744493Z",
+    "path": "/Users/dantelex/.npm/_npx/1d6e82a4126006c4",
+    "stale": false
+  },
+  {
+    "name": "strip-bom-stream",
+    "version": "1.0.0",
+    "size_bytes": 3195,
+    "last_used": "2024-06-01T23:23:48.416357190Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/strip-bom-stream",
+    "stale": true
+  },
+  {
+    "name": "process-nextick-args",
+    "version": "2.0.1",
+    "size_bytes": 3175,
+    "last_used": "2024-06-01T23:23:49.215374893Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/process-nextick-args",
+    "stale": true
+  },
+  {
+    "name": "onetime",
+    "version": "1.1.0",
+    "size_bytes": 3166,
+    "last_used": "2024-06-01T23:23:48.633312740Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/onetime",
+    "stale": true
+  },
+  {
+    "name": "widest-line",
+    "version": "2.0.1",
+    "size_bytes": 3159,
+    "last_used": "2024-06-01T23:23:48.440746163Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/widest-line",
+    "stale": true
+  },
+  {
+    "name": "os-homedir",
+    "version": "1.0.2",
+    "size_bytes": 3152,
+    "last_used": "2024-06-01T23:23:49.440622366Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/os-homedir",
+    "stale": true
+  },
+  {
+    "name": "strip-bom",
+    "version": "2.0.0",
+    "size_bytes": 3128,
+    "last_used": "2024-06-01T23:23:48.402660140Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/strip-bom",
+    "stale": true
+  },
+  {
+    "name": "has-flag",
+    "version": "3.0.0",
+    "size_bytes": 3125,
+    "last_used": "2024-06-01T23:23:48.227125572Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/has-flag",
+    "stale": true
+  },
+  {
+    "name": "p-finally",
+    "version": "1.0.0",
+    "size_bytes": 3111,
+    "last_used": "2024-06-01T23:23:48.228046781Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/p-finally",
+    "stale": true
+  },
+  {
+    "name": "find-pkg",
+    "version": "0.1.2",
+    "size_bytes": 3109,
+    "last_used": "2024-06-01T23:23:48.986595209Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/find-pkg",
+    "stale": true
+  },
+  {
+    "name": "strip-ansi",
+    "version": "3.0.1",
+    "size_bytes": 3104,
+    "last_used": "2024-06-01T23:23:49.027335443Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/strip-ansi",
+    "stale": true
+  },
+  {
+    "name": "has-ansi",
+    "version": "2.0.0",
+    "size_bytes": 3098,
+    "last_used": "2024-06-01T23:23:49.039316700Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/has-ansi",
+    "stale": true
+  },
+  {
+    "name": "os-tmpdir",
+    "version": "1.0.2",
+    "size_bytes": 3056,
+    "last_used": "2025-07-08T20:55:06.710505186Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/os-tmpdir",
+    "stale": true
+  },
+  {
+    "name": "path-key",
+    "version": "2.0.1",
+    "size_bytes": 3020,
+    "last_used": "2024-06-01T23:23:48.227995364Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/path-key",
+    "stale": true
+  },
+  {
+    "name": "latest-version",
+    "version": "3.1.0",
+    "size_bytes": 3018,
+    "last_used": "2024-06-01T23:23:48.474579600Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/latest-version",
+    "stale": true
+  },
+  {
+    "name": "strip-bom",
+    "version": "3.0.0",
+    "size_bytes": 3004,
+    "last_used": "2025-07-08T20:55:06.709969371Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/strip-bom",
+    "stale": true
+  },
+  {
+    "name": "code-point-at",
+    "version": "1.1.0",
+    "size_bytes": 2994,
+    "last_used": "2024-06-01T23:23:48.706451077Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/code-point-at",
+    "stale": true
+  },
+  {
+    "name": "camel-case",
+    "version": "3.0.0",
+    "size_bytes": 2994,
+    "last_used": "2024-06-01T23:23:49.358755815Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/camel-case",
+    "stale": true
+  },
+  {
+    "name": "wrappy",
+    "version": "1.0.2",
+    "size_bytes": 2961,
+    "last_used": "2024-06-01T23:23:48.228809073Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/wrappy",
+    "stale": true
+  },
+  {
+    "name": "cli-cursor",
+    "version": "1.0.2",
+    "size_bytes": 2915,
+    "last_used": "2024-06-01T23:23:49.088104272Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/cli-cursor",
+    "stale": true
+  },
+  {
+    "name": "has-own-prop",
+    "version": "2.0.0",
+    "size_bytes": 2842,
+    "last_used": "2025-07-08T20:55:06.724112225Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/has-own-prop",
+    "stale": true
+  },
+  {
+    "name": "shebang-regex",
+    "version": "3.0.0",
+    "size_bytes": 2828,
+    "last_used": "2025-07-08T20:55:06.719859161Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/shebang-regex",
+    "stale": true
+  },
+  {
+    "name": "is-windows",
+    "version": "0.2.0",
+    "size_bytes": 2775,
+    "last_used": "2024-06-01T23:23:49.089565732Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-windows",
+    "stale": true
+  },
+  {
+    "name": "escape-string-regexp",
+    "version": "1.0.5",
+    "size_bytes": 2688,
+    "last_used": "2024-06-01T23:23:48.229101532Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/escape-string-regexp",
+    "stale": true
+  },
+  {
+    "name": "shebang-command",
+    "version": "1.2.0",
+    "size_bytes": 2688,
+    "last_used": "2024-06-01T23:23:48.227058031Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/shebang-command",
+    "stale": true
+  },
+  {
+    "name": "strip-eof",
+    "version": "1.0.0",
+    "size_bytes": 2638,
+    "last_used": "2024-06-01T23:23:48.227975698Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/strip-eof",
+    "stale": true
+  },
+  {
+    "name": "prepend-http",
+    "version": "1.0.4",
+    "size_bytes": 2611,
+    "last_used": "2024-06-01T23:23:48.378744708Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/prepend-http",
+    "stale": true
+  },
+  {
+    "name": "is-path-inside",
+    "version": "1.0.1",
+    "size_bytes": 2595,
+    "last_used": "2024-06-01T23:23:48.440570496Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-path-inside",
+    "stale": true
+  },
+  {
+    "name": "unique-string",
+    "version": "1.0.0",
+    "size_bytes": 2577,
+    "last_used": "2024-06-01T23:23:48.440627621Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/unique-string",
+    "stale": true
+  },
+  {
+    "name": "log-ok",
+    "version": "0.1.1",
+    "size_bytes": 2562,
+    "last_used": "2024-06-01T23:23:48.919851668Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/log-ok",
+    "stale": true
+  },
+  {
+    "name": "shebang-command",
+    "version": "2.0.0",
+    "size_bytes": 2556,
+    "last_used": "2025-07-08T20:55:06.713467086Z",
+    "path": "/Users/dantelex/.npm/_npx/ccf722f030a36e55/node_modules/shebang-command",
+    "stale": true
+  },
+  {
+    "name": "capture-stack-trace",
+    "version": "1.0.2",
+    "size_bytes": 2500,
+    "last_used": "2024-06-01T23:23:48.426898571Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/capture-stack-trace",
+    "stale": true
+  },
+  {
+    "name": "is-redirect",
+    "version": "1.0.0",
+    "size_bytes": 2471,
+    "last_used": "2024-06-01T23:23:48.440549580Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-redirect",
+    "stale": true
+  },
+  {
+    "name": "lowercase-keys",
+    "version": "1.0.1",
+    "size_bytes": 2456,
+    "last_used": "2024-06-01T23:23:48.426972280Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/lowercase-keys",
+    "stale": true
+  },
+  {
+    "name": "vali-date",
+    "version": "1.0.0",
+    "size_bytes": 2436,
+    "last_used": "2024-06-01T23:23:48.344158936Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/vali-date",
+    "stale": true
+  },
+  {
+    "name": "restore-cursor",
+    "version": "1.0.1",
+    "size_bytes": 2430,
+    "last_used": "2024-06-01T23:23:49.028662569Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/restore-cursor",
+    "stale": true
+  },
+  {
+    "name": "is-obj",
+    "version": "1.0.1",
+    "size_bytes": 2403,
+    "last_used": "2024-06-01T23:23:48.440605705Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-obj",
+    "stale": true
+  },
+  {
+    "name": "number-is-nan",
+    "version": "1.0.1",
+    "size_bytes": 2345,
+    "last_used": "2024-06-01T23:23:48.677470393Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/number-is-nan",
+    "stale": true
+  },
+  {
+    "name": "shebang-regex",
+    "version": "1.0.0",
+    "size_bytes": 2303,
+    "last_used": "2024-06-01T23:23:48.227090031Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/shebang-regex",
+    "stale": true
+  },
+  {
+    "name": "buffer-alloc",
+    "version": "1.2.0",
+    "size_bytes": 2274,
+    "last_used": "2024-06-01T23:23:49.009770182Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/buffer-alloc",
+    "stale": true
+  },
+  {
+    "name": "tsc",
+    "version": "2.0.4",
+    "size_bytes": 2260,
+    "last_used": "2025-09-15T02:06:17.672389322Z",
+    "path": "/Users/dantelex/.npm/_npx/1d6e82a4126006c4/node_modules/tsc",
+    "stale": false
+  },
+  {
+    "name": "math-random",
+    "version": "1.0.4",
+    "size_bytes": 2228,
+    "last_used": "2024-06-01T23:23:48.717239417Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/math-random",
+    "stale": true
+  },
+  {
+    "name": "de-indent",
+    "version": "1.0.2",
+    "size_bytes": 2197,
+    "last_used": "2025-09-12T20:19:21.416324016Z",
+    "path": "/Users/dantelex/.npm/_npx/2db181330ea4b15b/node_modules/de-indent",
+    "stale": false
+  },
+  {
+    "name": "@kagehq/keys",
+    "version": null,
+    "size_bytes": 2127,
+    "last_used": "2025-09-08T03:10:03.507754536Z",
+    "path": "/Users/dantelex/.npm/_npx/e9c751b63a11d73d",
+    "stale": true
+  },
+  {
+    "name": "buffer-alloc-unsafe",
+    "version": "1.1.0",
+    "size_bytes": 1936,
+    "last_used": "2024-06-01T23:23:49.013037559Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/buffer-alloc-unsafe",
+    "stale": true
+  },
+  {
+    "name": "detect-conflict",
+    "version": "1.0.1",
+    "size_bytes": 1884,
+    "last_used": "2024-06-01T23:23:49.548219307Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/detect-conflict",
+    "stale": true
+  },
+  {
+    "name": "exit-hook",
+    "version": "1.1.1",
+    "size_bytes": 1782,
+    "last_used": "2024-06-01T23:23:48.699644656Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/exit-hook",
+    "stale": true
+  },
+  {
+    "name": "is-npm",
+    "version": "1.0.0",
+    "size_bytes": 1187,
+    "last_used": "2024-06-01T23:23:48.474627017Z",
+    "path": "/Users/dantelex/.npm/_npx/3ee8cad6c56ba30b/node_modules/is-npm",
+    "stale": true
+  }
+]

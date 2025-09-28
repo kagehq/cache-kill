@@ -387,7 +387,7 @@ mod tests {
     #[test]
     fn test_action_executor_creation() {
         let config = create_test_config();
-        let executor = ActionExecutor::new(config);
+        let _executor = ActionExecutor::new(config);
         assert!(true); // Just test that it can be created
     }
 
