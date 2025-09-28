@@ -20,6 +20,7 @@ Join our Discord community for discussions, support, and updates:
 - **JavaScript package managers**: npm, pnpm, yarn global and project caches (opt-in via `--js-pm`)
 - **Enhanced edge cache purging** with improved API integration
 - **System diagnostics** with `--doctor` command
+- **MCP Server** for AI assistant integration via Model Context Protocol
 
 ## Installation
 
@@ -89,6 +90,50 @@ cargo install cachekill
 # Dry run including JS PM caches
 ./target/release/cachekill --dry-run --js-pm
 ```
+
+## MCP Server
+
+CacheKill includes an MCP server that allows AI assistants to interact with cache management tools programmatically.
+
+### Running the MCP Server
+
+```bash
+# Build the MCP server
+cargo build --release --bin mcp
+
+# Run the MCP server
+./target/release/mcp
+```
+
+### Available MCP Tools
+
+The MCP server provides the following tools for AI assistants:
+
+- **`list_caches`** - List all cache entries with details
+- **`clean_caches`** - Clean cache entries with various options
+- **`dry_run`** - Show what would be cleaned without doing it
+- **`npx_analysis`** - Analyze NPX cache with per-package details
+- **`docker_stats`** - Get Docker cache statistics
+- **`system_diagnostics`** - Run system diagnostics
+- **`restore_backup`** - Restore from last backup
+
+### MCP Server Configuration
+
+The MCP server accepts the same configuration options as the CLI tool:
+
+```json
+{
+  "lang": "js",
+  "force": true,
+  "safe_delete": true,
+  "docker": true,
+  "npx": true
+}
+```
+
+### MCP Server Implementation
+
+The MCP server is a simple wrapper around the main `cachekill` binary that provides JSON output for AI assistants. It delegates all operations to the main CLI tool, ensuring consistency and reliability.
 
 ## Supported Languages
 
