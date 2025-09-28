@@ -17,6 +17,7 @@ Join our Discord community for discussions, support, and updates:
 - **CI/CD integration** with GitHub Actions, GitLab CI, and CircleCI
 - **Specialized integrations** for HuggingFace, PyTorch, Vercel, and Cloudflare
 - **Advanced NPX analysis** with per-package visibility and stale detection
+- **JavaScript package managers**: npm, pnpm, yarn global and project caches (opt-in via `--js-pm`)
 - **Enhanced edge cache purging** with improved API integration
 - **System diagnostics** with `--doctor` command
 
@@ -77,6 +78,18 @@ cargo install cachekill
 ./target/release/cachekill --npx --stale-days 7 --force  # Surgical - only stale packages
 ```
 
+### JavaScript Package Managers usage
+```bash
+# Include JavaScript package manager caches (npm, pnpm, yarn)
+./target/release/cachekill --list --js-pm
+
+# JSON output including JS PM caches
+./target/release/cachekill --list --json --js-pm
+
+# Dry run including JS PM caches
+./target/release/cachekill --dry-run --js-pm
+```
+
 ## Supported Languages
 
 - **JavaScript/TypeScript**: `node_modules/`, `.next/`, `.vite/`
@@ -84,6 +97,7 @@ cargo install cachekill
 - **Rust**: `target/`, `.cargo/`
 - **Java**: `.gradle/`, `build/`, `~/.m2/repository`
 - **Machine Learning**: `~/.cache/huggingface`, `~/.cache/torch`
+- **JavaScript package managers**: npm (`~/.npm` or `%LOCALAPPDATA%\npm-cache`), pnpm (store + meta caches), yarn (global + project `.yarn/cache`)
 - **NPX**: `~/.npm/_npx`
 - **Docker**: Images, containers, volumes
 
