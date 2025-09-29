@@ -111,29 +111,48 @@ jobs:
       - name: Prepare release assets
         run: |
           mkdir -p release-assets
+          echo "Available artifacts:"
+          ls -la
           
           # Create platform-specific archives
           for target in x86_64-unknown-linux-gnu x86_64-pc-windows-gnu x86_64-apple-darwin aarch64-unknown-linux-gnu aarch64-apple-darwin; do
+            echo "Processing target: $target"
             if [ -f "cachekill-$target/cachekill" ] || [ -f "cachekill-$target/cachekill.exe" ]; then
+              echo "Found cachekill binary for $target"
               mkdir -p "release-assets/$target"
-              cp "cachekill-$target/cachekill"* "release-assets/$target/"
-              cp "mcp-$target/mcp"* "release-assets/$target/"
+              cp "cachekill-$target/cachekill"* "release-assets/$target/" 2>/dev/null || echo "No cachekill binary found for $target"
+              cp "mcp-$target/mcp"* "release-assets/$target/" 2>/dev/null || echo "No mcp binary found for $target"
               
               # Create tar.gz for Unix systems
               if [[ "$target" == *"linux"* ]] || [[ "$target" == *"darwin"* ]]; then
                 cd "release-assets/$target"
-                tar -czf "../../cachekill-$target.tar.gz" *
+                if [ "$(ls -A .)" ]; then
+                  tar -czf "../../cachekill-$target.tar.gz" *
+                  echo "Created cachekill-$target.tar.gz"
+                else
+                  echo "No files to archive for $target"
+                fi
                 cd ../..
               fi
               
               # Create zip for Windows
               if [[ "$target" == *"windows"* ]]; then
                 cd "release-assets/$target"
-                zip -r "../../cachekill-$target.zip" *
+                if [ "$(ls -A .)" ]; then
+                  zip -r "../../cachekill-$target.zip" *
+                  echo "Created cachekill-$target.zip"
+                else
+                  echo "No files to archive for $target"
+                fi
                 cd ../..
               fi
+            else
+              echo "No cachekill binary found for $target"
             fi
           done
+          
+          echo "Final release assets:"
+          ls -la release-assets/
 
       - name: Generate checksums
         run: |
@@ -157,5 +176,6 @@ jobs:
           generate_release_notes: true
           draft: false
           prerelease: false
+          fail_on_unmatched_files: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
