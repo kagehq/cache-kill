@@ -1,22 +1,8 @@
-# Cross-compilation configuration for CacheKill
-# This file configures cargo to use cross-compilation targets
+# Cross-compilation configuration for Cache Kill
+# This file configures cargo for cross-compilation when needed
 
-[target.x86_64-pc-windows-gnu]
-linker = "x86_64-w64-mingw32-gcc"
-
-[target.aarch64-unknown-linux-gnu]
-linker = "aarch64-linux-gnu-gcc"
-
-[target.aarch64-apple-darwin]
-linker = "aarch64-apple-darwin-gcc"
-
-# Build configuration
-[build]
-# Use release profile for better performance
-rustflags = [
-    "-C", "target-cpu=native",
-    "-C", "link-arg=-s",  # Strip symbols for smaller binaries
-]
+# Only apply cross-compilation settings when explicitly targeting those platforms
+# These settings are used by GitHub Actions for cross-compilation
 
 # Profile configuration for release builds
 [profile.release]

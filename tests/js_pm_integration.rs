@@ -5,7 +5,7 @@ use std::process::Command;
 #[test]
 fn js_pm_list_json_succeeds_and_is_object() {
     let output = Command::new("cargo")
-        .args(["run", "--", "--list", "--json", "--js-pm"])
+        .args(["run", "--bin", "cachekill", "--", "--list", "--json", "--js-pm"])
         .output()
         .expect("failed to run cachekill");
 

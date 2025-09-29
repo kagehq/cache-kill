@@ -10,7 +10,7 @@ fn manifest_path() -> String {
 
 fn run_with_env_and_cwd(cwd: &std::path::Path, envs: &[(&str, &std::path::Path)], extra_args: &[&str]) -> (bool, String, String) {
     let mut cmd = Command::new("cargo");
-    cmd.arg("run").arg("--manifest-path").arg(manifest_path()).arg("--");
+    cmd.arg("run").arg("--bin").arg("cachekill").arg("--manifest-path").arg(manifest_path()).arg("--");
     for a in extra_args { cmd.arg(a); }
     cmd.current_dir(cwd);
     for (k, v) in envs { cmd.env(k, v); }
