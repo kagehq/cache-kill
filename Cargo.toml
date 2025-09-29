@@ -1,6 +1,6 @@
 [package]
 name = "cachekill"
-version = "0.1.7"
+version = "0.1.8"
 edition = "2021"
 authors = ["Kage <info@kagehq.com>"]
 description = "A CLI tool to safely nuke development and build caches"
