@@ -1,5 +1,5 @@
 use anyhow::Result;
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 
 use crate::cache_entry::CacheEntry;
 use crate::config::MergedConfig;
