@@ -37,7 +37,7 @@ use torch::{handle_torch_clean, handle_torch_list};
 /// CacheKill - A production-ready CLI tool to safely nuke development and build caches
 #[derive(Parser)]
 #[command(name = "cachekill")]
-#[command(version = "0.1.2")] // Version bump with NPX improvements
+#[command(version = "0.1.7")] // Version bump with NPX improvements
 #[command(about = "Safely nuke development and build caches")]
 #[command(long_about = r#"
 CacheKill is a production-ready CLI tool that helps you safely clean up
