@@ -4,6 +4,10 @@
 # Only apply cross-compilation settings when explicitly targeting those platforms
 # These settings are used by GitHub Actions for cross-compilation
 
+# Target-specific linker configuration
+[target.aarch64-unknown-linux-gnu]
+linker = "aarch64-linux-gnu-gcc"
+
 # Profile configuration for release builds
 [profile.release]
 # Optimize for size and speed
