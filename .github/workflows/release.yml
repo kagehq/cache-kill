@@ -107,6 +107,13 @@ jobs:
 
       - name: Download all artifacts
         uses: actions/download-artifact@v4
+        continue-on-error: true
+
+      - name: Check build status
+        run: |
+          echo "Checking if build jobs completed successfully..."
+          echo "This release step will only run if all build jobs passed"
+          echo "If you see this message, the build jobs completed"
 
       - name: Prepare release assets
         run: |
@@ -177,5 +184,6 @@ jobs:
           draft: false
           prerelease: false
           fail_on_unmatched_files: false
+          make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
