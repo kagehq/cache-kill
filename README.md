@@ -1,6 +1,6 @@
 # Cache Kill
 
-A CLI tool to safely nuke development and build caches across multiple languages and frameworks.
+A lightweight CLI tool to safely nuke development and build caches.
 
 ## Community & Support
 
@@ -24,17 +24,35 @@ Join our Discord community for discussions, support, and updates:
 
 ## Installation
 
-### From Source
+### One-liner install (recommended)
+
+**Linux/macOS:**
 ```bash
-git clone https://github.com/kagehq/cachekill.git
-cd cachekill
-cargo build --release
+curl -fsSL https://raw.githubusercontent.com/kagehq/cache-kill/main/install.sh | bash
 ```
 
-### Using Cargo
-```bash
-cargo install cachekill
+**Windows (PowerShell):**
+```powershell
+iwr -useb https://raw.githubusercontent.com/kagehq/cache-kill/main/install.ps1 | iex
 ```
+
+### Manual installation
+
+Download the latest release from [GitHub Releases](https://github.com/kagehq/cache-kill/releases) and extract the binary to your PATH.
+
+### Building from source
+
+```bash
+# Clone the repository
+git clone https://github.com/kagehq/cache-kill.git
+cd cache-kill
+
+# Build the project
+cargo build --release
+
+# Install locally
+cargo install --path .
+
 
 ## Quick Start
 

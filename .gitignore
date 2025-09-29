@@ -4,7 +4,9 @@
 *.pdb
 
 # Cargo
-Cargo.lock
+# Note: Cargo.lock should be committed for applications, not libraries
+# Uncomment the line below if this is a library crate
+# Cargo.lock
 
 # IDE and Editor files
 .vscode/
@@ -22,12 +24,15 @@ Cargo.lock
 ehthumbs.db
 Thumbs.db
 
-# CacheKill specific
+# Cache Kill specific
 .cachekill-backup/
 .cachekillrc
+.cachekill/
 
 # Test artifacts
-test-projects/
+# Note: test-projects/ contains test fixtures that should be committed
+# Uncomment the line below if you want to exclude test projects
+# test-projects/
 *.log
 
 # Temporary files
@@ -88,13 +93,17 @@ venv.bak/
 .github/workflows/*.yml.bak
 ci/*.yml.bak
 
-# Release artifacts
+# Release artifacts (these are created by CI/CD)
 *.tar.gz
 *.zip
 *.deb
 *.rpm
 *.dmg
 *.exe
+
+# GitHub Actions artifacts
+.github/workflows/*.yml.bak
+.github/actions/*/action.yml.bak
 
 # Benchmark results
 criterion/
@@ -106,3 +115,188 @@ perf.data*
 # Local development
 .local/
 .cache/
+
+# Cache Kill specific caches and backups
+.cachekill-backup*/
+.cachekill-*/
+cachekill-*.tar.gz
+cachekill-*.zip
+
+# Install script artifacts
+install-*.sh.bak
+install-*.ps1.bak
+
+# Documentation build artifacts
+docs/_build/
+site/
+
+# Performance profiling
+*.prof
+*.flamegraph
+perf.data*
+
+# Memory profiling
+*.heapsnapshot
+*.heapprofile
+
+# Rust-specific build artifacts
+**/target/debug/
+**/target/release/
+**/target/.rustc_info.json
+**/target/.cargo-lock
+
+# Cross-compilation artifacts
+*.cross
+cross-*
+
+# Package manager caches (for testing)
+.npm/
+.yarn/
+.pnpm/
+node_modules/
+
+# Python virtual environments (for testing)
+venv/
+env/
+.venv/
+.env/
+
+# Java build artifacts (for testing)
+.gradle/
+build/
+target/
+
+# IDE and editor specific
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Temporary and backup files
+*~
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+
+# Log files
+*.log
+logs/
+log/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Archive files (unless they're test fixtures)
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Binary files (unless they're test fixtures)
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+
+# Patch and diff files
+*.orig
+*.rej
+*.patch
+*.diff
+
+# Lock files (keep Cargo.lock for applications)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Cache directories
+.cache/
+.cargo/registry/
+.cargo/git/
+
+# IDE workspace files
+*.code-workspace
+*.sublime-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*

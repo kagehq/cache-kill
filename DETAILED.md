@@ -1,6 +1,6 @@
-# CacheKill - Detailed Documentation 📚
+# Cache Kill - Detailed Documentation
 
-A guide to the CacheKill CLI tool for safely managing development and build caches.
+A cguide to the Cache Kill CLI tool for safely managing development and build caches.
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ A guide to the CacheKill CLI tool for safely managing development and build cach
 
 ## Overview
 
-CacheKill is a CLI tool designed to safely clean up development and build caches across multiple languages and frameworks. It provides intelligent cache detection, safe deletion with backup functionality, and detailed insights into cache usage.
+Cache Kill is a CLI tool designed to safely clean up development and build caches across multiple languages and frameworks. It provides intelligent cache detection, safe deletion with backup functionality, and detailed insights into cache usage.
 
 ### Key Features
 
@@ -40,8 +40,8 @@ CacheKill is a CLI tool designed to safely clean up development and build caches
 
 ```bash
 # Clone the repository
-git clone https://github.com/kagehq/cachekill.git
-cd cachekill
+git clone https://github.com/kagehq/cache-kill.git
+cd cache-kill
 
 # Build in release mode
 cargo build --release
@@ -553,8 +553,8 @@ time ./target/release/cachekill --list
 
 ```bash
 # Clone and build
-git clone https://github.com/kagehq/cachekill.git
-cd cachekill
+git clone https://github.com/kagehq/cache-kill.git
+cd cache-kill
 cargo build --release
 ```
 

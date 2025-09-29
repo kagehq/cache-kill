@@ -5,9 +5,13 @@ edition = "2021"
 authors = ["Kage <info@kagehq.com>"]
 description = "A CLI tool to safely nuke development and build caches"
 license = "FSL-1.1-MIT"
-repository = "https://github.com/kagehq/cachekill"
+repository = "https://github.com/kagehq/cache-kill"
+homepage = "https://github.com/kagehq/cache-kill"
+documentation = "https://github.com/kagehq/cache-kill"
+readme = "README.md"
 keywords = ["cache", "cleanup", "development", "build", "cli"]
 categories = ["command-line-utilities", "development-tools"]
+rust-version = "1.70"
 
 [[bin]]
 name = "cachekill"
