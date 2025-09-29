@@ -15,7 +15,7 @@ impl CacheKillMcpServer {
     pub async fn run(&mut self) -> Result<()> {
         // Simple MCP server that delegates to the main cachekill binary
         // This is a basic implementation that can be extended
-        
+
         println!("CacheKill MCP Server starting...");
         println!("Available tools:");
         println!("- list_caches: List all cache entries with details");
@@ -25,7 +25,7 @@ impl CacheKillMcpServer {
         println!("- docker_stats: Get Docker cache statistics");
         println!("- system_diagnostics: Run system diagnostics");
         println!("- restore_backup: Restore from last backup");
-        
+
         // Keep the server running
         loop {
             tokio::time::sleep(tokio::time::Duration::from_secs(1)).await;
@@ -36,19 +36,19 @@ impl CacheKillMcpServer {
     pub async fn list_caches(&self, args: HashMap<String, Value>) -> Result<Value> {
         let mut cmd = Command::new("cachekill");
         cmd.arg("--list").arg("--json");
-        
+
         // Add language filter if specified
         if let Some(lang) = args.get("lang").and_then(|v| v.as_str()) {
             cmd.arg("--lang").arg(lang);
         }
-        
+
         // Add NPX if requested
         if let Some(npx) = args.get("npx").and_then(|v| v.as_bool()) {
             if npx {
                 cmd.arg("--npx");
             }
         }
-        
+
         // Add Docker if requested
         if let Some(docker) = args.get("docker").and_then(|v| v.as_bool()) {
             if docker {
@@ -57,7 +57,7 @@ impl CacheKillMcpServer {
         }
 
         let output = cmd.output()?;
-        
+
         if output.status.success() {
             let result: Value = serde_json::from_slice(&output.stdout)?;
             Ok(result)
@@ -72,33 +72,33 @@ impl CacheKillMcpServer {
     pub async fn clean_caches(&self, args: HashMap<String, Value>) -> Result<Value> {
         let mut cmd = Command::new("cachekill");
         cmd.arg("--json");
-        
+
         // Add force flag if specified
         if let Some(force) = args.get("force").and_then(|v| v.as_bool()) {
             if force {
                 cmd.arg("--force");
             }
         }
-        
+
         // Add safe delete if specified
         if let Some(safe_delete) = args.get("safe_delete").and_then(|v| v.as_bool()) {
             if safe_delete {
                 cmd.arg("--safe-delete");
             }
         }
-        
+
         // Add language filter if specified
         if let Some(lang) = args.get("lang").and_then(|v| v.as_str()) {
             cmd.arg("--lang").arg(lang);
         }
-        
+
         // Add NPX if requested
         if let Some(npx) = args.get("npx").and_then(|v| v.as_bool()) {
             if npx {
                 cmd.arg("--npx");
             }
         }
-        
+
         // Add Docker if requested
         if let Some(docker) = args.get("docker").and_then(|v| v.as_bool()) {
             if docker {
@@ -107,7 +107,7 @@ impl CacheKillMcpServer {
         }
 
         let output = cmd.output()?;
-        
+
         if output.status.success() {
             let result: Value = serde_json::from_slice(&output.stdout)?;
             Ok(result)
@@ -122,19 +122,19 @@ impl CacheKillMcpServer {
     pub async fn dry_run(&self, args: HashMap<String, Value>) -> Result<Value> {
         let mut cmd = Command::new("cachekill");
         cmd.arg("--dry-run").arg("--json");
-        
+
         // Add language filter if specified
         if let Some(lang) = args.get("lang").and_then(|v| v.as_str()) {
             cmd.arg("--lang").arg(lang);
         }
-        
+
         // Add NPX if requested
         if let Some(npx) = args.get("npx").and_then(|v| v.as_bool()) {
             if npx {
                 cmd.arg("--npx");
             }
         }
-        
+
         // Add Docker if requested
         if let Some(docker) = args.get("docker").and_then(|v| v.as_bool()) {
             if docker {
@@ -143,7 +143,7 @@ impl CacheKillMcpServer {
         }
 
         let output = cmd.output()?;
-        
+
         if output.status.success() {
             let result: Value = serde_json::from_slice(&output.stdout)?;
             Ok(result)
@@ -160,7 +160,7 @@ impl CacheKillMcpServer {
         cmd.arg("--npx").arg("--list").arg("--json");
 
         let output = cmd.output()?;
-        
+
         if output.status.success() {
             let result: Value = serde_json::from_slice(&output.stdout)?;
             Ok(result)
@@ -177,7 +177,7 @@ impl CacheKillMcpServer {
         cmd.arg("--docker").arg("--list").arg("--json");
 
         let output = cmd.output()?;
-        
+
         if output.status.success() {
             let result: Value = serde_json::from_slice(&output.stdout)?;
             Ok(result)
@@ -194,7 +194,7 @@ impl CacheKillMcpServer {
         cmd.arg("--doctor").arg("--json");
 
         let output = cmd.output()?;
-        
+
         if output.status.success() {
             let result: Value = serde_json::from_slice(&output.stdout)?;
             Ok(result)
@@ -211,7 +211,7 @@ impl CacheKillMcpServer {
         cmd.arg("--restore-last").arg("--json");
 
         let output = cmd.output()?;
-        
+
         if output.status.success() {
             let result: Value = serde_json::from_slice(&output.stdout)?;
             Ok(result)

@@ -42,7 +42,9 @@ Utils for `handle_cleanup_mode`, `handle_dry_run_mode` & `handle_list_mode`
 Purpose: readability - the function is too cluttered and need refactoring for future.
  */
 pub fn add_js_pm_entries(entries: &mut Vec<CacheEntry>, config: &MergedConfig) -> Result<()> {
-    if !config.js_pm { return Ok(()); }
+    if !config.js_pm {
+        return Ok(());
+    }
     let pm = PackageManagers::new(config.clone());
     let mut pm_entries = pm.list_all()?;
     entries.append(&mut pm_entries);

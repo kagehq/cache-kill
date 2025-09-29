@@ -29,7 +29,13 @@ fn store_dir() -> Option<PathBuf> {
     }
     #[cfg(all(unix, not(target_os = "macos")))]
     {
-        dirs::home_dir().map(|home| home.join(".local").join("share").join("pnpm").join("store").join("v3"))
+        dirs::home_dir().map(|home| {
+            home.join(".local")
+                .join("share")
+                .join("pnpm")
+                .join("store")
+                .join("v3")
+        })
     }
 }
 

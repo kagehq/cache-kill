@@ -1,11 +1,11 @@
-use std::path::{Path, PathBuf};
-use anyhow::{Context, Result};
-use chrono::{DateTime, Utc};
-use serde::{Serialize, Deserialize};
-use fs_extra::dir;
 use crate::cache_entry::{CacheEntry, PlannedAction};
 use crate::config::MergedConfig;
-use crate::util::{create_backup_dir_name, get_backup_dir, path_exists, is_dir};
+use crate::util::{create_backup_dir_name, get_backup_dir, is_dir, path_exists};
+use anyhow::{Context, Result};
+use chrono::{DateTime, Utc};
+use fs_extra::dir;
+use serde::{Deserialize, Serialize};
+use std::path::{Path, PathBuf};
 
 /// Action executor for cache operations
 pub struct ActionExecutor {
@@ -56,7 +56,7 @@ impl ActionExecutor {
     pub fn safe_delete(&self, entries: &[CacheEntry]) -> Result<SafeDeleteResult> {
         let backup_dir = get_backup_dir();
         let timestamped_backup = backup_dir.join(create_backup_dir_name());
-        
+
         // Create backup directory
         std::fs::create_dir_all(&timestamped_backup)
             .context("Failed to create backup directory")?;
@@ -95,11 +95,14 @@ impl ActionExecutor {
     /// Move a path to backup directory
     fn move_to_backup(&self, source: &Path, backup_dir: &Path) -> Result<PathBuf> {
         if !path_exists(source) {
-            return Err(anyhow::anyhow!("Source path does not exist: {}", source.display()));
+            return Err(anyhow::anyhow!(
+                "Source path does not exist: {}",
+                source.display()
+            ));
         }
 
         let backup_path = backup_dir.join(source.file_name().unwrap_or_else(|| source.as_os_str()));
-        
+
         if is_dir(source) {
             // Move directory
             let options = dir::CopyOptions::new();
@@ -107,8 +110,7 @@ impl ActionExecutor {
                 .context("Failed to move directory to backup")?;
         } else {
             // Move file
-            std::fs::rename(source, &backup_path)
-                .context("Failed to move file to backup")?;
+            std::fs::rename(source, &backup_path).context("Failed to move file to backup")?;
         }
 
         Ok(backup_path)
@@ -149,11 +151,9 @@ impl ActionExecutor {
         }
 
         if is_dir(path) {
-            std::fs::remove_dir_all(path)
-                .context("Failed to remove directory")?;
+            std::fs::remove_dir_all(path).context("Failed to remove directory")?;
         } else {
-            std::fs::remove_file(path)
-                .context("Failed to remove file")?;
+            std::fs::remove_file(path).context("Failed to remove file")?;
         }
 
         Ok(())
@@ -162,7 +162,7 @@ impl ActionExecutor {
     /// Restore from last backup
     pub fn restore_last_backup(&self) -> Result<RestoreResult> {
         let backup_dir = get_backup_dir();
-        
+
         if !path_exists(&backup_dir) {
             return Err(anyhow::anyhow!("No backup directory found"));
         }
@@ -175,7 +175,10 @@ impl ActionExecutor {
             .collect();
 
         backup_dirs.sort_by(|a, b| {
-            b.metadata().unwrap().modified().unwrap()
+            b.metadata()
+                .unwrap()
+                .modified()
+                .unwrap()
                 .cmp(&a.metadata().unwrap().modified().unwrap())
         });
 
@@ -196,9 +199,7 @@ impl ActionExecutor {
         };
 
         // Read backup directory contents
-        for entry in std::fs::read_dir(backup_dir)
-            .context("Failed to read backup directory")?
-        {
+        for entry in std::fs::read_dir(backup_dir).context("Failed to read backup directory")? {
             let entry = entry?;
             let backup_path = entry.path();
             let original_path = self.get_original_path_from_backup(&backup_path)?;
@@ -223,7 +224,8 @@ impl ActionExecutor {
     fn get_original_path_from_backup(&self, backup_path: &Path) -> Result<PathBuf> {
         // This is a simplified implementation
         // In practice, you might want to store metadata about original paths
-        let file_name = backup_path.file_name()
+        let file_name = backup_path
+            .file_name()
             .context("Failed to get file name from backup path")?;
         Ok(PathBuf::from(file_name))
     }
@@ -231,7 +233,10 @@ impl ActionExecutor {
     /// Restore a single path from backup
     fn restore_path(&self, backup_path: &Path, original_path: &Path) -> Result<()> {
         if !path_exists(backup_path) {
-            return Err(anyhow::anyhow!("Backup path does not exist: {}", backup_path.display()));
+            return Err(anyhow::anyhow!(
+                "Backup path does not exist: {}",
+                backup_path.display()
+            ));
         }
 
         if is_dir(backup_path) {
@@ -252,7 +257,7 @@ impl ActionExecutor {
     #[allow(dead_code)]
     pub fn clean_old_backups(&self, days: u32) -> Result<CleanupResult> {
         let backup_dir = get_backup_dir();
-        
+
         if !path_exists(&backup_dir) {
             return Ok(CleanupResult {
                 removed: Vec::new(),
@@ -266,21 +271,18 @@ impl ActionExecutor {
             total_freed: 0,
         };
 
-        for entry in std::fs::read_dir(&backup_dir)
-            .context("Failed to read backup directory")?
-        {
+        for entry in std::fs::read_dir(&backup_dir).context("Failed to read backup directory")? {
             let entry = entry?;
             let path = entry.path();
-            
+
             if path.is_dir() {
                 let metadata = entry.metadata()?;
                 let modified_time: DateTime<Utc> = DateTime::from(metadata.modified()?);
-                
+
                 if modified_time < cutoff_time {
                     let size = crate::util::get_size(&path).unwrap_or(0);
-                    std::fs::remove_dir_all(&path)
-                        .context("Failed to remove old backup")?;
-                    
+                    std::fs::remove_dir_all(&path).context("Failed to remove old backup")?;
+
                     result.removed.push(path);
                     result.total_freed += size;
                 }
@@ -359,10 +361,10 @@ pub struct CleanupResult {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use tempfile::TempDir;
-    use std::fs;
+    use crate::cache_entry::{CacheKind, LanguageFilter, PlannedAction};
     use crate::config::MergedConfig;
-    use crate::cache_entry::{LanguageFilter, CacheKind, PlannedAction};
+    use std::fs;
+    use tempfile::TempDir;
 
     fn create_test_config() -> MergedConfig {
         MergedConfig {
@@ -403,14 +405,16 @@ mod tests {
                 1000,
                 Utc::now(),
                 false,
-            ).with_planned_action(PlannedAction::Delete),
+            )
+            .with_planned_action(PlannedAction::Delete),
             CacheEntry::new(
                 PathBuf::from("test2"),
                 CacheKind::Python,
                 2000,
                 Utc::now(),
                 false,
-            ).with_planned_action(PlannedAction::Backup),
+            )
+            .with_planned_action(PlannedAction::Backup),
         ];
 
         let result = executor.dry_run(&entries).unwrap();
@@ -431,15 +435,14 @@ mod tests {
         let test_file = temp_dir.path().join("test.txt");
         fs::write(&test_file, "test content").unwrap();
 
-        let entries = vec![
-            CacheEntry::new(
-                test_file.clone(),
-                CacheKind::JavaScript,
-                12,
-                Utc::now(),
-                false,
-            ).with_planned_action(PlannedAction::Backup),
-        ];
+        let entries = vec![CacheEntry::new(
+            test_file.clone(),
+            CacheKind::JavaScript,
+            12,
+            Utc::now(),
+            false,
+        )
+        .with_planned_action(PlannedAction::Backup)];
 
         let result = executor.safe_delete(&entries).unwrap();
         assert_eq!(result.backed_up.len(), 1);
@@ -458,15 +461,14 @@ mod tests {
         let test_file = temp_dir.path().join("test.txt");
         fs::write(&test_file, "test content").unwrap();
 
-        let entries = vec![
-            CacheEntry::new(
-                test_file.clone(),
-                CacheKind::JavaScript,
-                12,
-                Utc::now(),
-                false,
-            ).with_planned_action(PlannedAction::Delete),
-        ];
+        let entries = vec![CacheEntry::new(
+            test_file.clone(),
+            CacheKind::JavaScript,
+            12,
+            Utc::now(),
+            false,
+        )
+        .with_planned_action(PlannedAction::Delete)];
 
         let result = executor.hard_delete(&entries).unwrap();
         assert_eq!(result.deleted.len(), 1);

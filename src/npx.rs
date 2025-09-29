@@ -1,11 +1,11 @@
-use std::path::PathBuf;
+use crate::cache_entry::{CacheEntry, CacheKind, PlannedAction};
+use crate::config::MergedConfig;
+use crate::util::{get_most_recent_mtime, get_size, is_dir, path_exists};
 use anyhow::{Context, Result};
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
+use std::path::PathBuf;
 use walkdir::WalkDir;
-use crate::cache_entry::{CacheEntry, CacheKind, PlannedAction};
-use crate::util::{path_exists, is_dir, get_size, get_most_recent_mtime};
-use crate::config::MergedConfig;
 
 /// NPX package entry
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -57,25 +57,20 @@ impl NpxCacheManager {
     /// List NPX cache entries
     pub fn list_npx_cache(&self) -> Result<Vec<CacheEntry>> {
         let npx_cache_dir = Self::get_npx_cache_dir()?;
-        
+
         if !path_exists(&npx_cache_dir) {
             return Ok(vec![]);
         }
 
         let mut entries = Vec::new();
-        
+
         // Get the total size of the NPX cache directory
         let total_size = get_size(&npx_cache_dir)?;
         let last_used = get_most_recent_mtime(&npx_cache_dir)?;
         let stale = self.is_stale(&last_used);
 
-        let entry = CacheEntry::new(
-            npx_cache_dir,
-            CacheKind::Npx,
-            total_size,
-            last_used,
-            stale,
-        ).with_planned_action(self.determine_planned_action());
+        let entry = CacheEntry::new(npx_cache_dir, CacheKind::Npx, total_size, last_used, stale)
+            .with_planned_action(self.determine_planned_action());
 
         entries.push(entry);
 
@@ -85,16 +80,12 @@ impl NpxCacheManager {
                 let path = entry.path();
                 if path.is_dir() {
                     let size = get_size(&path).unwrap_or(0);
-                    let last_used = get_most_recent_mtime(&path).unwrap_or(DateTime::from_timestamp(0, 0).unwrap_or_default());
+                    let last_used = get_most_recent_mtime(&path)
+                        .unwrap_or(DateTime::from_timestamp(0, 0).unwrap_or_default());
                     let stale = self.is_stale(&last_used);
 
-                    let cache_entry = CacheEntry::new(
-                        path,
-                        CacheKind::Npx,
-                        size,
-                        last_used,
-                        stale,
-                    ).with_planned_action(self.determine_planned_action());
+                    let cache_entry = CacheEntry::new(path, CacheKind::Npx, size, last_used, stale)
+                        .with_planned_action(self.determine_planned_action());
 
                     entries.push(cache_entry);
                 }
@@ -119,7 +110,7 @@ impl NpxCacheManager {
     #[allow(dead_code)]
     pub fn clear_npx_cache(&self) -> Result<()> {
         let npx_cache_dir = Self::get_npx_cache_dir()?;
-        
+
         if !path_exists(&npx_cache_dir) {
             return Ok(());
         }
@@ -138,14 +129,13 @@ impl NpxCacheManager {
     fn safe_delete_npx_cache(&self, npx_cache_dir: &PathBuf) -> Result<()> {
         use crate::util::{create_backup_dir_name, get_backup_dir};
         use fs_extra::dir;
-        
+
         let backup_dir = get_backup_dir();
         let timestamped_backup = backup_dir.join(create_backup_dir_name());
         let npx_backup = timestamped_backup.join("npx");
-        
+
         // Create backup directory
-        std::fs::create_dir_all(&npx_backup)
-            .context("Failed to create backup directory")?;
+        std::fs::create_dir_all(&npx_backup).context("Failed to create backup directory")?;
 
         // Move NPX cache to backup
         let options = dir::CopyOptions::new();
@@ -159,8 +149,7 @@ impl NpxCacheManager {
     /// Hard delete NPX cache
     #[allow(dead_code)]
     fn hard_delete_npx_cache(&self, npx_cache_dir: &PathBuf) -> Result<()> {
-        std::fs::remove_dir_all(npx_cache_dir)
-            .context("Failed to remove NPX cache directory")?;
+        std::fs::remove_dir_all(npx_cache_dir).context("Failed to remove NPX cache directory")?;
 
         println!("✅ NPX cache deleted");
         Ok(())
@@ -223,7 +212,7 @@ pub fn is_npx_available() -> bool {
 #[allow(dead_code)]
 pub fn get_npx_version() -> Option<String> {
     use std::process::Command;
-    
+
     if let Ok(output) = Command::new("npx").arg("--version").output() {
         if output.status.success() {
             return Some(String::from_utf8_lossy(&output.stdout).trim().to_string());
@@ -236,18 +225,18 @@ impl NpxCacheManager {
     /// List NPX packages with per-package details
     pub fn list_packages(&self) -> Result<Vec<NpxPackage>> {
         let npx_cache_dir = Self::get_npx_cache_dir()?;
-        
+
         if !path_exists(&npx_cache_dir) {
             return Ok(vec![]);
         }
 
         let mut packages = Vec::new();
-        
+
         // Walk through NPX cache directory
         for entry in WalkDir::new(&npx_cache_dir).max_depth(3) {
             let entry = entry?;
             let path = entry.path();
-            
+
             if path.is_dir() {
                 // Try to find package.json in this directory
                 let package_json = path.join("package.json");
@@ -256,7 +245,7 @@ impl NpxCacheManager {
                         let size = get_size(path).unwrap_or(0);
                         let last_used = get_most_recent_mtime(path).unwrap_or_else(|_| Utc::now());
                         let stale = self.is_stale(&last_used);
-                        
+
                         packages.push(NpxPackage {
                             name: package_info.name,
                             version: package_info.version,
@@ -269,10 +258,10 @@ impl NpxCacheManager {
                 }
             }
         }
-        
+
         // Sort by size descending
         packages.sort_by(|a, b| b.size_bytes.cmp(&a.size_bytes));
-        
+
         Ok(packages)
     }
 
@@ -281,7 +270,7 @@ impl NpxCacheManager {
     fn parse_package_json(&self, path: &std::path::Path) -> Result<PackageInfo> {
         let content = std::fs::read_to_string(path)?;
         let package: serde_json::Value = serde_json::from_str(&content)?;
-        
+
         // For NPX packages, try to get name from dependencies or use directory name
         let name = if let Some(name) = package["name"].as_str() {
             name.to_string()
@@ -296,11 +285,9 @@ impl NpxCacheManager {
                 .unwrap_or("unknown")
                 .to_string()
         };
-        
-        let version = package["version"]
-            .as_str()
-            .map(|v| v.to_string());
-        
+
+        let version = package["version"].as_str().map(|v| v.to_string());
+
         Ok(PackageInfo { name, version })
     }
 }
@@ -308,8 +295,8 @@ impl NpxCacheManager {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::config::MergedConfig;
     use crate::cache_entry::LanguageFilter;
+    use crate::config::MergedConfig;
 
     fn create_test_config() -> MergedConfig {
         MergedConfig {
@@ -380,10 +367,10 @@ mod tests {
     fn test_planned_action() {
         let mut config = create_test_config();
         let manager = NpxCacheManager::new(config.clone());
-        
+
         // Test with safe delete enabled
         assert_eq!(manager.determine_planned_action(), PlannedAction::Backup);
-        
+
         // Test with safe delete disabled
         config.safe_delete = false;
         let manager = NpxCacheManager::new(config);

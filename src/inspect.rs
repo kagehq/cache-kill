@@ -1,10 +1,10 @@
-use std::path::Path;
+use crate::cache_entry::{CacheEntry, CacheKind, PlannedAction};
+use crate::config::MergedConfig;
+use crate::util::{get_most_recent_mtime, get_size, is_dir, path_exists};
 use anyhow::{Context, Result};
 use chrono::{DateTime, Utc};
 use rayon::prelude::*;
-use crate::cache_entry::{CacheEntry, CacheKind, PlannedAction};
-use crate::util::{get_size, get_most_recent_mtime, path_exists, is_dir};
-use crate::config::MergedConfig;
+use std::path::Path;
 
 /// Inspect cache entries and calculate metadata
 pub struct CacheInspector {
@@ -23,7 +23,7 @@ impl CacheInspector {
             .par_iter()
             .map(|path| self.inspect_single_cache(path))
             .collect();
-        
+
         entries
     }
 
@@ -38,13 +38,7 @@ impl CacheInspector {
         let last_used = self.get_last_used_time(path)?;
         let stale = self.is_stale(&last_used);
 
-        let mut entry = CacheEntry::new(
-            path.to_path_buf(),
-            kind,
-            size_bytes,
-            last_used,
-            stale,
-        );
+        let mut entry = CacheEntry::new(path.to_path_buf(), kind, size_bytes, last_used, stale);
 
         // Determine planned action
         entry.planned_action = Some(self.determine_planned_action(&entry));
@@ -55,26 +49,28 @@ impl CacheInspector {
     /// Determine the cache kind for a path
     fn determine_cache_kind(&self, path: &Path) -> CacheKind {
         let path_str = path.to_string_lossy().to_lowercase();
-        
+
         // JavaScript/TypeScript caches
-        if path_str.contains("node_modules") || 
-           path_str.contains(".next") || 
-           path_str.contains(".nuxt") ||
-           path_str.contains(".vite") ||
-           path_str.contains(".turbo") ||
-           path_str.contains(".parcel-cache") {
+        if path_str.contains("node_modules")
+            || path_str.contains(".next")
+            || path_str.contains(".nuxt")
+            || path_str.contains(".vite")
+            || path_str.contains(".turbo")
+            || path_str.contains(".parcel-cache")
+        {
             return CacheKind::JavaScript;
         }
 
         // Python caches
-        if path_str.contains("__pycache__") ||
-           path_str.contains(".pytest_cache") ||
-           path_str.contains(".venv") ||
-           path_str.contains("venv") ||
-           path_str.contains(".tox") ||
-           path_str.contains(".mypy_cache") ||
-           path_str.contains(".ruff_cache") ||
-           path_str.contains(".pip-cache") {
+        if path_str.contains("__pycache__")
+            || path_str.contains(".pytest_cache")
+            || path_str.contains(".venv")
+            || path_str.contains("venv")
+            || path_str.contains(".tox")
+            || path_str.contains(".mypy_cache")
+            || path_str.contains(".ruff_cache")
+            || path_str.contains(".pip-cache")
+        {
             return CacheKind::Python;
         }
 
@@ -84,18 +80,20 @@ impl CacheInspector {
         }
 
         // Java caches
-        if path_str.contains(".gradle") ||
-           path_str.contains("build") && path_str.contains("gradle") ||
-           path_str.contains(".m2") {
+        if path_str.contains(".gradle")
+            || path_str.contains("build") && path_str.contains("gradle")
+            || path_str.contains(".m2")
+        {
             return CacheKind::Java;
         }
 
         // ML/AI caches
-        if path_str.contains("huggingface") ||
-           path_str.contains("torch") ||
-           path_str.contains("transformers") ||
-           path_str.contains(".dvc") ||
-           path_str.contains("wandb") {
+        if path_str.contains("huggingface")
+            || path_str.contains("torch")
+            || path_str.contains("transformers")
+            || path_str.contains(".dvc")
+            || path_str.contains("wandb")
+        {
             return CacheKind::MachineLearning;
         }
 
@@ -128,7 +126,7 @@ impl CacheInspector {
     /// Calculate directory size with progress indication
     fn calculate_directory_size(&self, path: &Path) -> Result<u64> {
         let mut total_size = 0u64;
-        
+
         for entry in walkdir::WalkDir::new(path)
             .follow_links(false)
             .into_iter()
@@ -140,7 +138,7 @@ impl CacheInspector {
                 }
             }
         }
-        
+
         Ok(total_size)
     }
 
@@ -151,12 +149,10 @@ impl CacheInspector {
         }
 
         if is_dir(path) {
-            get_most_recent_mtime(path)
-                .context("Failed to get most recent modification time")
+            get_most_recent_mtime(path).context("Failed to get most recent modification time")
         } else {
             use crate::util::get_mtime;
-            get_mtime(path)
-                .context("Failed to get file modification time")
+            get_mtime(path).context("Failed to get file modification time")
         }
     }
 
@@ -192,18 +188,27 @@ impl CacheInspector {
         let total_size: u64 = entries.iter().map(|e| e.size_bytes).sum();
         let total_count = entries.len();
         let stale_count = entries.iter().filter(|e| e.stale).count();
-        let to_delete_count = entries.iter()
-            .filter(|e| matches!(e.planned_action, Some(PlannedAction::Delete) | Some(PlannedAction::Backup)))
+        let to_delete_count = entries
+            .iter()
+            .filter(|e| {
+                matches!(
+                    e.planned_action,
+                    Some(PlannedAction::Delete) | Some(PlannedAction::Backup)
+                )
+            })
             .count();
-        let to_skip_count = entries.iter()
+        let to_skip_count = entries
+            .iter()
             .filter(|e| matches!(e.planned_action, Some(PlannedAction::Skip)))
             .count();
 
-        let size_by_kind = entries.iter()
-            .fold(std::collections::HashMap::new(), |mut acc, entry| {
-                *acc.entry(entry.kind).or_insert(0) += entry.size_bytes;
-                acc
-            });
+        let size_by_kind =
+            entries
+                .iter()
+                .fold(std::collections::HashMap::new(), |mut acc, entry| {
+                    *acc.entry(entry.kind).or_insert(0) += entry.size_bytes;
+                    acc
+                });
 
         CacheSummary {
             total_size,
@@ -216,7 +221,11 @@ impl CacheInspector {
     }
 
     /// Get the top N largest cache entries
-    pub fn get_largest_entries<'a>(&self, entries: &'a [CacheEntry], n: usize) -> Vec<&'a CacheEntry> {
+    pub fn get_largest_entries<'a>(
+        &self,
+        entries: &'a [CacheEntry],
+        n: usize,
+    ) -> Vec<&'a CacheEntry> {
         let mut sorted_entries: Vec<_> = entries.iter().collect();
         sorted_entries.sort_by(|a, b| b.size_bytes.cmp(&a.size_bytes));
         sorted_entries.into_iter().take(n).collect()
@@ -254,11 +263,11 @@ impl CacheSummary {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use tempfile::TempDir;
-    use std::fs;
-    use crate::config::MergedConfig;
     use crate::cache_entry::LanguageFilter;
+    use crate::config::MergedConfig;
     use chrono::Utc;
+    use std::fs;
+    use tempfile::TempDir;
 
     fn create_test_config() -> MergedConfig {
         MergedConfig {
@@ -307,7 +316,7 @@ mod tests {
 
         let config = create_test_config();
         let inspector = CacheInspector::new(config);
-        
+
         let size = inspector.calculate_size(&test_file).unwrap();
         assert_eq!(size, 12); // "test content".len()
     }

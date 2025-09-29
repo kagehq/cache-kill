@@ -1,5 +1,5 @@
-use anyhow::Result;
 use crate::cache_entry::CacheEntry;
+use anyhow::Result;
 
 /// Trait implemented by each package manager cache handler
 pub trait CacheManager {

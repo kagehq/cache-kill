@@ -1,9 +1,9 @@
-use serde::{Deserialize, Serialize};
-use std::path::PathBuf;
-use std::fs;
-use anyhow::{Context, Result};
 use crate::cache_entry::LanguageFilter;
-use crate::util::{get_current_dir, expand_home};
+use crate::util::{expand_home, get_current_dir};
+use anyhow::{Context, Result};
+use serde::{Deserialize, Serialize};
+use std::fs;
+use std::path::PathBuf;
 
 /// Configuration loaded from .cachekillrc file
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -90,14 +90,14 @@ impl Config {
     /// Load configuration from .cachekillrc file
     pub fn load() -> Result<Self> {
         let config_path = Self::find_config_file()?;
-        
+
         if config_path.exists() {
-            let content = fs::read_to_string(&config_path)
-                .context("Failed to read .cachekillrc file")?;
-            
-            let config: Config = toml::from_str(&content)
-                .context("Failed to parse .cachekillrc file")?;
-            
+            let content =
+                fs::read_to_string(&config_path).context("Failed to read .cachekillrc file")?;
+
+            let config: Config =
+                toml::from_str(&content).context("Failed to parse .cachekillrc file")?;
+
             Ok(config)
         } else {
             Ok(Config::default())
@@ -107,20 +107,20 @@ impl Config {
     /// Find the .cachekillrc file in the current directory or parent directories
     fn find_config_file() -> Result<PathBuf> {
         let mut current_dir = get_current_dir()?;
-        
+
         loop {
             let config_path = current_dir.join(".cachekillrc");
             if config_path.exists() {
                 return Ok(config_path);
             }
-            
+
             if let Some(parent) = current_dir.parent() {
                 current_dir = parent.to_path_buf();
             } else {
                 break;
             }
         }
-        
+
         // Return a non-existent path if no config file found
         Ok(PathBuf::from(".cachekillrc"))
     }
@@ -132,23 +132,25 @@ impl Config {
             dry_run: cli_args.dry_run,
             force: cli_args.force,
             json: cli_args.json,
-            lang: cli_args.lang.unwrap_or(
-                self.default_lang.unwrap_or(LanguageFilter::Auto)
-            ),
-            paths: cli_args.paths.clone().unwrap_or_else(|| {
-                self.include_paths.clone().unwrap_or_default()
-            }),
-            exclude: cli_args.exclude.clone().unwrap_or_else(|| {
-                self.exclude_paths.clone().unwrap_or_default()
-            }),
-            stale_days: cli_args.stale_days.unwrap_or(
-                self.stale_days.unwrap_or(14)
-            ),
-            safe_delete: cli_args.safe_delete.unwrap_or(
-                self.safe_delete.unwrap_or(true)
-            ),
+            lang: cli_args
+                .lang
+                .unwrap_or(self.default_lang.unwrap_or(LanguageFilter::Auto)),
+            paths: cli_args
+                .paths
+                .clone()
+                .unwrap_or_else(|| self.include_paths.clone().unwrap_or_default()),
+            exclude: cli_args
+                .exclude
+                .clone()
+                .unwrap_or_else(|| self.exclude_paths.clone().unwrap_or_default()),
+            stale_days: cli_args.stale_days.unwrap_or(self.stale_days.unwrap_or(14)),
+            safe_delete: cli_args
+                .safe_delete
+                .unwrap_or(self.safe_delete.unwrap_or(true)),
             backup_dir: cli_args.backup_dir.clone().unwrap_or_else(|| {
-                self.backup_dir.clone().unwrap_or_else(|| ".cachekill-backup".to_string())
+                self.backup_dir
+                    .clone()
+                    .unwrap_or_else(|| ".cachekill-backup".to_string())
             }),
             docker: cli_args.docker || self.include_docker.unwrap_or(false),
             npx: cli_args.npx || self.include_npx.unwrap_or(false),
@@ -206,12 +208,11 @@ impl MergedConfig {
     }
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;
-    use tempfile::TempDir;
     use std::fs;
+    use tempfile::TempDir;
 
     #[test]
     fn test_config_default() {
@@ -254,18 +255,18 @@ mod tests {
     fn test_config_file_loading() {
         let temp_dir = TempDir::new().unwrap();
         let config_path = temp_dir.path().join(".cachekillrc");
-        
+
         let config_content = r#"
 stale_days = 7
 safe_delete = false
 include_docker = true
 "#;
-        
+
         fs::write(&config_path, config_content).unwrap();
-        
+
         // Change to temp directory to test config loading
         std::env::set_current_dir(temp_dir.path()).unwrap();
-        
+
         let config = Config::load().unwrap();
         assert_eq!(config.stale_days, Some(7));
         assert_eq!(config.safe_delete, Some(false));

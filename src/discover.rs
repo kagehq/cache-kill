@@ -1,9 +1,9 @@
-use std::path::{Path, PathBuf};
-use std::fs;
-use anyhow::Result;
 use crate::cache_entry::{CacheKind, LanguageFilter};
-use crate::util::{get_current_dir, path_exists, is_dir};
 use crate::config::MergedConfig;
+use crate::util::{get_current_dir, is_dir, path_exists};
+use anyhow::Result;
+use std::fs;
+use std::path::{Path, PathBuf};
 
 /// Detected project type
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -33,19 +33,21 @@ impl ProjectType {
         let mut types = Vec::new();
 
         // Check for JavaScript/TypeScript projects
-        if project_root.join("package.json").exists() ||
-           project_root.join("yarn.lock").exists() ||
-           project_root.join("pnpm-lock.yaml").exists() ||
-           project_root.join("bun.lockb").exists() {
+        if project_root.join("package.json").exists()
+            || project_root.join("yarn.lock").exists()
+            || project_root.join("pnpm-lock.yaml").exists()
+            || project_root.join("bun.lockb").exists()
+        {
             types.push(ProjectType::JavaScript);
         }
 
         // Check for Python projects
-        if project_root.join("pyproject.toml").exists() ||
-           project_root.join("requirements.txt").exists() ||
-           project_root.join("setup.py").exists() ||
-           project_root.join("Pipfile").exists() ||
-           project_root.join("poetry.lock").exists() {
+        if project_root.join("pyproject.toml").exists()
+            || project_root.join("requirements.txt").exists()
+            || project_root.join("setup.py").exists()
+            || project_root.join("Pipfile").exists()
+            || project_root.join("poetry.lock").exists()
+        {
             types.push(ProjectType::Python);
         }
 
@@ -55,25 +57,27 @@ impl ProjectType {
         }
 
         // Check for Java projects
-        if project_root.join("pom.xml").exists() ||
-           project_root.join("build.gradle").exists() ||
-           project_root.join("build.gradle.kts").exists() ||
-           project_root.join("gradlew").exists() {
+        if project_root.join("pom.xml").exists()
+            || project_root.join("build.gradle").exists()
+            || project_root.join("build.gradle.kts").exists()
+            || project_root.join("gradlew").exists()
+        {
             types.push(ProjectType::Java);
         }
 
         // Check for ML/AI projects
-        if project_root.join("requirements.txt").exists() && 
-           (fs::read_to_string(project_root.join("requirements.txt"))
-               .unwrap_or_default()
-               .contains("torch") ||
-            fs::read_to_string(project_root.join("requirements.txt"))
+        if project_root.join("requirements.txt").exists()
+            && (fs::read_to_string(project_root.join("requirements.txt"))
                 .unwrap_or_default()
-                .contains("tensorflow") ||
-            fs::read_to_string(project_root.join("requirements.txt"))
-                .unwrap_or_default()
-                .contains("huggingface")) ||
-           project_root.join(".dvc").exists() {
+                .contains("torch")
+                || fs::read_to_string(project_root.join("requirements.txt"))
+                    .unwrap_or_default()
+                    .contains("tensorflow")
+                || fs::read_to_string(project_root.join("requirements.txt"))
+                    .unwrap_or_default()
+                    .contains("huggingface"))
+            || project_root.join(".dvc").exists()
+        {
             types.push(ProjectType::MachineLearning);
         }
 
@@ -88,22 +92,10 @@ impl ProjectType {
     #[allow(dead_code)]
     pub fn get_cache_kinds(&self) -> Vec<CacheKind> {
         match self {
-            ProjectType::JavaScript => vec![
-                CacheKind::JavaScript,
-                CacheKind::Generic,
-            ],
-            ProjectType::Python => vec![
-                CacheKind::Python,
-                CacheKind::Generic,
-            ],
-            ProjectType::Rust => vec![
-                CacheKind::Rust,
-                CacheKind::Generic,
-            ],
-            ProjectType::Java => vec![
-                CacheKind::Java,
-                CacheKind::Generic,
-            ],
+            ProjectType::JavaScript => vec![CacheKind::JavaScript, CacheKind::Generic],
+            ProjectType::Python => vec![CacheKind::Python, CacheKind::Generic],
+            ProjectType::Rust => vec![CacheKind::Rust, CacheKind::Generic],
+            ProjectType::Java => vec![CacheKind::Java, CacheKind::Generic],
             ProjectType::MachineLearning => vec![
                 CacheKind::MachineLearning,
                 CacheKind::Python,
@@ -127,17 +119,22 @@ impl DiscoveryResult {
     pub fn discover(config: &MergedConfig) -> Result<Self> {
         let project_root = get_current_dir()?;
         let project_type = ProjectType::detect(&project_root)?;
-        
+
         let mut cache_entries = Vec::new();
-        
+
         // Discover caches based on project type and language filter
         // Always include project-type-specific caches when lang is Auto
-        let should_discover_js = config.lang == LanguageFilter::Auto || config.lang == LanguageFilter::JavaScript;
-        let should_discover_py = config.lang == LanguageFilter::Auto || config.lang == LanguageFilter::Python;
-        let should_discover_rust = config.lang == LanguageFilter::Auto || config.lang == LanguageFilter::Rust;
-        let should_discover_java = config.lang == LanguageFilter::Auto || config.lang == LanguageFilter::Java;
-        let should_discover_ml = config.lang == LanguageFilter::Auto || config.lang == LanguageFilter::MachineLearning;
-        
+        let should_discover_js =
+            config.lang == LanguageFilter::Auto || config.lang == LanguageFilter::JavaScript;
+        let should_discover_py =
+            config.lang == LanguageFilter::Auto || config.lang == LanguageFilter::Python;
+        let should_discover_rust =
+            config.lang == LanguageFilter::Auto || config.lang == LanguageFilter::Rust;
+        let should_discover_java =
+            config.lang == LanguageFilter::Auto || config.lang == LanguageFilter::Java;
+        let should_discover_ml =
+            config.lang == LanguageFilter::Auto || config.lang == LanguageFilter::MachineLearning;
+
         // For Auto mode, also include project-type-specific caches
         if config.lang == LanguageFilter::Auto {
             match project_type {
@@ -191,11 +188,11 @@ impl DiscoveryResult {
                 cache_entries.extend(Self::discover_ml_caches(&project_root, config)?);
             }
         }
-        
+
         if config.all {
             cache_entries.extend(Self::discover_generic_caches(&project_root, config)?);
         }
-        
+
         // Add custom paths if specified
         if !config.paths.is_empty() {
             cache_entries.extend(Self::discover_custom_paths(&project_root, config)?);
@@ -211,7 +208,7 @@ impl DiscoveryResult {
     /// Discover JavaScript/TypeScript caches
     fn discover_js_caches(project_root: &Path, config: &MergedConfig) -> Result<Vec<PathBuf>> {
         let mut caches = Vec::new();
-        
+
         let js_cache_patterns = vec![
             "node_modules",
             ".next",
@@ -243,7 +240,7 @@ impl DiscoveryResult {
     /// Discover Python caches
     fn discover_py_caches(project_root: &Path, config: &MergedConfig) -> Result<Vec<PathBuf>> {
         let mut caches = Vec::new();
-        
+
         let py_cache_patterns = vec![
             "__pycache__",
             ".pytest_cache",
@@ -287,11 +284,8 @@ impl DiscoveryResult {
     /// Discover Rust caches
     fn discover_rust_caches(project_root: &Path, config: &MergedConfig) -> Result<Vec<PathBuf>> {
         let mut caches = Vec::new();
-        
-        let rust_cache_patterns = vec![
-            "target",
-            ".cargo",
-        ];
+
+        let rust_cache_patterns = vec!["target", ".cargo"];
 
         for pattern in rust_cache_patterns {
             let cache_path = project_root.join(pattern);
@@ -308,13 +302,8 @@ impl DiscoveryResult {
     /// Discover Java caches
     fn discover_java_caches(project_root: &Path, config: &MergedConfig) -> Result<Vec<PathBuf>> {
         let mut caches = Vec::new();
-        
-        let java_cache_patterns = vec![
-            ".gradle",
-            "build",
-            "target",
-            ".m2",
-        ];
+
+        let java_cache_patterns = vec![".gradle", "build", "target", ".m2"];
 
         for pattern in java_cache_patterns {
             let cache_path = project_root.join(pattern);
@@ -341,13 +330,8 @@ impl DiscoveryResult {
     /// Discover ML/AI caches
     fn discover_ml_caches(project_root: &Path, config: &MergedConfig) -> Result<Vec<PathBuf>> {
         let mut caches = Vec::new();
-        
-        let ml_cache_patterns = vec![
-            ".dvc/cache",
-            ".dvc/tmp",
-            "wandb",
-            ".wandb",
-        ];
+
+        let ml_cache_patterns = vec![".dvc/cache", ".dvc/tmp", "wandb", ".wandb"];
 
         for pattern in ml_cache_patterns {
             let cache_path = project_root.join(pattern);
@@ -381,14 +365,8 @@ impl DiscoveryResult {
     /// Discover generic caches
     fn discover_generic_caches(project_root: &Path, config: &MergedConfig) -> Result<Vec<PathBuf>> {
         let mut caches = Vec::new();
-        
-        let generic_cache_patterns = vec![
-            "tmp",
-            "temp",
-            ".cache",
-            "cache",
-            ".tmp",
-        ];
+
+        let generic_cache_patterns = vec!["tmp", "temp", ".cache", "cache", ".tmp"];
 
         for pattern in generic_cache_patterns {
             let cache_path = project_root.join(pattern);
@@ -405,17 +383,17 @@ impl DiscoveryResult {
     /// Discover custom paths specified in config
     fn discover_custom_paths(project_root: &Path, config: &MergedConfig) -> Result<Vec<PathBuf>> {
         let mut caches = Vec::new();
-        
+
         for pattern in &config.paths {
             // Handle glob patterns
             if pattern.contains('*') || pattern.contains('?') {
                 use globset::{Glob, GlobSetBuilder};
-                
+
                 let mut builder = GlobSetBuilder::new();
                 if let Ok(glob) = Glob::new(pattern) {
                     let _ = builder.add(glob);
                 }
-                
+
                 if let Ok(glob_set) = builder.build() {
                     for entry in walkdir::WalkDir::new(project_root) {
                         if let Ok(entry) = entry {
@@ -434,7 +412,7 @@ impl DiscoveryResult {
                 } else {
                     project_root.join(pattern)
                 };
-                
+
                 if path_exists(&cache_path) {
                     if config.should_process_path(&cache_path) {
                         caches.push(cache_path);
@@ -450,24 +428,33 @@ impl DiscoveryResult {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use tempfile::TempDir;
     use std::fs;
+    use tempfile::TempDir;
 
     #[test]
     fn test_project_type_detection() {
         let temp_dir = TempDir::new().unwrap();
-        
+
         // Test JavaScript project
         fs::write(temp_dir.path().join("package.json"), "{}").unwrap();
-        assert_eq!(ProjectType::detect(temp_dir.path()).unwrap(), ProjectType::JavaScript);
-        
+        assert_eq!(
+            ProjectType::detect(temp_dir.path()).unwrap(),
+            ProjectType::JavaScript
+        );
+
         // Test Python project
         fs::write(temp_dir.path().join("requirements.txt"), "requests").unwrap();
-        assert_eq!(ProjectType::detect(temp_dir.path()).unwrap(), ProjectType::Mixed);
-        
+        assert_eq!(
+            ProjectType::detect(temp_dir.path()).unwrap(),
+            ProjectType::Mixed
+        );
+
         // Test Rust project
         fs::write(temp_dir.path().join("Cargo.toml"), "[package]").unwrap();
-        assert_eq!(ProjectType::detect(temp_dir.path()).unwrap(), ProjectType::Mixed);
+        assert_eq!(
+            ProjectType::detect(temp_dir.path()).unwrap(),
+            ProjectType::Mixed
+        );
     }
 
     #[test]
@@ -475,7 +462,7 @@ mod tests {
         let js_kinds = ProjectType::JavaScript.get_cache_kinds();
         assert!(js_kinds.contains(&CacheKind::JavaScript));
         assert!(js_kinds.contains(&CacheKind::Generic));
-        
+
         let rust_kinds = ProjectType::Rust.get_cache_kinds();
         assert!(rust_kinds.contains(&CacheKind::Rust));
         assert!(rust_kinds.contains(&CacheKind::Generic));
@@ -485,12 +472,12 @@ mod tests {
     fn test_discovery_result() {
         let temp_dir = TempDir::new().unwrap();
         std::env::set_current_dir(temp_dir.path()).unwrap();
-        
+
         // Create a simple JavaScript project
         fs::write("package.json", "{}").unwrap();
         fs::create_dir_all("node_modules").unwrap();
         fs::create_dir_all("dist").unwrap();
-        
+
         let config = MergedConfig {
             list: false,
             dry_run: false,
@@ -508,11 +495,14 @@ mod tests {
             all: false,
             js_pm: false,
         };
-        
+
         let result = DiscoveryResult::discover(&config).unwrap();
         // The project type detection might return Unknown in test environment
         // This is acceptable as long as cache entries are found
-        assert!(result.project_type == ProjectType::JavaScript || result.project_type == ProjectType::Unknown);
+        assert!(
+            result.project_type == ProjectType::JavaScript
+                || result.project_type == ProjectType::Unknown
+        );
         assert!(!result.cache_entries.is_empty());
     }
 }

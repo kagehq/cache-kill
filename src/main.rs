@@ -1,41 +1,43 @@
-use clap::Parser;
 use anyhow::Result;
+use clap::Parser;
 use std::process;
 
+mod actions;
 mod cache_entry;
+mod ci;
 mod config;
 mod discover;
-mod inspect;
-mod actions;
-mod output;
-mod npx;
 mod docker;
-mod util;
-mod ci;
-mod hf;
-mod torch;
-mod edge;
 mod doctor;
+mod edge;
+mod hf;
+mod inspect;
+mod npx;
+mod output;
 mod package_managers;
+mod torch;
+mod util;
 
-use config::{Config, CliArgs, MergedConfig};
-use discover::DiscoveryResult;
-use inspect::CacheInspector;
-use actions::ActionExecutor;
-use output::OutputFormatter;
-use npx::NpxCacheManager;
-use docker::DockerCacheManager;
-use ci::{CiMode, handle_ci_mode};
-use hf::{handle_hf_list, handle_hf_clean};
-use torch::{handle_torch_list, handle_torch_clean};
-use edge::{handle_vercel_purge, handle_vercel_status, handle_cloudflare_purge, handle_cloudflare_status};
-use doctor::handle_doctor;
 use crate::cache_entry::{CacheEntry, PlannedAction};
+use actions::ActionExecutor;
+use ci::{handle_ci_mode, CiMode};
+use config::{CliArgs, Config, MergedConfig};
+use discover::DiscoveryResult;
+use docker::DockerCacheManager;
+use doctor::handle_doctor;
+use edge::{
+    handle_cloudflare_purge, handle_cloudflare_status, handle_vercel_purge, handle_vercel_status,
+};
+use hf::{handle_hf_clean, handle_hf_list};
+use inspect::CacheInspector;
+use npx::NpxCacheManager;
+use output::OutputFormatter;
+use torch::{handle_torch_clean, handle_torch_list};
 
 /// CacheKill - A production-ready CLI tool to safely nuke development and build caches
 #[derive(Parser)]
 #[command(name = "cachekill")]
-    #[command(version = "0.1.2")] // Version bump with NPX improvements
+#[command(version = "0.1.2")] // Version bump with NPX improvements
 #[command(about = "Safely nuke development and build caches")]
 #[command(long_about = r#"
 CacheKill is a production-ready CLI tool that helps you safely clean up
@@ -163,7 +165,6 @@ struct Cli {
     js_pm: bool,
 }
 
-
 impl Cli {
     /// Convert CLI arguments to CliArgs struct
     fn to_cli_args(&self) -> CliArgs {
@@ -173,8 +174,14 @@ impl Cli {
             force: self.force || self.yes,
             json: self.json,
             lang: self.lang.as_ref().and_then(|s| s.parse().ok()),
-            paths: self.paths.as_ref().map(|s| s.split(',').map(|s| s.trim().to_string()).collect()),
-            exclude: self.exclude.as_ref().map(|s| s.split(',').map(|s| s.trim().to_string()).collect()),
+            paths: self
+                .paths
+                .as_ref()
+                .map(|s| s.split(',').map(|s| s.trim().to_string()).collect()),
+            exclude: self
+                .exclude
+                .as_ref()
+                .map(|s| s.split(',').map(|s| s.trim().to_string()).collect()),
             stale_days: self.stale_days,
             safe_delete: self.safe_delete,
             backup_dir: self.backup_dir.clone(),
@@ -189,7 +196,6 @@ impl Cli {
 
 fn main() {
     let cli = Parser::parse();
-
 
     // Run the main application
     if let Err(e) = run(cli) {
@@ -289,7 +295,7 @@ fn run(cli: Cli) -> Result<()> {
 
 fn handle_restore_last(config: &MergedConfig, formatter: &OutputFormatter) -> Result<()> {
     let executor = ActionExecutor::new(config.clone());
-    
+
     match executor.restore_last_backup() {
         Ok(result) => {
             if let Err(e) = formatter.print_restore_result(&result) {
@@ -345,7 +351,7 @@ fn handle_list_mode(config: &MergedConfig, formatter: &OutputFormatter) -> Resul
 
 fn handle_npx_list_mode(config: &MergedConfig, formatter: &OutputFormatter) -> Result<()> {
     let npx_manager = NpxCacheManager::new(config.clone());
-    
+
     if !npx::is_npx_available() {
         if !config.json {
             println!("NPX is not available on this system.");
@@ -361,34 +367,43 @@ fn handle_npx_list_mode(config: &MergedConfig, formatter: &OutputFormatter) -> R
             println!("📦 NPX Package Cache Analysis");
             println!("Found {} cached packages:", packages.len());
             println!();
-            
+
             if packages.is_empty() {
                 println!("No NPX packages found in cache.");
                 return Ok(());
             }
-            
-            println!("{:<30} | {:<15} | {:<12} | {:<15} | {:<8}", 
-                "Package", "Version", "Size", "Last Used", "Stale?");
-            println!("{:-<30} | {:-<15} | {:-<12} | {:-<15} | {:-<8}", 
-                "", "", "", "", "");
-            
+
+            println!(
+                "{:<30} | {:<15} | {:<12} | {:<15} | {:<8}",
+                "Package", "Version", "Size", "Last Used", "Stale?"
+            );
+            println!(
+                "{:-<30} | {:-<15} | {:-<12} | {:-<15} | {:-<8}",
+                "", "", "", "", ""
+            );
+
             for package in &packages {
                 let version = package.version.as_deref().unwrap_or("unknown");
                 let size = humansize::format_size(package.size_bytes, humansize::DECIMAL);
                 let last_used = package.last_used.format("%Y-%m-%d %H:%M").to_string();
                 let stale = if package.stale { "Yes" } else { "No" };
-                
-                println!("{:<30} | {:<15} | {:<12} | {:<15} | {:<8}", 
-                    package.name, version, size, last_used, stale);
+
+                println!(
+                    "{:<30} | {:<15} | {:<12} | {:<15} | {:<8}",
+                    package.name, version, size, last_used, stale
+                );
             }
-            
+
             let total_size: u64 = packages.iter().map(|p| p.size_bytes).sum();
             let stale_count = packages.iter().filter(|p| p.stale).count();
-            
+
             println!();
             println!("📊 Summary:");
             println!("  Total packages: {}", packages.len());
-            println!("  Total size: {}", humansize::format_size(total_size, humansize::DECIMAL));
+            println!(
+                "  Total size: {}",
+                humansize::format_size(total_size, humansize::DECIMAL)
+            );
             println!("  Stale packages: {}", stale_count);
         }
     } else {
@@ -404,7 +419,7 @@ fn handle_npx_list_mode(config: &MergedConfig, formatter: &OutputFormatter) -> R
 
 fn handle_docker_list_mode(config: &MergedConfig, formatter: &OutputFormatter) -> Result<()> {
     let docker_manager = DockerCacheManager::new(config.clone());
-    
+
     if !DockerCacheManager::is_docker_available() {
         if !config.json {
             println!("Docker is not available on this system.");
@@ -496,29 +511,37 @@ fn handle_cleanup_mode(config: &MergedConfig, formatter: &OutputFormatter) -> Re
     // Show summary
     let summary = inspector.get_summary(&entries);
     if !config.json {
-        println!("🔍 Found {} cache entries ({} total)", 
-                 summary.total_count, 
-                 summary.total_size_human());
-        
+        println!(
+            "🔍 Found {} cache entries ({} total)",
+            summary.total_count,
+            summary.total_size_human()
+        );
+
         let largest = inspector.get_largest_entries(&entries, 5);
         if !largest.is_empty() {
             println!("\n📊 Top 5 largest caches:");
             for (i, entry) in largest.iter().enumerate() {
-                println!("  {}. {} ({})", 
-                         i + 1, 
-                         entry.path.display(), 
-                         entry.size_human());
+                println!(
+                    "  {}. {} ({})",
+                    i + 1,
+                    entry.path.display(),
+                    entry.size_human()
+                );
             }
         }
     }
 
     // Ask for confirmation unless forced
     if !config.force {
-        let action = if config.safe_delete { "SAFE DELETE (move to backup)" } else { "DELETE" };
+        let action = if config.safe_delete {
+            "SAFE DELETE (move to backup)"
+        } else {
+            "DELETE"
+        };
         let prompt = format!("Proceed with {}? (y/N)", action);
-        
+
         match inquire::Confirm::new(&prompt).prompt() {
-            Ok(true) => {},
+            Ok(true) => {}
             Ok(false) => {
                 if !config.json {
                     println!("Operation cancelled.");
@@ -536,7 +559,7 @@ fn handle_cleanup_mode(config: &MergedConfig, formatter: &OutputFormatter) -> Re
 
     // Execute cleanup
     let executor = ActionExecutor::new(config.clone());
-    
+
     if config.safe_delete {
         // Partition entries into backup vs delete-only and perform both actions
         let (to_backup, to_delete): (Vec<_>, Vec<_>) = entries

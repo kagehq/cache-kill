@@ -1,6 +1,6 @@
+use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 use std::path::PathBuf;
-use chrono::{DateTime, Utc};
 
 /// Represents a cache entry with metadata
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -110,7 +110,7 @@ impl CacheEntry {
     pub fn last_used_human(&self) -> String {
         let now = Utc::now();
         let duration = now - self.last_used;
-        
+
         if duration.num_days() > 0 {
             format!("{}d ago", duration.num_days())
         } else if duration.num_hours() > 0 {
@@ -196,9 +196,18 @@ mod tests {
 
     #[test]
     fn test_language_filter_parsing() {
-        assert_eq!(LanguageFilter::from_str("auto").unwrap(), LanguageFilter::Auto);
-        assert_eq!(LanguageFilter::from_str("js").unwrap(), LanguageFilter::JavaScript);
-        assert_eq!(LanguageFilter::from_str("python").unwrap(), LanguageFilter::Python);
+        assert_eq!(
+            LanguageFilter::from_str("auto").unwrap(),
+            LanguageFilter::Auto
+        );
+        assert_eq!(
+            LanguageFilter::from_str("js").unwrap(),
+            LanguageFilter::JavaScript
+        );
+        assert_eq!(
+            LanguageFilter::from_str("python").unwrap(),
+            LanguageFilter::Python
+        );
         assert!(LanguageFilter::from_str("invalid").is_err());
     }
 

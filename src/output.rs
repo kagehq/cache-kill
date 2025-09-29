@@ -1,10 +1,10 @@
+use crate::actions::{DryRunResult, HardDeleteResult, RestoreResult, SafeDeleteResult};
+use crate::cache_entry::{CacheEntry, CacheKind, PlannedAction};
+use crate::docker::DockerStats;
+use crate::inspect::CacheSummary;
+use crate::npx::NpxStats;
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
-use crate::cache_entry::{CacheEntry, CacheKind, PlannedAction};
-use crate::inspect::CacheSummary;
-use crate::actions::{DryRunResult, SafeDeleteResult, HardDeleteResult, RestoreResult};
-use crate::npx::NpxStats;
-use crate::docker::DockerStats;
 
 /// Output formatter for human and JSON output
 pub struct OutputFormatter {
@@ -18,7 +18,10 @@ impl OutputFormatter {
     }
 
     /// Print cache entries in a table format
-    pub fn print_cache_table(&self, entries: &[CacheEntry]) -> Result<(), Box<dyn std::error::Error>> {
+    pub fn print_cache_table(
+        &self,
+        entries: &[CacheEntry],
+    ) -> Result<(), Box<dyn std::error::Error>> {
         if self.json_mode {
             self.print_json_output(entries)?;
         } else {
@@ -96,7 +99,7 @@ impl OutputFormatter {
             println!("  Total size: {}", summary.total_size_human());
             println!("  Total entries: {}", summary.total_count);
             println!("  Stale entries: {}", summary.stale_count);
-            
+
             if !summary.size_by_kind.is_empty() {
                 println!("\n  Size by kind:");
                 for (kind, size) in &summary.size_by_kind_human() {
@@ -153,7 +156,10 @@ impl OutputFormatter {
     }
 
     /// Print safe delete results
-    pub fn print_safe_delete_result(&self, result: &SafeDeleteResult) -> Result<(), Box<dyn std::error::Error>> {
+    pub fn print_safe_delete_result(
+        &self,
+        result: &SafeDeleteResult,
+    ) -> Result<(), Box<dyn std::error::Error>> {
         if self.json_mode {
             let output = JsonSafeDelete {
                 mode: "safe-delete".to_string(),
@@ -167,14 +173,21 @@ impl OutputFormatter {
         } else {
             println!("\n✅ Safe Delete Results:");
             println!("  Backup directory: {}", result.backup_dir.display());
-            println!("  Total size backed up: {}", humansize::format_size(result.total_size, humansize::DECIMAL));
+            println!(
+                "  Total size backed up: {}",
+                humansize::format_size(result.total_size, humansize::DECIMAL)
+            );
             println!("  Successfully backed up: {}", result.backed_up.len());
             println!("  Failed: {}", result.failed.len());
 
             if !result.backed_up.is_empty() {
                 println!("\n  📦 Backed up:");
                 for entry in &result.backed_up {
-                    println!("    {} -> {}", entry.original_path.display(), entry.backup_path.display());
+                    println!(
+                        "    {} -> {}",
+                        entry.original_path.display(),
+                        entry.backup_path.display()
+                    );
                 }
             }
 
@@ -189,11 +202,18 @@ impl OutputFormatter {
     }
 
     /// Print hard delete results
-    pub fn print_hard_delete_result(&self, result: &HardDeleteResult) -> Result<(), Box<dyn std::error::Error>> {
+    pub fn print_hard_delete_result(
+        &self,
+        result: &HardDeleteResult,
+    ) -> Result<(), Box<dyn std::error::Error>> {
         if self.json_mode {
             let output = JsonHardDelete {
                 mode: "hard-delete".to_string(),
-                deleted: result.deleted.iter().map(|p| p.to_string_lossy().to_string()).collect(),
+                deleted: result
+                    .deleted
+                    .iter()
+                    .map(|p| p.to_string_lossy().to_string())
+                    .collect(),
                 failed: result.failed.clone(),
                 total_size_bytes: result.total_size,
                 total_size_human: humansize::format_size(result.total_size, humansize::DECIMAL),
@@ -201,7 +221,10 @@ impl OutputFormatter {
             println!("{}", serde_json::to_string_pretty(&output)?);
         } else {
             println!("\n🗑️  Hard Delete Results:");
-            println!("  Total size freed: {}", humansize::format_size(result.total_size, humansize::DECIMAL));
+            println!(
+                "  Total size freed: {}",
+                humansize::format_size(result.total_size, humansize::DECIMAL)
+            );
             println!("  Successfully deleted: {}", result.deleted.len());
             println!("  Failed: {}", result.failed.len());
 
@@ -223,11 +246,18 @@ impl OutputFormatter {
     }
 
     /// Print restore results
-    pub fn print_restore_result(&self, result: &RestoreResult) -> Result<(), Box<dyn std::error::Error>> {
+    pub fn print_restore_result(
+        &self,
+        result: &RestoreResult,
+    ) -> Result<(), Box<dyn std::error::Error>> {
         if self.json_mode {
             let output = JsonRestore {
                 mode: "restore".to_string(),
-                restored: result.restored.iter().map(|p| p.to_string_lossy().to_string()).collect(),
+                restored: result
+                    .restored
+                    .iter()
+                    .map(|p| p.to_string_lossy().to_string())
+                    .collect(),
                 failed: result.failed.clone(),
                 backup_dir: result.backup_dir.to_string_lossy().to_string(),
             };
@@ -296,10 +326,22 @@ impl OutputFormatter {
             if stats.available {
                 println!("\n🐳 Docker Information:");
                 println!("  Total size: {}", stats.total_size_human());
-                println!("  Images: {}", humansize::format_size(stats.images_size, humansize::DECIMAL));
-                println!("  Containers: {}", humansize::format_size(stats.containers_size, humansize::DECIMAL));
-                println!("  Volumes: {}", humansize::format_size(stats.volumes_size, humansize::DECIMAL));
-                println!("  Build cache: {}", humansize::format_size(stats.build_cache_size, humansize::DECIMAL));
+                println!(
+                    "  Images: {}",
+                    humansize::format_size(stats.images_size, humansize::DECIMAL)
+                );
+                println!(
+                    "  Containers: {}",
+                    humansize::format_size(stats.containers_size, humansize::DECIMAL)
+                );
+                println!(
+                    "  Volumes: {}",
+                    humansize::format_size(stats.volumes_size, humansize::DECIMAL)
+                );
+                println!(
+                    "  Build cache: {}",
+                    humansize::format_size(stats.build_cache_size, humansize::DECIMAL)
+                );
             } else {
                 println!("\n🐳 Docker: Not available");
             }
@@ -311,8 +353,14 @@ impl OutputFormatter {
     fn calculate_totals(&self, entries: &[CacheEntry]) -> JsonTotals {
         let total_size: u64 = entries.iter().map(|e| e.size_bytes).sum();
         let count = entries.len();
-        let freed_bytes: u64 = entries.iter()
-            .filter(|e| matches!(e.planned_action, Some(PlannedAction::Delete) | Some(PlannedAction::Backup)))
+        let freed_bytes: u64 = entries
+            .iter()
+            .filter(|e| {
+                matches!(
+                    e.planned_action,
+                    Some(PlannedAction::Delete) | Some(PlannedAction::Backup)
+                )
+            })
             .map(|e| e.size_bytes)
             .sum();
 
@@ -424,7 +472,7 @@ mod tests {
     fn test_output_formatter_creation() {
         let formatter = OutputFormatter::new(false);
         assert!(!formatter.json_mode);
-        
+
         let json_formatter = OutputFormatter::new(true);
         assert!(json_formatter.json_mode);
     }
@@ -439,14 +487,16 @@ mod tests {
                 1000,
                 Utc::now(),
                 false,
-            ).with_planned_action(PlannedAction::Delete),
+            )
+            .with_planned_action(PlannedAction::Delete),
             CacheEntry::new(
                 std::path::PathBuf::from("test2"),
                 CacheKind::Python,
                 2000,
                 Utc::now(),
                 false,
-            ).with_planned_action(PlannedAction::Backup),
+            )
+            .with_planned_action(PlannedAction::Backup),
         ];
 
         let totals = formatter.calculate_totals(&entries);
@@ -458,15 +508,13 @@ mod tests {
     #[test]
     fn test_json_output_serialization() {
         let _formatter = OutputFormatter::new(true);
-        let entries = vec![
-            CacheEntry::new(
-                std::path::PathBuf::from("test1"),
-                CacheKind::JavaScript,
-                1000,
-                Utc::now(),
-                false,
-            ),
-        ];
+        let entries = vec![CacheEntry::new(
+            std::path::PathBuf::from("test1"),
+            CacheKind::JavaScript,
+            1000,
+            Utc::now(),
+            false,
+        )];
 
         let output = JsonOutput {
             mode: "list".to_string(),

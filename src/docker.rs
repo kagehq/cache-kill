@@ -1,9 +1,9 @@
-use anyhow::{Context, Result};
-use std::process::Command;
-use std::collections::HashMap;
-use chrono::Utc;
 use crate::cache_entry::{CacheEntry, CacheKind, PlannedAction};
 use crate::config::MergedConfig;
+use anyhow::{Context, Result};
+use chrono::Utc;
+use std::collections::HashMap;
+use std::process::Command;
 
 /// Docker cache manager
 pub struct DockerCacheManager {
@@ -25,11 +25,8 @@ impl DockerCacheManager {
     /// Get Docker version if available
     #[allow(dead_code)]
     pub fn get_docker_version() -> Option<String> {
-        let output = Command::new("docker")
-            .arg("--version")
-            .output()
-            .ok()?;
-        
+        let output = Command::new("docker").arg("--version").output().ok()?;
+
         if output.status.success() {
             Some(String::from_utf8_lossy(&output.stdout).trim().to_string())
         } else {
@@ -107,7 +104,7 @@ impl DockerCacheManager {
     fn parse_size_string(size_str: &str) -> Result<u64> {
         let size_str = size_str.to_uppercase();
         let size_str = size_str.trim_end_matches('B');
-        
+
         let (number_part, unit) = if size_str.ends_with('K') {
             (size_str.trim_end_matches('K'), 1024)
         } else if size_str.ends_with('M') {
@@ -120,9 +117,8 @@ impl DockerCacheManager {
             (size_str, 1)
         };
 
-        let number: f64 = number_part.parse()
-            .context("Failed to parse size number")?;
-        
+        let number: f64 = number_part.parse().context("Failed to parse size number")?;
+
         Ok((number * unit as f64) as u64)
     }
 
@@ -143,7 +139,8 @@ impl DockerCacheManager {
                 system_info.images_size,
                 Utc::now(),
                 false, // Docker images don't have a clear "stale" concept
-            ).with_planned_action(self.determine_planned_action());
+            )
+            .with_planned_action(self.determine_planned_action());
             entries.push(entry);
         }
 
@@ -155,7 +152,8 @@ impl DockerCacheManager {
                 system_info.containers_size,
                 Utc::now(),
                 false,
-            ).with_planned_action(self.determine_planned_action());
+            )
+            .with_planned_action(self.determine_planned_action());
             entries.push(entry);
         }
 
@@ -167,7 +165,8 @@ impl DockerCacheManager {
                 system_info.volumes_size,
                 Utc::now(),
                 false,
-            ).with_planned_action(self.determine_planned_action());
+            )
+            .with_planned_action(self.determine_planned_action());
             entries.push(entry);
         }
 
@@ -179,7 +178,8 @@ impl DockerCacheManager {
                 system_info.build_cache_size,
                 Utc::now(),
                 false,
-            ).with_planned_action(self.determine_planned_action());
+            )
+            .with_planned_action(self.determine_planned_action());
             entries.push(entry);
         }
 
@@ -209,7 +209,8 @@ impl DockerCacheManager {
             .output()
         {
             if output.status.success() {
-                result.images_removed = Self::parse_removed_count(&String::from_utf8_lossy(&output.stdout));
+                result.images_removed =
+                    Self::parse_removed_count(&String::from_utf8_lossy(&output.stdout));
             }
         }
 
@@ -221,7 +222,8 @@ impl DockerCacheManager {
             .output()
         {
             if output.status.success() {
-                result.containers_removed = Self::parse_removed_count(&String::from_utf8_lossy(&output.stdout));
+                result.containers_removed =
+                    Self::parse_removed_count(&String::from_utf8_lossy(&output.stdout));
             }
         }
 
@@ -233,7 +235,8 @@ impl DockerCacheManager {
             .output()
         {
             if output.status.success() {
-                result.volumes_removed = Self::parse_removed_count(&String::from_utf8_lossy(&output.stdout));
+                result.volumes_removed =
+                    Self::parse_removed_count(&String::from_utf8_lossy(&output.stdout));
             }
         }
 
@@ -245,7 +248,8 @@ impl DockerCacheManager {
             .output()
         {
             if output.status.success() {
-                result.build_cache_removed = Self::parse_removed_count(&String::from_utf8_lossy(&output.stdout));
+                result.build_cache_removed =
+                    Self::parse_removed_count(&String::from_utf8_lossy(&output.stdout));
             }
         }
 
@@ -283,7 +287,7 @@ impl DockerCacheManager {
     /// Get Docker statistics
     pub fn get_docker_stats(&self) -> Result<DockerStats> {
         let system_info = self.get_docker_system_info()?;
-        
+
         Ok(DockerStats {
             total_size: system_info.total_size,
             images_size: system_info.images_size,
@@ -337,10 +341,22 @@ impl DockerStats {
     #[allow(dead_code)]
     pub fn size_by_category_human(&self) -> HashMap<String, String> {
         let mut map = HashMap::new();
-        map.insert("images".to_string(), humansize::format_size(self.images_size, humansize::DECIMAL));
-        map.insert("containers".to_string(), humansize::format_size(self.containers_size, humansize::DECIMAL));
-        map.insert("volumes".to_string(), humansize::format_size(self.volumes_size, humansize::DECIMAL));
-        map.insert("build_cache".to_string(), humansize::format_size(self.build_cache_size, humansize::DECIMAL));
+        map.insert(
+            "images".to_string(),
+            humansize::format_size(self.images_size, humansize::DECIMAL),
+        );
+        map.insert(
+            "containers".to_string(),
+            humansize::format_size(self.containers_size, humansize::DECIMAL),
+        );
+        map.insert(
+            "volumes".to_string(),
+            humansize::format_size(self.volumes_size, humansize::DECIMAL),
+        );
+        map.insert(
+            "build_cache".to_string(),
+            humansize::format_size(self.build_cache_size, humansize::DECIMAL),
+        );
         map
     }
 }
@@ -348,8 +364,8 @@ impl DockerStats {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::config::MergedConfig;
     use crate::cache_entry::LanguageFilter;
+    use crate::config::MergedConfig;
 
     fn create_test_config() -> MergedConfig {
         MergedConfig {
@@ -390,19 +406,28 @@ mod tests {
     #[test]
     fn test_parse_size_string() {
         assert_eq!(DockerCacheManager::parse_size_string("1KB").unwrap(), 1024);
-        assert_eq!(DockerCacheManager::parse_size_string("1MB").unwrap(), 1024 * 1024);
-        assert_eq!(DockerCacheManager::parse_size_string("1GB").unwrap(), 1024 * 1024 * 1024);
-        assert_eq!(DockerCacheManager::parse_size_string("1.5GB").unwrap(), (1.5 * 1024.0 * 1024.0 * 1024.0) as u64);
+        assert_eq!(
+            DockerCacheManager::parse_size_string("1MB").unwrap(),
+            1024 * 1024
+        );
+        assert_eq!(
+            DockerCacheManager::parse_size_string("1GB").unwrap(),
+            1024 * 1024 * 1024
+        );
+        assert_eq!(
+            DockerCacheManager::parse_size_string("1.5GB").unwrap(),
+            (1.5 * 1024.0 * 1024.0 * 1024.0) as u64
+        );
     }
 
     #[test]
     fn test_parse_removed_count() {
         let output = "Deleted: 5 objects";
         assert_eq!(DockerCacheManager::parse_removed_count(output), 5);
-        
+
         let output2 = "Deleted: 0 objects";
         assert_eq!(DockerCacheManager::parse_removed_count(output2), 0);
-        
+
         let output3 = "No output";
         assert_eq!(DockerCacheManager::parse_removed_count(output3), 0);
     }
@@ -410,15 +435,17 @@ mod tests {
     #[test]
     fn test_docker_stats_creation() {
         let stats = DockerStats {
-            total_size: 1024 * 1024 * 1024, // 1GB
-            images_size: 512 * 1024 * 1024, // 512MB
-            containers_size: 256 * 1024 * 1024, // 256MB
-            volumes_size: 128 * 1024 * 1024, // 128MB
+            total_size: 1024 * 1024 * 1024,      // 1GB
+            images_size: 512 * 1024 * 1024,      // 512MB
+            containers_size: 256 * 1024 * 1024,  // 256MB
+            volumes_size: 128 * 1024 * 1024,     // 128MB
             build_cache_size: 128 * 1024 * 1024, // 128MB
             available: true,
         };
 
         assert_eq!(stats.total_size, 1024 * 1024 * 1024);
-        assert!(stats.total_size_human().contains("1.0") && stats.total_size_human().contains("GB"));
+        assert!(
+            stats.total_size_human().contains("1.0") && stats.total_size_human().contains("GB")
+        );
     }
 }

@@ -1,10 +1,8 @@
-use std::path::{Path, PathBuf};
-use std::fs;
 use anyhow::{Context, Result};
+use chrono::{DateTime, Datelike, Timelike, Utc};
 use dirs;
-use chrono::{DateTime, Utc, Datelike, Timelike};
-
-
+use std::fs;
+use std::path::{Path, PathBuf};
 
 /// Normalize a path by resolving any relative components and expanding home directory
 #[allow(dead_code)]
@@ -38,8 +36,7 @@ pub fn expand_home(path: &str) -> PathBuf {
 
 /// Get the current working directory
 pub fn get_current_dir() -> Result<PathBuf> {
-    std::env::current_dir()
-        .context("Failed to get current working directory")
+    std::env::current_dir().context("Failed to get current working directory")
 }
 
 /// Check if a path exists and is accessible
@@ -57,7 +54,6 @@ pub fn is_file(path: &Path) -> bool {
 pub fn is_dir(path: &Path) -> bool {
     path.is_dir()
 }
-
 
 /// Get the size of a file or directory
 pub fn get_size(path: &Path) -> Result<u64> {
@@ -88,7 +84,7 @@ pub fn get_mtime(path: &Path) -> Result<DateTime<Utc>> {
 /// Get the most recent modification time in a directory tree
 pub fn get_most_recent_mtime(path: &Path) -> Result<DateTime<Utc>> {
     let mut most_recent = get_mtime(path)?;
-    
+
     for entry in walkdir::WalkDir::new(path) {
         let entry = entry?;
         if entry.file_type().is_file() {
@@ -98,7 +94,7 @@ pub fn get_most_recent_mtime(path: &Path) -> Result<DateTime<Utc>> {
             }
         }
     }
-    
+
     Ok(most_recent)
 }
 
@@ -106,10 +102,15 @@ pub fn get_most_recent_mtime(path: &Path) -> Result<DateTime<Utc>> {
 #[allow(dead_code)]
 pub fn is_within_project(path: &Path, project_root: &Path) -> bool {
     path.canonicalize()
-        .map(|canonical| canonical.starts_with(project_root.canonicalize().unwrap_or_else(|_| project_root.to_path_buf())))
+        .map(|canonical| {
+            canonical.starts_with(
+                project_root
+                    .canonicalize()
+                    .unwrap_or_else(|_| project_root.to_path_buf()),
+            )
+        })
         .unwrap_or(false)
 }
-
 
 /// Get the cachekill backup directory
 pub fn get_backup_dir() -> PathBuf {
@@ -121,7 +122,8 @@ pub fn get_backup_dir() -> PathBuf {
 /// Create a timestamped backup directory name
 pub fn create_backup_dir_name() -> String {
     let now = Utc::now();
-    format!("{}-{:02}-{:02}_{:02}-{:02}-{:02}",
+    format!(
+        "{}-{:02}-{:02}_{:02}-{:02}-{:02}",
         now.year(),
         now.month(),
         now.day(),
@@ -131,25 +133,17 @@ pub fn create_backup_dir_name() -> String {
     )
 }
 
-
-
-
-
-
-
-
-
 /// Check if a path matches any of the given glob patterns
 pub fn matches_any_glob(path: &Path, patterns: &[String]) -> bool {
     use globset::{Glob, GlobSetBuilder};
-    
+
     let mut builder = GlobSetBuilder::new();
     for pattern in patterns {
         if let Ok(glob) = Glob::new(pattern) {
             let _ = builder.add(glob);
         }
     }
-    
+
     if let Ok(glob_set) = builder.build() {
         glob_set.is_match(path)
     } else {
@@ -188,7 +182,7 @@ mod tests {
         let temp_dir = TempDir::new().unwrap();
         let test_file = temp_dir.path().join("test.txt");
         fs::write(&test_file, "test").unwrap();
-        
+
         assert!(path_exists(&test_file));
         assert!(!path_exists(&temp_dir.path().join("nonexistent.txt")));
     }
@@ -198,7 +192,7 @@ mod tests {
         let temp_dir = TempDir::new().unwrap();
         let test_file = temp_dir.path().join("test.txt");
         fs::write(&test_file, "test content").unwrap();
-        
+
         let size = get_size(&test_file).unwrap();
         assert_eq!(size, 12); // "test content".len()
     }
@@ -208,14 +202,13 @@ mod tests {
         let temp_dir = TempDir::new().unwrap();
         let project_root = temp_dir.path();
         let sub_path = project_root.join("subdir").join("file.txt");
-        
+
         fs::create_dir_all(sub_path.parent().unwrap()).unwrap();
         fs::write(&sub_path, "test").unwrap();
-        
+
         assert!(is_within_project(&sub_path, project_root));
         assert!(!is_within_project(&PathBuf::from("/tmp"), project_root));
     }
-
 
     #[test]
     fn test_create_backup_dir_name() {
@@ -228,9 +221,9 @@ mod tests {
     fn test_matches_any_glob() {
         let path = PathBuf::from("/tmp/test.txt");
         let patterns = vec!["*.txt".to_string(), "*.log".to_string()];
-        
+
         assert!(matches_any_glob(&path, &patterns));
-        
+
         let patterns2 = vec!["*.log".to_string(), "*.json".to_string()];
         assert!(!matches_any_glob(&path, &patterns2));
     }

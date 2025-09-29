@@ -1,8 +1,8 @@
 use anyhow::{Context, Result};
-use serde::{Deserialize, Serialize};
-use std::process::Command;
-use std::env;
 use chrono::{DateTime, Utc};
+use serde::{Deserialize, Serialize};
+use std::env;
+use std::process::Command;
 
 use crate::config::MergedConfig;
 
@@ -28,10 +28,7 @@ impl VercelCacheManager {
 
     /// Check if Vercel CLI is available
     pub fn cli_available(&self) -> bool {
-        Command::new("vercel")
-            .arg("--version")
-            .output()
-            .is_ok()
+        Command::new("vercel").arg("--version").output().is_ok()
     }
 
     /// Check if Vercel token is available
@@ -42,29 +39,32 @@ impl VercelCacheManager {
     /// Get Vercel token from environment
     #[allow(dead_code)]
     fn get_token(&self) -> Result<String> {
-        env::var("VERCEL_TOKEN")
-            .context("VERCEL_TOKEN environment variable not set")
+        env::var("VERCEL_TOKEN").context("VERCEL_TOKEN environment variable not set")
     }
 
     /// Purge Vercel cache using CLI
     fn purge_via_cli(&self, project_id: Option<&str>) -> Result<VercelPurgeResult> {
         let mut cmd = Command::new("vercel");
         cmd.arg("deploy").arg("--prebuilt").arg("--force");
-        
+
         if let Some(project) = project_id {
             cmd.arg("--project").arg(project);
         }
-        
-        let output = cmd.output()
+
+        let output = cmd
+            .output()
             .context("Failed to execute vercel CLI command")?;
-        
+
         let success = output.status.success();
         let message = if success {
             "Vercel cache purge initiated via CLI".to_string()
         } else {
-            format!("Vercel CLI failed: {}", String::from_utf8_lossy(&output.stderr))
+            format!(
+                "Vercel CLI failed: {}",
+                String::from_utf8_lossy(&output.stderr)
+            )
         };
-        
+
         Ok(VercelPurgeResult {
             success,
             message,
@@ -77,40 +77,52 @@ impl VercelCacheManager {
     /// Purge Vercel cache using API
     fn purge_via_api(&self, project_id: Option<&str>) -> Result<VercelPurgeResult> {
         let token = self.get_token()?;
-        
+
         // Use curl as a fallback for API calls
         let mut cmd = Command::new("curl");
         cmd.args(&[
-            "-X", "POST",
-            "-H", &format!("Authorization: Bearer {}", token),
-            "-H", "Content-Type: application/json",
+            "-X",
+            "POST",
+            "-H",
+            &format!("Authorization: Bearer {}", token),
+            "-H",
+            "Content-Type: application/json",
         ]);
-        
+
         if let Some(project) = project_id {
             // Purge specific project
-            let url = format!("https://api.vercel.com/v1/integrations/deployments/{}/revalidate", project);
+            let url = format!(
+                "https://api.vercel.com/v1/integrations/deployments/{}/revalidate",
+                project
+            );
             cmd.arg(&url);
         } else {
             // Purge all projects (this might not be supported by Vercel API)
             return Ok(VercelPurgeResult {
                 success: false,
-                message: "Project ID required for Vercel API purge. Use --project <id> or Vercel CLI.".to_string(),
+                message:
+                    "Project ID required for Vercel API purge. Use --project <id> or Vercel CLI."
+                        .to_string(),
                 project_id: None,
                 timestamp: Utc::now(),
                 method: "api".to_string(),
             });
         }
-        
-        let output = cmd.output()
+
+        let output = cmd
+            .output()
             .context("Failed to execute curl command for Vercel API")?;
-        
+
         let success = output.status.success();
         let message = if success {
             "Vercel cache purge initiated via API".to_string()
         } else {
-            format!("Vercel API failed: {}", String::from_utf8_lossy(&output.stderr))
+            format!(
+                "Vercel API failed: {}",
+                String::from_utf8_lossy(&output.stderr)
+            )
         };
-        
+
         Ok(VercelPurgeResult {
             success,
             message,
@@ -161,19 +173,19 @@ impl VercelCacheManager {
     /// Get recommendations for setup
     fn get_recommendations(&self) -> Vec<String> {
         let mut recommendations = Vec::new();
-        
+
         if !self.cli_available() {
             recommendations.push("Install Vercel CLI: npm install -g vercel".to_string());
         }
-        
+
         if !self.token_available() {
             recommendations.push("Set VERCEL_TOKEN environment variable".to_string());
         }
-        
+
         if recommendations.is_empty() {
             recommendations.push("Vercel integration is ready".to_string());
         }
-        
+
         recommendations
     }
 }
@@ -181,9 +193,9 @@ impl VercelCacheManager {
 /// Handle Vercel purge command
 pub fn handle_vercel_purge(config: &MergedConfig, project_id: Option<&str>) -> Result<()> {
     let manager = VercelCacheManager::new(config.clone());
-    
+
     let result = manager.purge_cache(project_id, config.force)?;
-    
+
     if config.json {
         println!("{}", serde_json::to_string_pretty(&result)?);
     } else {
@@ -197,7 +209,7 @@ pub fn handle_vercel_purge(config: &MergedConfig, project_id: Option<&str>) -> R
             println!("❌ {}", result.message);
         }
     }
-    
+
     Ok(())
 }
 
@@ -205,18 +217,18 @@ pub fn handle_vercel_purge(config: &MergedConfig, project_id: Option<&str>) -> R
 pub fn handle_vercel_status(config: &MergedConfig) -> Result<()> {
     let manager = VercelCacheManager::new(config.clone());
     let status = manager.get_status();
-    
+
     if config.json {
         println!("{}", serde_json::to_string_pretty(&status)?);
     } else {
         println!("🚀 Vercel Integration Status");
         println!("CLI Available: {}", status["cli_available"]);
         println!("Token Available: {}", status["token_available"]);
-        
+
         if let Some(token_source) = status["token_source"].as_str() {
             println!("Token Source: {}", token_source);
         }
-        
+
         if let Some(recommendations) = status["recommendations"].as_array() {
             if !recommendations.is_empty() {
                 println!("\nRecommendations:");
@@ -228,7 +240,7 @@ pub fn handle_vercel_status(config: &MergedConfig) -> Result<()> {
             }
         }
     }
-    
+
     Ok(())
 }
 
@@ -246,7 +258,7 @@ mod tests {
             timestamp: Utc::now(),
             method: "cli".to_string(),
         };
-        
+
         assert!(result.success);
         assert_eq!(result.message, "Test message");
         assert_eq!(result.project_id, Some("test-project".to_string()));
@@ -257,7 +269,7 @@ mod tests {
         let config = MergedConfig::default();
         let manager = VercelCacheManager::new(config);
         let status = manager.get_status();
-        
+
         assert!(status.is_object());
         assert!(status["cli_available"].is_boolean());
         assert!(status["token_available"].is_boolean());
