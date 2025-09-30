@@ -65,9 +65,10 @@ jobs:
           shared-key: ${{ matrix.target }}
 
       - name: Build (cachekill only)
+        timeout-minutes: 30
         run: |
           echo "Building for target: ${{ matrix.target }} (cachekill only)"
-          timeout 30m cargo build --release --bin cachekill --target ${{ matrix.target }}
+          cargo build --release --bin cachekill --target ${{ matrix.target }}
           echo "Build completed successfully"
 
       - name: Strip binaries (Unix)
@@ -86,8 +87,7 @@ jobs:
 
       - name: Strip binaries (Windows)
         if: matrix.os == 'windows-latest'
-        run: |
-          strip target/${{ matrix.target }}/release/cachekill.exe
+        run: echo "Skipping strip on Windows"
 
       - name: Upload cachekill binary
         uses: actions/upload-artifact@v4
