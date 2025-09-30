@@ -82,10 +82,8 @@ jobs:
         if: matrix.os != 'windows-latest'
         run: |
           ./target/release/cachekill --version
-          ./target/release/mcp --version
 
       - name: Test binary (Windows)
         if: matrix.os == 'windows-latest'
         run: |
           ./target/release/cachekill.exe --version
-          ./target/release/mcp.exe --version
