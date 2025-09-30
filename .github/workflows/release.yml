@@ -1,5 +1,8 @@
 name: Release
 
+permissions:
+  contents: write
+
 on:
   push:
     tags:
@@ -51,15 +54,10 @@ jobs:
           timeout 10m sudo apt-get install -y gcc-aarch64-linux-gnu
           echo "Cross-compilation toolchain installed successfully"
 
-      - name: Cache cargo registry
-        uses: actions/cache@v4
+      - name: Cache Rust build
+        uses: Swatinem/rust-cache@v2
         with:
-          path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-          key: ${{ runner.os }}-cargo-${{ matrix.target }}-${{ hashFiles('**/Cargo.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-cargo-${{ matrix.target }}-
+          shared-key: ${{ matrix.target }}
 
       - name: Build
         run: |
