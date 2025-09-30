@@ -26,9 +26,10 @@ jobs:
           - target: x86_64-apple-darwin
             os: macos-latest
             ext: ''
-          - target: aarch64-unknown-linux-gnu
-            os: ubuntu-latest
-            ext: ''
+          # Temporarily disabled aarch64 targets due to build issues
+          # - target: aarch64-unknown-linux-gnu
+          #   os: ubuntu-latest
+          #   ext: ''
           - target: aarch64-apple-darwin
             os: macos-latest
             ext: ''
@@ -45,8 +46,10 @@ jobs:
       - name: Install cross-compilation toolchain (Linux aarch64)
         if: matrix.target == 'aarch64-unknown-linux-gnu'
         run: |
-          sudo apt-get update
-          sudo apt-get install -y gcc-aarch64-linux-gnu
+          echo "Installing aarch64 cross-compilation toolchain..."
+          timeout 10m sudo apt-get update
+          timeout 10m sudo apt-get install -y gcc-aarch64-linux-gnu
+          echo "Cross-compilation toolchain installed successfully"
 
       - name: Cache cargo registry
         uses: actions/cache@v4
@@ -59,7 +62,11 @@ jobs:
             ${{ runner.os }}-cargo-${{ matrix.target }}-
 
       - name: Build
-        run: cargo build --release --target ${{ matrix.target }}
+        run: |
+          echo "Building for target: ${{ matrix.target }}"
+          echo "This may take several minutes for cross-compilation targets..."
+          timeout 30m cargo build --release --target ${{ matrix.target }}
+          echo "Build completed successfully"
 
       - name: Strip binaries (Unix)
         if: matrix.os != 'windows-latest'
