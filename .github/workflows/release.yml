@@ -29,13 +29,6 @@ jobs:
           - target: x86_64-apple-darwin
             os: macos-latest
             ext: ''
-          # Temporarily disabled aarch64 targets due to build issues
-          # - target: aarch64-unknown-linux-gnu
-          #   os: ubuntu-latest
-          #   ext: ''
-          - target: aarch64-apple-darwin
-            os: macos-latest
-            ext: ''
 
     steps:
       - name: Checkout repository
@@ -45,6 +38,18 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
         with:
           targets: ${{ matrix.target }}
+
+      - name: Enable sccache
+        uses: mozilla-actions/sccache-action@v0.0.6
+
+      - name: Configure build env (fast but optimized)
+        run: |
+          echo "RUSTC_WRAPPER=sccache" >> $GITHUB_ENV
+          echo "CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse" >> $GITHUB_ENV
+          echo "RUSTFLAGS=-C debuginfo=0" >> $GITHUB_ENV
+          echo "CARGO_PROFILE_RELEASE_LTO=false" >> $GITHUB_ENV
+          echo "CARGO_PROFILE_RELEASE_CODEGEN_UNITS=16" >> $GITHUB_ENV
+          echo "CARGO_PROFILE_RELEASE_OPT_LEVEL=2" >> $GITHUB_ENV
 
       - name: Install cross-compilation toolchain (Linux aarch64)
         if: matrix.target == 'aarch64-unknown-linux-gnu'
@@ -59,11 +64,10 @@ jobs:
         with:
           shared-key: ${{ matrix.target }}
 
-      - name: Build
+      - name: Build (cachekill only)
         run: |
-          echo "Building for target: ${{ matrix.target }}"
-          echo "This may take several minutes for cross-compilation targets..."
-          timeout 30m cargo build --release --target ${{ matrix.target }}
+          echo "Building for target: ${{ matrix.target }} (cachekill only)"
+          timeout 30m cargo build --release --locked --bin cachekill --target ${{ matrix.target }}
           echo "Build completed successfully"
 
       - name: Strip binaries (Unix)
@@ -94,11 +98,7 @@ jobs:
           name: cachekill-${{ matrix.target }}
           path: target/${{ matrix.target }}/release/cachekill${{ matrix.ext }}
 
-      - name: Upload mcp binary
-        uses: actions/upload-artifact@v4
-        with:
-          name: mcp-${{ matrix.target }}
-          path: target/${{ matrix.target }}/release/mcp${{ matrix.ext }}
+      # Skip MCP in release for speed; can be re-enabled when needed
 
   release:
     name: Create Release

@@ -1,5 +1,9 @@
 name: CI
 
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
@@ -16,6 +20,12 @@ jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
+    env:
+      CARGO_REGISTRIES_CRATES_IO_PROTOCOL: sparse
+      RUSTFLAGS: -C debuginfo=0
+      CARGO_PROFILE_RELEASE_LTO: 'false'
+      CARGO_PROFILE_RELEASE_CODEGEN_UNITS: '16'
+      CARGO_PROFILE_RELEASE_OPT_LEVEL: '2'
     
     steps:
       - name: Checkout repository
@@ -26,11 +36,19 @@ jobs:
         with:
           components: clippy, rustfmt
 
+      - name: Enable sccache
+        uses: mozilla-actions/sccache-action@v0.0.6
+
+      - name: Configure sccache env
+        run: |
+          echo "RUSTC_WRAPPER=sccache" >> $GITHUB_ENV
+          sccache --version
+
       - name: Cache Rust build
         uses: Swatinem/rust-cache@v2
 
-      - name: Run tests
-        run: cargo test --verbose
+      - name: Run tests (bin cachekill)
+        run: cargo test --verbose --locked --bin cachekill
 
       - name: Run clippy
         run: cargo clippy
@@ -57,8 +75,8 @@ jobs:
       - name: Cache Rust build
         uses: Swatinem/rust-cache@v2
 
-      - name: Build
-        run: cargo build --release
+      - name: Build (bin cachekill)
+        run: cargo build --release --locked --bin cachekill
 
       - name: Test binary (Unix)
         if: matrix.os != 'windows-latest'
