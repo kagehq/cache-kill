@@ -67,7 +67,7 @@ jobs:
       - name: Build (cachekill only)
         run: |
           echo "Building for target: ${{ matrix.target }} (cachekill only)"
-          timeout 30m cargo build --release --locked --bin cachekill --target ${{ matrix.target }}
+          timeout 30m cargo build --release --bin cachekill --target ${{ matrix.target }}
           echo "Build completed successfully"
 
       - name: Strip binaries (Unix)
