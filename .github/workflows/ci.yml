@@ -48,7 +48,7 @@ jobs:
         uses: Swatinem/rust-cache@v2
 
       - name: Run tests (bin cachekill)
-        run: cargo test --verbose --locked --bin cachekill
+        run: cargo test --verbose --bin cachekill
 
       - name: Run clippy
         run: cargo clippy
@@ -76,7 +76,7 @@ jobs:
         uses: Swatinem/rust-cache@v2
 
       - name: Build (bin cachekill)
-        run: cargo build --release --locked --bin cachekill
+        run: cargo build --release --bin cachekill
 
       - name: Test binary (Unix)
         if: matrix.os != 'windows-latest'
