@@ -29,11 +29,14 @@ Join our Discord community for discussions, support, and updates:
 **Linux/macOS:**
 ```bash
 curl -fsSL https://raw.githubusercontent.com/kagehq/cache-kill/main/install.sh | bash
+cachekill --version
 ```
 
 **Windows (PowerShell):**
 ```powershell
 iwr -useb https://raw.githubusercontent.com/kagehq/cache-kill/main/install.ps1 | iex
+# Verify
+cachekill --version
 ```
 
 ### Manual installation
@@ -58,55 +61,55 @@ cargo install --path .
 
 ```bash
 # List all caches
-./target/release/cachekill --list
+cachekill --list
 
 # Show what would be cleaned
-./target/release/cachekill --dry-run
+cachekill --dry-run
 
 # Clean with confirmation
-./target/release/cachekill
+cachekill
 
 # Clean specific language
-./target/release/cachekill --lang js
+cachekill --lang js
 
 # Include Docker and NPX
-./target/release/cachekill --docker --npx
+cachekill --docker --npx
 
 # JSON output for scripting
-./target/release/cachekill --list --json
+cachekill --list --json
 
 # System diagnostics
-./target/release/cachekill --doctor
+cachekill --doctor
 
 # CI mode for automation
-./target/release/cachekill --ci prebuild
-./target/release/cachekill --ci postbuild
+cachekill --ci prebuild
+cachekill --ci postbuild
 
 # Specialized integrations
-./target/release/cachekill --hf --list
-./target/release/cachekill --torch
-./target/release/cachekill --vercel --list
-./target/release/cachekill --cloudflare
+cachekill --hf --list
+cachekill --torch
+cachekill --vercel --list
+cachekill --cloudflare
 
 # Advanced NPX analysis with per-package details
-./target/release/cachekill --npx --list
+cachekill --npx --list
 
 # NPX cache management
-./target/release/cachekill --npx --dry-run          # Preview what would be cleaned
-./target/release/cachekill --npx --force            # Nuclear option - clear all NPX caches
-./target/release/cachekill --npx --stale-days 7 --force  # Surgical - only stale packages
+cachekill --npx --dry-run          # Preview what would be cleaned
+cachekill --npx --force            # Nuclear option - clear all NPX caches
+cachekill --npx --stale-days 7 --force  # Surgical - only stale packages
 ```
 
 ### JavaScript Package Managers usage
 ```bash
 # Include JavaScript package manager caches (npm, pnpm, yarn)
-./target/release/cachekill --list --js-pm
+cachekill --list --js-pm
 
 # JSON output including JS PM caches
-./target/release/cachekill --list --json --js-pm
+cachekill --list --json --js-pm
 
 # Dry run including JS PM caches
-./target/release/cachekill --dry-run --js-pm
+cachekill --dry-run --js-pm
 ```
 
 ## MCP Server
@@ -116,10 +119,9 @@ CacheKill includes an MCP server that allows AI assistants to interact with cach
 ### Running the MCP Server
 
 ```bash
-# Build the MCP server
+# Install/Run the MCP server
+# Note: current release assets include cachekill. Build mcp from source:
 cargo build --release --bin mcp
-
-# Run the MCP server
 ./target/release/mcp
 ```
 
