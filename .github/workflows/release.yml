@@ -77,20 +77,17 @@ jobs:
             # Try cross-compilation strip first, fallback to regular strip if not available
             if command -v aarch64-linux-gnu-strip >/dev/null 2>&1; then
               aarch64-linux-gnu-strip target/${{ matrix.target }}/release/cachekill || echo "Cross-compilation strip failed, skipping"
-              aarch64-linux-gnu-strip target/${{ matrix.target }}/release/mcp || echo "Cross-compilation strip failed, skipping"
             else
               echo "Cross-compilation strip not available, skipping strip for aarch64"
             fi
           else
             strip target/${{ matrix.target }}/release/cachekill
-            strip target/${{ matrix.target }}/release/mcp
           fi
 
       - name: Strip binaries (Windows)
         if: matrix.os == 'windows-latest'
         run: |
           strip target/${{ matrix.target }}/release/cachekill.exe
-          strip target/${{ matrix.target }}/release/mcp.exe
 
       - name: Upload cachekill binary
         uses: actions/upload-artifact@v4
